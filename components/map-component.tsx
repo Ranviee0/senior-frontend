@@ -1,44 +1,70 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
+import { useEffect, useState } from "react";
+import { MapContainer, TileLayer, CircleMarker, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
 
 // Define the landmark data type
 interface Landmark {
-  id: number
-  name: string
-  type: string
-  latitude: number
-  longitude: number
+  id: number;
+  name: string;
+  type: string;
+  latitude: number;
+  longitude: number;
+}
+
+interface Land {
+  land_id: number;
+  normalized_input: { [key: string]: number };
+  predicted_land_price: number;
 }
 
 export default function MapComponent() {
-  const [mounted, setMounted] = useState(false)
-  const [landmarkData, setLandmarkData] = useState<Landmark[]>([])
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const [mounted, setMounted] = useState(false);
+  const [landmarkData, setLandmarkData] = useState<Landmark[]>([]);
+  const [landData, setLandData] = useState<Land[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    setMounted(true)
+    setMounted(true);
+
+    const fetchLands = async () => {
+      try {
+        setIsLoading(true);
+        const response = await fetch("http://0.0.0.0:8000/land-price-predictions/");
+
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status}`);
+        }
+        const data = await response.json();
+        setLandData(data);
+        setError(null);
+      } catch (err) {
+        console.error("Failed to fetch landmarks:", err);
+        setError("Failed to load landmarks. Please try again later.");
+      } finally {
+        setIsLoading(false);
+      }
+    };
 
     // Fetch landmark data from the backend
     const fetchLandmarks = async () => {
       try {
-        setIsLoading(true)
+        setIsLoading(true);
         // Replace with your actual API endpoint
-        const response = await fetch("http://0.0.0.0:8000/list-landmarks/")
+        const response = await fetch("http://0.0.0.0:8000/list-landmarks/");
 
         if (!response.ok) {
-          throw new Error(`Error: ${response.status}`)
+          throw new Error(`Error: ${response.status}`);
         }
 
-        const data = await response.json()
-        setLandmarkData(data)
-        setError(null)
+        const data = await response.json();
+        setLandmarkData(data);
+        setError(null);
       } catch (err) {
-        console.error("Failed to fetch landmarks:", err)
-        setError("Failed to load landmarks. Please try again later.")
+        console.error("Failed to fetch landmarks:", err);
+        setError("Failed to load landmarks. Please try again later.");
 
         // For development/demo purposes, use sample data if API fails
         setLandmarkData([
@@ -63,30 +89,33 @@ export default function MapComponent() {
             id: 3,
             latitude: 13.8166739,
           },
-        ])
+        ]);
       } finally {
-        setIsLoading(false)
+        setIsLoading(false);
       }
-    }
+    };
+    fetchLands();
+    fetchLandmarks();
+  }, []);
 
-    fetchLandmarks()
-  }, [])
-
-  if (!mounted) return null
+  if (!mounted) return null;
 
   // Show loading state
-  if (isLoading && landmarkData.length === 0) {
-    return <div className="h-full w-full flex items-center justify-center">Loading map data...</div>
+  if (isLoading && (landmarkData.length === 0 || landData.length === 0)) {
+    return (
+      <div className="h-full w-full flex items-center justify-center">
+        Loading map data...
+      </div>
+    );
   }
 
   // Show error state if there's an error and no fallback data
-  if (error && landmarkData.length === 0) {
-    return <div className="h-full w-full flex items-center justify-center text-red-500">{error}</div>
-  }
-
-  // If no landmarks are available after loading
-  if (!isLoading && landmarkData.length === 0) {
-    return <div className="h-full w-full flex items-center justify-center">No landmarks available</div>
+  if (error && (landmarkData.length === 0 || landData.length === 0)) {
+    return (
+      <div className="h-full w-full flex items-center justify-center text-red-500">
+        {error}
+      </div>
+    );
   }
 
   // Calculate the center of the map based on the average of all coordinates
@@ -95,10 +124,10 @@ export default function MapComponent() {
       return {
         lat: acc.lat + landmark.latitude / landmarkData.length,
         lng: acc.lng + landmark.longitude / landmarkData.length,
-      }
+      };
     },
-    { lat: 0, lng: 0 },
-  )
+    { lat: 0, lng: 0 }
+  );
 
   return (
     <div className="h-full w-full relative">
@@ -120,7 +149,8 @@ export default function MapComponent() {
         {/* Fix for TileLayer TypeScript error */}
         <TileLayer
           {...{
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+            attribution:
+              '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
             url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
           }}
         />
@@ -145,14 +175,42 @@ export default function MapComponent() {
                 <h3 className="font-bold">{landmark.name}</h3>
                 <p>Type: {landmark.type}</p>
                 <p>
-                  Coordinates: {landmark.latitude.toFixed(6)}, {landmark.longitude.toFixed(6)}
+                  Coordinates: {landmark.latitude.toFixed(6)},{" "}
+                  {landmark.longitude.toFixed(6)}
                 </p>
+              </div>
+            </Popup>
+          </CircleMarker>
+        ))}
+
+        {landData.map((land) => (
+          // Fix for CircleMarker TypeScript error
+          <CircleMarker
+            key={land.land_id}
+            {...{
+              center: [land.normalized_input.latitude, land.normalized_input.longitude],
+              radius: 8,
+              pathOptions: {
+                fillColor: "#FF6666",
+                fillOpacity: 0.8,
+                color: "#CC4444",
+                weight: 1,
+              },
+            }}
+          >
+            <Popup>
+              <div>
+                <h3 className="font-bold">{land.land_id}</h3>
+                <p>
+                  Coordinates: {land.normalized_input.latitude.toFixed(6)},{" "}
+                  {land.normalized_input.longitude.toFixed(6)}
+                </p>
+                <p>{land.predicted_land_price}</p>
               </div>
             </Popup>
           </CircleMarker>
         ))}
       </MapContainer>
     </div>
-  )
+  );
 }
-

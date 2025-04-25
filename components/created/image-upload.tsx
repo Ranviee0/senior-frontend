@@ -5,12 +5,23 @@ import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
+// Update the ImageUploadPreviewProps interface to be more specific
 interface ImageUploadPreviewProps {
   onChange?: (files: File[]) => void
+  value?: File[]
 }
 
-export function ImageUploadPreview({ onChange }: ImageUploadPreviewProps) {
-  const [previews, setPreviews] = useState<{ file: File; url: string }[]>([])
+// Update the component to accept and use the value prop
+export function ImageUploadPreview({ onChange, value }: ImageUploadPreviewProps) {
+  const [previews, setPreviews] = useState<{ file: File; url: string }[]>(() => {
+    // Initialize previews from value prop if provided
+    return value
+      ? value.map((file) => ({
+          file,
+          url: URL.createObjectURL(file),
+        }))
+      : []
+  })
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const modalRef = useRef<HTMLDivElement>(null)

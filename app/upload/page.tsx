@@ -3,6 +3,7 @@
 import type React from "react"
 import { useEffect, useState } from "react"
 import { useForm, FormProvider, Controller } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 import { ThreeTier } from "@/components/created/three-tier"
 import provinceData from "@/data/provinces.json"
 import { Input } from "@/components/ui/input"
@@ -12,9 +13,11 @@ import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Separator } from "@/components/ui/separator"
 import { ImageUploadPreview } from "@/components/created/image-upload"
-import type { Upload } from "@/app/types"
 import type { ProvinceData } from "@/app/types"
 import { LocationPicker } from "@/components/created/location-picker"
+import { uploadSchema, type UploadFormValues } from "./schema"
+import { AlertCircle } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
 const UploadPage: React.FC = () => {
   const [province, setProvince] = useState<string>("")
@@ -24,22 +27,18 @@ const UploadPage: React.FC = () => {
   const [data, setData] = useState<ProvinceData | null>(null)
   const [densityLevel, setDensityLevel] = useState<string>("")
   const [densityValue, setDensityValue] = useState<number>(0)
-  const [submittedData, setSubmittedData] = useState<Upload | null>(null)
-  // Add a new state for street address
   const [streetAddress, setStreetAddress] = useState<string>("")
-  // First, add a new state to track the current step
-  // Add this after the other useState declarations
   const [currentStep, setCurrentStep] = useState<number>(0)
+  const [stepErrors, setStepErrors] = useState<string[]>([])
 
-  // Add a steps array to define your form steps
-  // Add this after the useState declarations
   const steps = [
     { title: "Basic Information", description: "Land details and images" },
     { title: "Location Details", description: "Address and geographical information" },
     { title: "Development Plans", description: "Nearby development information" },
   ]
 
-  const methods = useForm<Upload>({
+  const methods = useForm<UploadFormValues>({
+    resolver: zodResolver(uploadSchema),
     defaultValues: {
       land_name: "",
       description: "",
@@ -52,10 +51,67 @@ const UploadPage: React.FC = () => {
       pop_density: 0,
       flood_risk: "unknown",
       nearby_dev_plan: [""],
+      images: [],
     },
+    mode: "onChange",
   })
 
-  const { control, setValue, handleSubmit, watch, register } = methods
+  const {
+    control,
+    setValue,
+    handleSubmit,
+    watch,
+    register,
+    formState: { errors, isValid },
+    trigger,
+  } = methods
+
+  // Function to validate the current step
+  const validateStep = async () => {
+    let isStepValid = false
+    const newErrors: string[] = []
+
+    switch (currentStep) {
+      case 0:
+        isStepValid = await trigger(["land_name", "description", "area", "price"])
+        if (!isStepValid) {
+          if (errors.land_name) newErrors.push(errors.land_name.message as string)
+          if (errors.description) newErrors.push(errors.description.message as string)
+          if (errors.area) newErrors.push(errors.area.message as string)
+          if (errors.price) newErrors.push(errors.price.message as string)
+        }
+        break
+      case 1:
+        isStepValid = await trigger(["address", "lattitude", "longitude", "zoning", "pop_density", "flood_risk"])
+        if (!isStepValid) {
+          if (errors.address) newErrors.push(errors.address.message as string)
+          if (errors.lattitude) newErrors.push(errors.lattitude.message as string)
+          if (errors.longitude) newErrors.push(errors.longitude.message as string)
+          if (errors.zoning) newErrors.push(errors.zoning.message as string)
+          if (errors.pop_density) newErrors.push(errors.pop_density.message as string)
+          if (errors.flood_risk) newErrors.push(errors.flood_risk.message as string)
+        }
+        break
+      case 2:
+        isStepValid = await trigger(["nearby_dev_plan"])
+        if (!isStepValid && errors.nearby_dev_plan) {
+          newErrors.push(errors.nearby_dev_plan.message as string)
+        }
+        break
+    }
+
+    setStepErrors(newErrors)
+    return isStepValid
+  }
+
+  // Function to handle next step
+  const handleNextStep = async () => {
+    const isStepValid = await validateStep()
+    if (isStepValid) {
+      setCurrentStep(Math.min(steps.length - 1, currentStep + 1))
+      setStepErrors([])
+    }
+  }
 
   useEffect(() => {
     if (!province) return
@@ -77,7 +133,6 @@ const UploadPage: React.FC = () => {
     }
   }, [province, setValue])
 
-  // Modify the useEffect for address concatenation to include street address
   useEffect(() => {
     const addressComponents = []
     if (streetAddress) addressComponents.push(streetAddress)
@@ -108,29 +163,64 @@ const UploadPage: React.FC = () => {
     }
   }
 
-  const onSubmit = handleSubmit((data) => {
-    console.log("Form submitted:", data)
-    setSubmittedData(data)
-  })
+  const onSubmit = async (values: UploadFormValues) => {
+    const formData = new FormData()
 
-  // Modify the return statement to include step navigation
-  // Replace the entire return statement with this updated version:
+    formData.append("land_name", values.land_name)
+    formData.append("description", values.description)
+    formData.append("area", values.area.toString())
+    formData.append("price", values.price.toString())
+    formData.append("address", values.address)
+    formData.append("lattitude", values.lattitude.toString())
+    formData.append("longitude", values.longitude.toString())
+    formData.append("pop_density", values.pop_density.toString())
+    formData.append("flood_risk", values.flood_risk)
+    if (values.zoning) formData.append("zoning", values.zoning)
+
+    values.nearby_dev_plan.forEach((plan) => {
+      formData.append("nearby_dev_plan", plan)
+    })
+
+    if (values.images && values.images.length > 0) {
+      values.images.forEach((file) => {
+        formData.append("images", file)
+      })
+    }
+
+    try {
+      const response = await fetch("http://localhost:8000/train/upload", {
+        method: "POST",
+        body: formData,
+      })
+
+      if (!response.ok) throw new Error(`Upload failed: ${response.statusText}`)
+      const result = await response.json()
+      console.log("✅ Upload success:", result)
+    } catch (error) {
+      console.error("❌ Upload error:", error)
+    }
+  }
+
   return (
     <FormProvider {...methods}>
       <div className="w-full h-full overflow-auto">
-        <div className="container mx-auto py-4 px-4 max-w-4xl pb-20">
+        <div className="container mx-auto py-8 px-4 max-w-4xl pb-20">
           <h1 className="text-xl font-bold mb-4">Upload New Land</h1>
 
           {/* Step indicator */}
-          <div className="mb-6">
-            <div className="flex justify-between">
+          <div className="mb-8">
+            <div className="grid grid-cols-3 gap-0">
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col items-center w-1/3 ${index < steps.length - 1 ? "relative" : ""}`}
+                  className={`flex flex-col items-center relative ${
+                    index < steps.length - 1
+                      ? "after:content-[''] after:absolute after:top-5 after:left-1/2 after:w-full after:h-0.5 after:bg-gray-200 after:z-0"
+                      : ""
+                  }`}
                 >
                   <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 
+                    className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 z-10
                       ${
                         currentStep === index
                           ? "bg-primary text-primary-foreground"
@@ -144,10 +234,10 @@ const UploadPage: React.FC = () => {
                     {index + 1}
                   </div>
                   <div className="text-sm font-medium text-center">{step.title}</div>
-                  <div className="text-xs text-gray-500 text-center">{step.description}</div>
+                  <div className="text-xs text-gray-500 text-center px-2">{step.description}</div>
 
                   {index < steps.length - 1 && (
-                    <div className="absolute top-5 left-1/2 w-full h-0.5 bg-gray-200">
+                    <div className="absolute top-5 left-1/2 w-full h-0.5 z-0" style={{ transform: "translateX(0%)" }}>
                       <div
                         className="h-full bg-primary transition-all"
                         style={{ width: currentStep > index ? "100%" : "0%" }}
@@ -161,78 +251,114 @@ const UploadPage: React.FC = () => {
 
           <Separator className="my-3" />
 
+          {/* Validation errors */}
+          {stepErrors.length > 0 && (
+            <Alert variant="destructive" className="mb-6">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription>
+                <ul className="list-disc pl-5">
+                  {stepErrors.map((error, index) => (
+                    <li key={index}>{error}</li>
+                  ))}
+                </ul>
+              </AlertDescription>
+            </Alert>
+          )}
+
           <div>
-            <form onSubmit={onSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               {/* Step 1: Basic Information */}
               {currentStep === 0 && (
-                <>
-                  <h2 className="text-md font-semibold">Basic Information</h2>
+                <div className="space-y-6">
+                  <h2 className="text-md font-semibold mb-4">Basic Information</h2>
 
                   {/* Property Images */}
-                  <div className="space-y-1">
-                    <ImageUploadPreview
-                      onChange={(files) => {
-                        // This will be connected to backend later
-                        console.log("Files selected:", files)
-                      }}
-                    />
+                  <div className="space-y-3">
+                    <ImageUploadPreview onChange={(files) => setValue("images", files)} />
                   </div>
 
-                  <div className="space-y-1">
+                  <div className="space-y-2">
                     <Label htmlFor="land_name" className="text-sm">
-                      Land Name
+                      Land Name <span className="text-red-500">*</span>
                     </Label>
-                    <Input id="land_name" {...register("land_name")} className="h-9" />
+                    <Input
+                      id="land_name"
+                      {...register("land_name")}
+                      className={`h-9 ${errors.land_name ? "border-red-500" : ""}`}
+                    />
+                    {errors.land_name && (
+                      <p className="text-xs text-red-500 mt-1">{errors.land_name.message as string}</p>
+                    )}
                   </div>
 
                   {/* Basic Information */}
-                  <div className="grid grid-cols-3 gap-3">
-                    <div className="space-y-1">
+                  <div className="grid grid-cols-3 gap-4">
+                    <div className="space-y-2">
                       <Label htmlFor="price" className="text-sm">
-                        Price
+                        Price <span className="text-red-500">*</span>
                       </Label>
-                      <Input id="price" type="number" {...register("price", { valueAsNumber: true })} className="h-9" />
+                      <Input
+                        id="price"
+                        type="number"
+                        {...register("price", { valueAsNumber: true })}
+                        className={`h-9 ${errors.price ? "border-red-500" : ""}`}
+                      />
+                      {errors.price && <p className="text-xs text-red-500 mt-1">{errors.price.message as string}</p>}
                     </div>
 
-                    <div className="space-y-1">
+                    <div className="space-y-2">
                       <Label htmlFor="area" className="text-sm">
-                        Area (sq.m)
+                        Area (sq.m) <span className="text-red-500">*</span>
                       </Label>
-                      <Input id="area" type="number" {...register("area", { valueAsNumber: true })} className="h-9" />
+                      <Input
+                        id="area"
+                        type="number"
+                        {...register("area", { valueAsNumber: true })}
+                        className={`h-9 ${errors.area ? "border-red-500" : ""}`}
+                      />
+                      {errors.area && <p className="text-xs text-red-500 mt-1">{errors.area.message as string}</p>}
                     </div>
                   </div>
 
-                  <div className="space-y-1">
+                  <div className="space-y-2">
                     <Label htmlFor="description" className="text-sm">
-                      Description
+                      Description <span className="text-red-500">*</span>
                     </Label>
-                    <Textarea id="description" rows={3} {...register("description")} />
+                    <Textarea
+                      id="description"
+                      rows={3}
+                      {...register("description")}
+                      className={errors.description ? "border-red-500" : ""}
+                    />
+                    {errors.description && (
+                      <p className="text-xs text-red-500 mt-1">{errors.description.message as string}</p>
+                    )}
                   </div>
-                </>
+                </div>
               )}
 
               {/* Step 2: Location Details */}
               {currentStep === 1 && (
-                <>
-                  <h2 className="text-md font-semibold">Location Details</h2>
+                <div className="space-y-6">
+                  <h2 className="text-md font-semibold mb-4">Location Details</h2>
 
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <div>
-                      <div className="grid grid-cols-6 gap-3">
-                        <div className="space-y-1 col-span-4">
+                      <div className="grid grid-cols-6 gap-4 mb-4">
+                        <div className="space-y-2 col-span-4">
                           <Label htmlFor="streetAddress" className="text-sm">
-                            Street Address
+                            Street Address <span className="text-red-500">*</span>
                           </Label>
                           <Input
                             id="streetAddress"
                             value={streetAddress}
                             onChange={(e) => setStreetAddress(e.target.value)}
                             placeholder="e.g. 51 Main St."
-                            className="h-9"
+                            className={`h-9 ${errors.address ? "border-red-500" : ""}`}
                           />
                         </div>
 
-                        <div className="space-y-1 col-span-1">
+                        <div className="space-y-2 col-span-1">
                           <Label htmlFor="zipCode" className="text-sm">
                             Zip Code
                           </Label>
@@ -244,7 +370,7 @@ const UploadPage: React.FC = () => {
                           />
                         </div>
 
-                        <div className="space-y-1 col-span-1">
+                        <div className="space-y-2 col-span-1">
                           <Label className="text-sm">Population Density</Label>
                           <div className="flex items-center space-x-2">
                             <Input value={densityValue.toFixed(2)} readOnly className="h-9 bg-gray-50" />
@@ -253,7 +379,7 @@ const UploadPage: React.FC = () => {
                         </div>
                       </div>
 
-                      <div>
+                      <div className="mb-4">
                         <ThreeTier
                           control={control}
                           fieldId="address_components"
@@ -264,17 +390,17 @@ const UploadPage: React.FC = () => {
                         />
                       </div>
 
-                      <div className="grid grid-cols-3 gap-3">
-                        <div className="col-span-1">
+                      <div className="grid grid-cols-3 gap-4">
+                        <div className="col-span-1 space-y-2">
                           <Label htmlFor="flood_risk" className="text-sm">
-                            Flood Risk
+                            Flood Risk <span className="text-red-500">*</span>
                           </Label>
                           <Controller
                             control={control}
                             name="flood_risk"
                             render={({ field }) => (
                               <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <SelectTrigger className="h-9">
+                                <SelectTrigger className={`h-9 ${errors.flood_risk ? "border-red-500" : ""}`}>
                                   <SelectValue placeholder="Select risk level" />
                                 </SelectTrigger>
                                 <SelectContent>
@@ -286,8 +412,11 @@ const UploadPage: React.FC = () => {
                               </Select>
                             )}
                           />
+                          {errors.flood_risk && (
+                            <p className="text-xs text-red-500 mt-1">{errors.flood_risk.message as string}</p>
+                          )}
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-span-1 space-y-2">
                           <Label htmlFor="zoning" className="text-sm">
                             Zoning
                           </Label>
@@ -297,27 +426,32 @@ const UploadPage: React.FC = () => {
                     </div>
                   </div>
 
-                  <LocationPicker
-                    control={control}
-                    latFieldId="lattitude"
-                    lngFieldId="longitude"
-                    label="Select Location"
-                    required
-                  />
-                </>
+                  <div className="mt-6">
+                    <LocationPicker
+                      control={control}
+                      latFieldId="lattitude"
+                      lngFieldId="longitude"
+                      label="Select Location"
+                      required
+                    />
+                    {(errors.lattitude || errors.longitude) && (
+                      <p className="text-xs text-red-500 mt-1">Valid location coordinates are required</p>
+                    )}
+                  </div>
+                </div>
               )}
 
               {/* Step 3: Development Plans */}
               {currentStep === 2 && (
-                <>
-                  <h2 className="text-md font-semibold">Nearby Development Plans</h2>
+                <div className="space-y-6">
+                  <h2 className="text-md font-semibold mb-4">Nearby Development Plans</h2>
 
-                  <div className="space-y-3">
+                  <div className="space-y-4">
                     <Controller
                       control={control}
                       name="nearby_dev_plan"
                       render={({ field }) => (
-                        <div className="space-y-2">
+                        <div className="space-y-3">
                           {field.value.map((plan, index) => (
                             <div key={index} className="flex gap-2">
                               <Input
@@ -328,7 +462,7 @@ const UploadPage: React.FC = () => {
                                   field.onChange(newPlans)
                                 }}
                                 placeholder="Enter development plan"
-                                className="h-9"
+                                className={`h-9 ${errors.nearby_dev_plan ? "border-red-500" : ""}`}
                               />
                               <Button
                                 type="button"
@@ -353,43 +487,47 @@ const UploadPage: React.FC = () => {
                           >
                             Add Development Plan
                           </Button>
+                          {errors.nearby_dev_plan && (
+                            <p className="text-xs text-red-500 mt-1">{errors.nearby_dev_plan.message as string}</p>
+                          )}
                         </div>
                       )}
                     />
                   </div>
-                </>
+                </div>
               )}
 
               {/* Navigation buttons */}
-              <div className="flex justify-between pt-6">
+              <div className="flex justify-between pt-8">
                 <Button
                   type="button"
                   variant="outline"
-                  onClick={() => setCurrentStep(Math.max(0, currentStep - 1))}
+                  onClick={() => {
+                    setCurrentStep(Math.max(0, currentStep - 1))
+                    setStepErrors([])
+                  }}
                   disabled={currentStep === 0}
                 >
                   Previous
                 </Button>
 
                 {currentStep < steps.length - 1 ? (
-                  <Button type="button" onClick={() => setCurrentStep(Math.min(steps.length - 1, currentStep + 1))}>
+                  <Button type="button" onClick={handleNextStep}>
                     Next
                   </Button>
                 ) : (
-                  <Button type="submit">Submit Land Details</Button>
+                  <Button
+                    type="submit"
+                    onClick={async () => {
+                      await validateStep()
+                    }}
+                  >
+                    Submit Land Details
+                  </Button>
                 )}
               </div>
             </form>
           </div>
-
-          {submittedData && (
-            <div className="bg-white border rounded-md p-4 mt-6">
-              <h2 className="text-lg font-semibold mb-3">Submitted Data</h2>
-              <pre className="bg-gray-50 p-3 rounded text-sm overflow-auto max-h-96">
-                {JSON.stringify(submittedData, null, 2)}
-              </pre>
-            </div>
-          )}
         </div>
       </div>
     </FormProvider>

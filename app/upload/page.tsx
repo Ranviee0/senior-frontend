@@ -16,10 +16,20 @@ import { ImageUploadPreview } from "@/components/created/image-upload"
 import type { ProvinceData } from "@/app/types"
 import { LocationPicker } from "@/components/created/location-picker"
 import { uploadSchema, type UploadFormValues } from "./schema"
-import { AlertCircle } from "lucide-react"
+import { AlertCircle, Check, X } from "lucide-react"
 import { Alert, AlertDescription } from "@/components/ui/alert"
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog"
+import { useRouter } from "next/navigation"
 
 const UploadPage: React.FC = () => {
+  const router = useRouter()
   const [province, setProvince] = useState<string>("")
   const [district, setDistrict] = useState<string>("")
   const [subdistrict, setSubdistrict] = useState<string>("")
@@ -30,6 +40,13 @@ const UploadPage: React.FC = () => {
   const [streetAddress, setStreetAddress] = useState<string>("")
   const [currentStep, setCurrentStep] = useState<number>(0)
   const [stepErrors, setStepErrors] = useState<string[]>([])
+  const [submissionStatus, setSubmissionStatus] = useState<{
+    success: boolean
+    message: string
+  } | null>(null)
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false)
+  const [showConfirmModal, setShowConfirmModal] = useState<boolean>(false)
+  const [formDataToSubmit, setFormDataToSubmit] = useState<UploadFormValues | null>(null)
 
   const steps = [
     { title: "Basic Information", description: "Land details and images" },
@@ -64,6 +81,7 @@ const UploadPage: React.FC = () => {
     register,
     formState: { errors, isValid },
     trigger,
+    getValues,
   } = methods
 
   // Function to validate the current step
@@ -145,6 +163,22 @@ const UploadPage: React.FC = () => {
     setValue("address", fullAddress)
   }, [province, district, subdistrict, zipCode, streetAddress, setValue])
 
+  // Effect to handle redirect after successful submission
+  useEffect(() => {
+    let redirectTimer: NodeJS.Timeout
+
+    if (submissionStatus?.success) {
+      // Redirect to home page after 1.5 seconds to allow user to see success message
+      redirectTimer = setTimeout(() => {
+        router.push("/")
+      }, 1500)
+    }
+
+    return () => {
+      if (redirectTimer) clearTimeout(redirectTimer)
+    }
+  }, [submissionStatus, router])
+
   const handleProvincesChange = (provinces: string[]) => {
     if (provinces.length > 0) {
       setProvince(provinces[0])
@@ -163,32 +197,45 @@ const UploadPage: React.FC = () => {
     }
   }
 
-  const onSubmit = async (values: UploadFormValues) => {
-    const formData = new FormData()
+  // Handle form submission
+  const handleFormSubmit = (values: UploadFormValues) => {
+    setFormDataToSubmit(values)
+    setShowConfirmModal(true)
+  }
 
-    formData.append("land_name", values.land_name)
-    formData.append("description", values.description)
-    formData.append("area", values.area.toString())
-    formData.append("price", values.price.toString())
-    formData.append("address", values.address)
-    formData.append("lattitude", values.lattitude.toString())
-    formData.append("longitude", values.longitude.toString())
-    formData.append("pop_density", values.pop_density.toString())
-    formData.append("flood_risk", values.flood_risk)
-    if (values.zoning) formData.append("zoning", values.zoning)
-
-    values.nearby_dev_plan.forEach((plan) => {
-      formData.append("nearby_dev_plan", plan)
-    })
-
-    if (values.images && values.images.length > 0) {
-      values.images.forEach((file) => {
-        formData.append("images", file)
-      })
-    }
+  // Handle actual submission after confirmation
+  const submitForm = async () => {
+    if (!formDataToSubmit || isSubmitting) return
 
     try {
-      const response = await fetch("http://localhost:8000/train/upload", {
+      setIsSubmitting(true)
+      setSubmissionStatus(null)
+      setShowConfirmModal(false)
+
+      const formData = new FormData()
+
+      formData.append("land_name", formDataToSubmit.land_name)
+      formData.append("description", formDataToSubmit.description)
+      formData.append("area", formDataToSubmit.area.toString())
+      formData.append("price", formDataToSubmit.price.toString())
+      formData.append("address", formDataToSubmit.address)
+      formData.append("lattitude", formDataToSubmit.lattitude.toString())
+      formData.append("longitude", formDataToSubmit.longitude.toString())
+      formData.append("pop_density", formDataToSubmit.pop_density.toString())
+      formData.append("flood_risk", formDataToSubmit.flood_risk)
+      if (formDataToSubmit.zoning) formData.append("zoning", formDataToSubmit.zoning)
+
+      formDataToSubmit.nearby_dev_plan.forEach((plan) => {
+        formData.append("nearby_dev_plan", plan)
+      })
+
+      if (formDataToSubmit.images && formDataToSubmit.images.length > 0) {
+        formDataToSubmit.images.forEach((file) => {
+          formData.append("images", file)
+        })
+      }
+
+      const response = await fetch("http://localhost:8000/admin/upload", {
         method: "POST",
         body: formData,
       })
@@ -196,9 +243,30 @@ const UploadPage: React.FC = () => {
       if (!response.ok) throw new Error(`Upload failed: ${response.statusText}`)
       const result = await response.json()
       console.log("✅ Upload success:", result)
+      setSubmissionStatus({
+        success: true,
+        message: "Land details uploaded successfully! Redirecting to home page...",
+      })
+      // Redirect is now handled by the useEffect
     } catch (error) {
       console.error("❌ Upload error:", error)
+      setSubmissionStatus({
+        success: false,
+        message: `Upload failed: ${error instanceof Error ? error.message : "Unknown error"}`,
+      })
+    } finally {
+      setIsSubmitting(false)
+      setFormDataToSubmit(null)
     }
+  }
+
+  // Format currency for display
+  const formatCurrency = (value: number) => {
+    return new Intl.NumberFormat("en-US", {
+      style: "currency",
+      currency: "THB",
+      minimumFractionDigits: 0,
+    }).format(value)
   }
 
   return (
@@ -265,8 +333,16 @@ const UploadPage: React.FC = () => {
             </Alert>
           )}
 
+          {/* Submission status */}
+          {submissionStatus && (
+            <Alert variant={submissionStatus.success ? "default" : "destructive"} className="mb-6">
+              <AlertCircle className="h-4 w-4" />
+              <AlertDescription>{submissionStatus.message}</AlertDescription>
+            </Alert>
+          )}
+
           <div>
-            <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+            <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-6">
               {/* Step 1: Basic Information */}
               {currentStep === 0 && (
                 <div className="space-y-6">
@@ -516,13 +592,8 @@ const UploadPage: React.FC = () => {
                     Next
                   </Button>
                 ) : (
-                  <Button
-                    type="submit"
-                    onClick={async () => {
-                      await validateStep()
-                    }}
-                  >
-                    Submit Land Details
+                  <Button type="submit" disabled={isSubmitting}>
+                    {isSubmitting ? "Submitting..." : "Submit Land Details"}
                   </Button>
                 )}
               </div>
@@ -530,6 +601,67 @@ const UploadPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Confirmation Modal */}
+      <Dialog open={showConfirmModal} onOpenChange={setShowConfirmModal}>
+        <DialogContent className="sm:max-w-md">
+          <DialogHeader>
+            <DialogTitle>Confirm Land Upload</DialogTitle>
+            <DialogDescription>Please review the land details before confirming the upload.</DialogDescription>
+          </DialogHeader>
+
+          {formDataToSubmit && (
+            <div className="space-y-4 py-4">
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <h3 className="font-medium text-sm">Land Name</h3>
+                  <p className="text-sm">{formDataToSubmit.land_name}</p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-sm">Price</h3>
+                  <p className="text-sm">{formatCurrency(formDataToSubmit.price)}</p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-sm">Area</h3>
+                  <p className="text-sm">{formDataToSubmit.area} sq.m</p>
+                </div>
+                <div>
+                  <h3 className="font-medium text-sm">Flood Risk</h3>
+                  <p className="text-sm capitalize">{formDataToSubmit.flood_risk}</p>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="font-medium text-sm">Address</h3>
+                <p className="text-sm">{formDataToSubmit.address}</p>
+              </div>
+
+              <div>
+                <h3 className="font-medium text-sm">Description</h3>
+                <p className="text-sm line-clamp-2">{formDataToSubmit.description}</p>
+              </div>
+
+              {formDataToSubmit.images && formDataToSubmit.images.length > 0 && (
+                <div>
+                  <h3 className="font-medium text-sm">Images</h3>
+                  <p className="text-sm">{formDataToSubmit.images.length} image(s) selected</p>
+                </div>
+              )}
+            </div>
+          )}
+
+          <DialogFooter className="flex sm:justify-between">
+            <Button type="button" variant="outline" onClick={() => setShowConfirmModal(false)}>
+              <X className="mr-2 h-4 w-4" />
+              Cancel
+            </Button>
+            <Button type="button" onClick={submitForm} disabled={isSubmitting}>
+              <Check className="mr-2 h-4 w-4" />
+              {isSubmitting ? "Uploading..." : "Confirm Upload"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </FormProvider>
   )
 }

@@ -1,33 +1,17 @@
-import type React from "react"
-import "./globals.css"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import { ThemeProvider } from "@/components/theme-provider"
-
-const inter = Inter({ subsets: ["latin"] })
+// app/layout.tsx
+import "./globals.css"; // if you have global styles
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Landmark Map",
-  description: "Map showing various landmarks using OpenStreetMap",
-    generator: 'v0.dev'
-}
+  title: "Your App Title",
+  description: "Your App Description",
+};
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
-      </body>
+      <head />
+      <body>{children}</body>
     </html>
-  )
+  );
 }
-
-
-
-import './globals.css'

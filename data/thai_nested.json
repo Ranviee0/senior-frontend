@@ -1,0 +1,9476 @@
+{
+  "Bangkok": {
+    "Khet Phra Nakhon": [
+      "Phra Borom Maha Ratchawang",
+      "Wang Burapha Phirom",
+      "Wat Ratchabophit",
+      "Samran Rat",
+      "San Chao Pho Suea",
+      "Sao Chingcha",
+      "Bowon Niwet",
+      "Talat Yot",
+      "Chana Songkhram",
+      "Ban Phan Thom",
+      "Bang Khun Phrom",
+      "Wat Sam Phraya"
+    ],
+    "Khet Dusit": [
+      "Dusit",
+      "Wachiraphayaban",
+      "Suan Chit Lada",
+      "Si Yaek Maha Nak",
+      "Thanon Nakhon Chai Si"
+    ],
+    "Khet Nong Chok": [
+      "Krathum Rai",
+      "Nong Chok",
+      "Khlong Sip",
+      "Khlong Sip Song",
+      "Khok Faet",
+      "Khu Fang Nuea",
+      "Lam Phak Chi",
+      "Lam Toiting"
+    ],
+    "Khet Bang Rak": [
+      "Maha Phruettharam",
+      "Si Lom",
+      "Suriyawong",
+      "Bang Rak",
+      "Si Phraya"
+    ],
+    "Khet Bang Khen": [
+      "Anusawari",
+      "Tha Raeng"
+    ],
+    "Khet Bang Kapi": [
+      "Khlong Chan",
+      "Hua Mak"
+    ],
+    "Khet Pathum Wan": [
+      "Rong Mueang",
+      "Wang Mai",
+      "Pathum Wan",
+      "Lumphini"
+    ],
+    "Khet Pom Prap Sattru Phai": [
+      "Pom Prap",
+      "Wat Thep Sirin",
+      "Khlong Maha Nak",
+      "Ban Bat",
+      "Wat Sommanat"
+    ],
+    "Khet Phra Khanong": [
+      "Bang Chak",
+      "Phra Khanong Tai"
+    ],
+    "Khet Min Buri": [
+      "Min Buri",
+      "Saen Saep"
+    ],
+    "Khet Lat Krabang": [
+      "Lat Krabang",
+      "Khlong Song Ton Nun",
+      "Khlong Sam Prawet",
+      "Lam Pla Thio",
+      "Thap Yao",
+      "Khum Thong"
+    ],
+    "Khet Yan Nawa": [
+      "Chong Nonsi",
+      "Bang Phongphang"
+    ],
+    "Khet Samphanthawong": [
+      "Chakkrawat",
+      "Samphanthawong",
+      "Talat Noi"
+    ],
+    "Khet Phaya Thai": [
+      "Samsen Nai",
+      "Phaya Thai"
+    ],
+    "Khet Thon Buri": [
+      "Wat Kanlaya",
+      "Hiran Ruchi",
+      "Bang Yi Ruea",
+      "Bukkhalo",
+      "Talat Phlu",
+      "Dao Khanong",
+      "Samre"
+    ],
+    "Khet Bangkok Yai": [
+      "Wat Arun",
+      "Wat Tha Phra"
+    ],
+    "Khet Huai Khwang": [
+      "Huai Khwang",
+      "Bang Kapi",
+      "Samsen Nok"
+    ],
+    "Khet Khlong San": [
+      "Somdet Chao Phraya",
+      "Khlong San",
+      "Bang Lamphu Lang",
+      "Khlong Ton Sai"
+    ],
+    "Khet Taling Chan": [
+      "Khlong Chak Phra",
+      "Taling Chan",
+      "Chimphli",
+      "Bang Phrom",
+      "Bang Ramat",
+      "Bang Chueak Nang"
+    ],
+    "Khet Bangkok Noi": [
+      "Siri Rat",
+      "Ban Chang Lo",
+      "Bang Khun Non",
+      "Bang Khun Si",
+      "Arun Ammarin"
+    ],
+    "Khet Bang Khun Thian": [
+      "Tha Kham",
+      "Samae Dam"
+    ],
+    "Khet Phasi Charoen": [
+      "Bang Wa",
+      "Bang Duan",
+      "Bang Kae",
+      "Bang Kae Nua",
+      "Bang Phai",
+      "Bang Chak",
+      "Bang Waek",
+      "Khlong Khwang",
+      "Pak Khlong Phasi Charoen",
+      "Khuha Sawan"
+    ],
+    "Khet Nong Khaem": [
+      "Nong Khaem",
+      "Nong Khang Phlu"
+    ],
+    "Khet Rat Burana": [
+      "Rat Burana",
+      "Bang Pakok"
+    ],
+    "Khet Bang Phlat": [
+      "Bang Phlat",
+      "Bang O",
+      "Bang Bamru",
+      "Bang Yi Khan"
+    ],
+    "Khet Din Daeng": [
+      "Din Daeng",
+      "Ratchadaphisek"
+    ],
+    "Khet Bueng Kum": [
+      "Khlong Kum",
+      "Saphan Sung",
+      "Khan Na Yao",
+      "Nawamin",
+      "Nuan Chan"
+    ],
+    "Khet Sathon": [
+      "Thung Wat Don",
+      "Yan Nawa",
+      "Thung Maha Mek"
+    ],
+    "Khet Bang Sue": [
+      "Bang Sue",
+      "Wong Sawang"
+    ],
+    "Khet Chatuchak": [
+      "Lat Yao",
+      "Sena Nikhom",
+      "Chan Kasem",
+      "Chom Phon",
+      "Chatuchak"
+    ],
+    "Khet Bang Kho Laem": [
+      "Bang Kho Laem",
+      "Wat Phraya Krai",
+      "Bang Khlo"
+    ],
+    "Khet Prawet": [
+      "Prawet",
+      "Nong Bon",
+      "Dokmai",
+      "Suan Luang"
+    ],
+    "Khet Khlong Toei": [
+      "Khlong Toei",
+      "Khlong Tan",
+      "Phra Khanong",
+      "Khlong Toei Nua",
+      "Khlong Tan Nua",
+      "Phra Khanong Nua"
+    ],
+    "Khet Suan Luang": [
+      "Suan Luang",
+      "On Nut",
+      "Phatthanakan"
+    ],
+    "Khet Chom Thong": [
+      "Bang Khun Thian",
+      "Bang Kho",
+      "Bang Mot",
+      "Chom Thong"
+    ],
+    "Khet Don Mueang": [
+      "Si Kan",
+      "Don Mueang",
+      "Sanam Bin"
+    ],
+    "Khet Ratchathewi": [
+      "Thung Phaya Thai",
+      "Thanon Phaya Thai",
+      "Thanon Phetchaburi",
+      "Makkasan"
+    ],
+    "Khet Lat Phrao": [
+      "Lat Phrao",
+      "Chorakhe Bua"
+    ],
+    "Khet Watthana": [
+      "Khlong Toei Nuea",
+      "Khlong Tan Nuea",
+      "Phra Khanong Nuea"
+    ],
+    "Khet Bang Khae": [
+      "Bang Khae",
+      "Bang Khae Nuea",
+      "Bang Phai",
+      "Lak Song"
+    ],
+    "Khet Lak Si": [
+      "Thung Song Hong",
+      "Talat Bang Khen"
+    ],
+    "Khet Sai Mai": [
+      "Sai Mai",
+      "O Ngoen",
+      "Khlong Thanon"
+    ],
+    "Khet Khan Na Yao": [
+      "Khan Na Yao",
+      "Ram Inthra"
+    ],
+    "Khet Saphan Sung": [
+      "Sapan Sung",
+      "Rat Phatthana",
+      "Thap Chang"
+    ],
+    "Khet Wang Thonglang": [
+      "Wang Thonglang",
+      "Saphan Song",
+      "Khlong Chao Khun Sing",
+      "Phlapphla"
+    ],
+    "Khet Khlong Sam Wa": [
+      "Sam Wa Tawantok",
+      "Sam Wa Tawan-ok",
+      "Bang Chan",
+      "Sai Kong Din",
+      "Sai Kong Din Tai"
+    ],
+    "Khet Bang Na": [
+      "Bang Na",
+      "Bang Na Nuea",
+      "Bang Na Tai"
+    ],
+    "Khet Thawi Watthana": [
+      "Thawi Watthana",
+      "Sala Thammasop"
+    ],
+    "Khet Thung Khru": [
+      "Bang Mot",
+      "Thung Khru"
+    ],
+    "Khet Bang Bon": [
+      "Bang Bon",
+      "Bang Bon Nuea",
+      "Bang Bon Tai",
+      "Khlong Bang Phran",
+      "Khlong Bang Bon"
+    ]
+  },
+  "Samut Prakan": {
+    "Mueang Samut Prakan": [
+      "Pak Nam",
+      "Samrong Nuea",
+      "Bang Mueang",
+      "Thai Ban",
+      "Bang Pu Mai",
+      "Phraek Sa",
+      "Bang Prong",
+      "Bang Pu",
+      "Bang Duan",
+      "Bang Mueang Mai",
+      "Thepharak",
+      "Thai Ban Mai",
+      "Phraek Sa Mai"
+    ],
+    "Bang Bo": [
+      "Bang Bo",
+      "Ban Rakat",
+      "Bang Phli Noi",
+      "Bang Phriang",
+      "Khlong Dan",
+      "Khlong Suan",
+      "Preng",
+      "Khlong Niyom Yattra"
+    ],
+    "Bang Phli": [
+      "Bang Phli Yai",
+      "Bang Kaeo",
+      "Bang Pla",
+      "Bang Chalong",
+      "Racha Thewa",
+      "Nong Prue"
+    ],
+    "Phra Pradaeng": [
+      "Talat",
+      "Bang Phueng",
+      "Bang Chak",
+      "Bang Khru",
+      "Bang Ya Phraek",
+      "Bang Hua Suea",
+      "Samrong Tai",
+      "Bang Yo",
+      "Bang Kachao",
+      "Bang Namphueng",
+      "Bang Krasop",
+      "Bang Ko Bua",
+      "Song Khanong",
+      "Samrong",
+      "Samrong Klang"
+    ],
+    "Phra Samut Chedi": [
+      "Na Kluea",
+      "Ban Khlong Suan",
+      "Laem Fa Pha",
+      "Pak Khlong Bang Pla Kot",
+      "Nai Khlong Bang Pla Kot"
+    ],
+    "Bang Sao Thong": [
+      "Bang Sao Thong",
+      "Sisa Chorakhe Noi",
+      "Sisa Chorakhe Yai"
+    ]
+  },
+  "Nonthaburi": {
+    "Mueang Nonthaburi": [
+      "Suan Yai",
+      "Talat Khwan",
+      "Bang Khen",
+      "Bang Kraso",
+      "Tha Sai",
+      "Bang Phai",
+      "Bang Si Mueang",
+      "Bang Krang",
+      "Sai Ma",
+      "Bang Rak Noi"
+    ],
+    "Bang Kruai": [
+      "Wat Chalo",
+      "Bang Kruai",
+      "Bang Si Thong",
+      "Bang Khanun",
+      "Bang Khun Kong",
+      "Bang Khu Wiang",
+      "Maha Sawat",
+      "Plai Bang",
+      "Sala Klang"
+    ],
+    "Bang Yai": [
+      "Bang Muang",
+      "Bang Mae Nang",
+      "Bang Len",
+      "Sao Thong Hin",
+      "Bang Yai",
+      "Ban Mai"
+    ],
+    "Bang Bua Thong": [
+      "Sano Loi",
+      "Bang Bua Thong",
+      "Bang Rak Yai",
+      "Bang Khu Rat",
+      "Lahan",
+      "Lam Pho",
+      "Phimon Rat",
+      "Bang Rak Phatthana"
+    ],
+    "Sai Noi": [
+      "Sai Noi",
+      "Rat Niyom",
+      "Nong Phrao Ngai",
+      "Sai Yai",
+      "Khun Si",
+      "Khlong Khwang",
+      "Thawi Watthana"
+    ],
+    "Pak Kret": [
+      "Pak Kret",
+      "Bang Talat",
+      "Ban Mai",
+      "Bang Phut",
+      "Bang Tanai",
+      "Khlong Phra Udom",
+      "Tha It",
+      "Ko Kret",
+      "Om Kret",
+      "Khlong Khoi",
+      "Bang Phlap",
+      "Khlong Kluea"
+    ]
+  },
+  "Pathum Thani": {
+    "Mueang Pathum Thani": [
+      "Bang Parok",
+      "Ban Mai",
+      "Ban Klang",
+      "Ban Chang",
+      "Ban Krachaeng",
+      "Bang Khayaeng",
+      "Bang Khu Wat",
+      "Bang Luang",
+      "Bang Duea",
+      "Bang Phut",
+      "Bang Phun",
+      "Bang Kadi",
+      "Suan Phrikthai",
+      "Lak Hok"
+    ],
+    "Khlong Luang": [
+      "Khlong Nueng",
+      "Khlong Song",
+      "Khlong Sam",
+      "Khlong Si",
+      "Khlong Ha",
+      "Khlong Hok",
+      "Khlong Chet"
+    ],
+    "Thanyaburi": [
+      "Prachathipat",
+      "Bueng Yitho",
+      "Rangsit",
+      "Lam Phak Kut",
+      "Bueng Sanan",
+      "Bueng Nam Rak"
+    ],
+    "Nong Suea": [
+      "Bueng Ba",
+      "Bueng Bon",
+      "Bueng Ka Sam",
+      "Bueng Cham O",
+      "Nong Sam Wang",
+      "Sala Khru",
+      "Noppharat"
+    ],
+    "Lat Lum Kaeo": [
+      "Rahaeng",
+      "Lat Lum Kaeo",
+      "Khu Bang Luang",
+      "Khu Khwang",
+      "Khlong Phra Udom",
+      "Bo Ngoen",
+      "Na Mai"
+    ],
+    "Lam Luk Ka": [
+      "Khu Khot",
+      "Lat Sawai",
+      "Bueng Kham Phroi",
+      "Lam Luk Ka",
+      "Bueng Thonglang",
+      "Lam Sai",
+      "Bueng Kho Hai",
+      "Phuet Udom"
+    ],
+    "Sam Khok": [
+      "Bang Toei",
+      "Khlong Khwai",
+      "Sam Khok",
+      "Krachaeng",
+      "Bang Pho Nuea",
+      "Chiang Rak Yai",
+      "Ban Pathum",
+      "Ban Ngio",
+      "Chiang Rak Noi",
+      "Bang Krabue",
+      "Thai Ko"
+    ]
+  },
+  "Phra Nakhon Si Ayutthaya": {
+    "Phra Nakhon Si Ayutthaya": [
+      "Pratu Chai",
+      "Kamang",
+      "Ho Rattanachai",
+      "Hua Ro",
+      "Tha Wasukri",
+      "Phai Ling",
+      "Pak Kran",
+      "Phukhao Thong",
+      "Samphao Lom",
+      "Suan Phrik",
+      "Khlong Takhian",
+      "Wat Tum",
+      "Hantra",
+      "Lumphli",
+      "Ban Mai",
+      "Ban Ko",
+      "Khlong Suan Phlu",
+      "Khlong Sa Bua",
+      "Ko Rian",
+      "Ban Pom",
+      "Ban Run"
+    ],
+    "Tha Ruea": [
+      "Tha Ruea",
+      "Champa",
+      "Tha Luang",
+      "Ban Rom",
+      "Sala Loi",
+      "Wang Daeng",
+      "Pho En",
+      "Pak Tha",
+      "Nong Khanak",
+      "Tha Chao Sanuk"
+    ],
+    "Nakhon Luang": [
+      "Nakhon Luang",
+      "Tha Chang",
+      "Bo Phong",
+      "Ban Chung",
+      "Pak Chan",
+      "Bang Rakam",
+      "Bang Phra Khru",
+      "Mae La",
+      "Nong Pling",
+      "Khlong Sakae",
+      "Sam Thai",
+      "Phra Non"
+    ],
+    "Bang Sai": [
+      "Bang Sai",
+      "Bang Phli",
+      "Sanam Chai",
+      "Ban Paeng",
+      "Na Mai",
+      "Bang Yi Tho",
+      "Khae Ok",
+      "Khae Tok",
+      "Chang Lek",
+      "Krachaeng",
+      "Ban Klueng",
+      "Chang Noi",
+      "Homok",
+      "Phai Phra",
+      "Kok Kaeo Burapha",
+      "Mai Tra",
+      "Ban Ma",
+      "Ban Ko",
+      "Ratchakhram",
+      "Chang Yai",
+      "Pho Taeng",
+      "Chiang Rak Noi",
+      "Khok Chang",
+      "Bang Sai",
+      "Kaeo Fa",
+      "Tao Lao",
+      "Plai Klat",
+      "Thep Mongkhon",
+      "Wang Phatthana"
+    ],
+    "Bang Ban": [
+      "Bang Ban",
+      "Wat Yom",
+      "Sai Noi",
+      "Saphan Thai",
+      "Maha Phram",
+      "Kop Chao",
+      "Ban Khlang",
+      "Phra Khao",
+      "Namtao",
+      "Thang Chang",
+      "Wat Taku",
+      "Bang Luang",
+      "Bang Luang Dot",
+      "Bang Hak",
+      "Bang Chani",
+      "Ban Kum"
+    ],
+    "Bang Pa-in": [
+      "Ban Len",
+      "Chiang Rak Noi",
+      "Ban Pho",
+      "Ban Krot",
+      "Bang Krasan",
+      "Khlong Chik",
+      "Ban Wa",
+      "Wat Yom",
+      "Bang Pradaeng",
+      "Sam Ruean",
+      "Ko Koet",
+      "Ban Phlap",
+      "Ban Paeng",
+      "Khung Lan",
+      "Taling Chan",
+      "Ban Sang",
+      "Talat Kriap",
+      "Khanon Luang"
+    ],
+    "Bang Pahan": [
+      "Bang Pahan",
+      "Khayai",
+      "Bang Duea",
+      "Sao Thong",
+      "Thang Klang",
+      "Bang Phloeng",
+      "Hansang",
+      "Bang Nang Ra",
+      "Ta Nim",
+      "Thap Nam",
+      "Ban Ma",
+      "Khwan Mueang",
+      "Ban Li",
+      "Pho Sam Ton",
+      "Phutlao",
+      "Tan En",
+      "Ban Khlo"
+    ],
+    "Phak Hai": [
+      "Phak Hai",
+      "Ammarit",
+      "Ban Khae",
+      "Lat Nam Khem",
+      "Ta Lan",
+      "Tha Din Daeng",
+      "Don Lan",
+      "Na Khu",
+      "Kudi",
+      "Lam Takhian",
+      "Khok Chang",
+      "Chakkarat",
+      "Nong Nam Yai",
+      "Lat Chit",
+      "Na Khok",
+      "Ban Yai"
+    ],
+    "Phachi": [
+      "Phachi",
+      "Khok Muang",
+      "Rasom",
+      "Nong Nam Sai",
+      "Don Ya Nang",
+      "Phai Lom",
+      "Krachio",
+      "Phra Kaeo"
+    ],
+    "Lat Bua Luang": [
+      "Lat Bua Luang",
+      "Lak Chai",
+      "Sam Mueang",
+      "Phraya Banlue",
+      "Singhanat",
+      "Khu Salot",
+      "Khlong Phraya Banlue"
+    ],
+    "Wang Noi": [
+      "Lam Ta Sao",
+      "Bo Ta Lo",
+      "Wang Noi",
+      "Lam Sai",
+      "Sanap Thuep",
+      "Phayom",
+      "Han Taphao",
+      "Wang Chula",
+      "Khao Ngam",
+      "Chamaep"
+    ],
+    "Sena": [
+      "Sena",
+      "Ban Phaen",
+      "Chao Chet",
+      "Sam Ko",
+      "Bang Nom Kho",
+      "Hua Wiang",
+      "Manrawichai",
+      "Ban Pho",
+      "Rang Chorakhe",
+      "Ban Krathum",
+      "Ban Thaeo",
+      "Chai Na",
+      "Sam Tum",
+      "Lat Nga",
+      "Don Thong",
+      "Ban Luang",
+      "Chao Sadet"
+    ],
+    "Uthai": [
+      "Khan Ham",
+      "Ban Chang",
+      "Sam Bandit",
+      "Ban Hip",
+      "Nong Mai Sung",
+      "Uthai",
+      "Sena",
+      "Nong Nam Som",
+      "Pho Sao Han",
+      "Thanu",
+      "Khao Mao"
+    ],
+    "Maha Rat": [
+      "Hua Phai",
+      "Kathum",
+      "Maha Rat",
+      "Namtao",
+      "Bang Na",
+      "Rong Chang",
+      "Chao Pluk",
+      "Phitphian",
+      "Ban Na",
+      "Ban Khwang",
+      "Tha To",
+      "Ban Mai"
+    ],
+    "Ban Phraek": [
+      "Ban Phraek",
+      "Ban Mai",
+      "Sam Phaniang",
+      "Khlong Noi",
+      "Song Hong"
+    ]
+  },
+  "Ang Thong": {
+    "Mueang Ang Thong": [
+      "Talat Luang",
+      "Bang Kaeo",
+      "Sala Daeng",
+      "Pa Ngio",
+      "Ban Hae",
+      "Talat Kruat",
+      "Mahatthai",
+      "Ban It",
+      "Hua Phai",
+      "Champa Lo",
+      "Phosa",
+      "Ban Ri",
+      "Khlong Wua",
+      "Yan Sue"
+    ],
+    "Chaiyo": [
+      "Chorakhe Rong",
+      "Chaiyaphum",
+      "Chaiyarit",
+      "Thewarat",
+      "Ratchasathit",
+      "Chaiyo",
+      "Lak Fa",
+      "Chawai",
+      "Tri Narong"
+    ],
+    "Pa Mok": [
+      "Bang Pla Kot",
+      "Pa Mok",
+      "Sai Thong",
+      "Rong Chang",
+      "Bang Sadet",
+      "Norasing",
+      "Ekkarat",
+      "Phong Pheng"
+    ],
+    "Pho Thong": [
+      "Ang Kaeo",
+      "Inthapramun",
+      "Bang Phlap",
+      "Nong Mae Kai",
+      "Ram Ma Sak",
+      "Bang Rakam",
+      "Pho Rang Nok",
+      "Ongkharak",
+      "Khok Phutsa",
+      "Yang Chai",
+      "Bo Rae",
+      "Thang Phra",
+      "Sam Ngam",
+      "Bang Chao Cha",
+      "Kham Yat"
+    ],
+    "Sawaeng Ha": [
+      "Sawaeng Ha",
+      "Si Phran",
+      "Ban Phran",
+      "Wang Nam Yen",
+      "Si Bua Thong",
+      "Huai Phai",
+      "Chamlong"
+    ],
+    "Wiset Chai Chan": [
+      "Phai Cham Sin",
+      "San Chao Rong Thong",
+      "Phai Dam Phatthana",
+      "Sao Rong Hai",
+      "Tha Chang",
+      "Yi Lon",
+      "Bang Chak",
+      "Huai Khan Laen",
+      "Khlong Khanak",
+      "Phai Wong",
+      "Si Roi",
+      "Muang Tia",
+      "Hua Taphan",
+      "Lak Kaeo",
+      "Talat Mai"
+    ],
+    "Samko": [
+      "Samko",
+      "Ratsadon Phatthana",
+      "Op Thom",
+      "Pho Muang Phan",
+      "Mongkhon Tham Nimit"
+    ]
+  },
+  "Loburi": {
+    "Mueang Lop Buri": [
+      "Thale Chup Son",
+      "Tha Hin",
+      "Kok Ko",
+      "Kong Thanu",
+      "Khao Phra Ngam",
+      "Khao Sam Yot",
+      "Khok Kathiam",
+      "Khok Lam Phan",
+      "Khok Tum",
+      "Ngio Rai",
+      "Don Pho",
+      "Talung",
+      "Tha Khae",
+      "Tha Sala",
+      "Nikhom Sang Ton-eng",
+      "Bang Khan Mak",
+      "Ban Khoi",
+      "Thai Talat",
+      "Pa Tan",
+      "Phrommat",
+      "Pho Kao Ton",
+      "Pho Tru",
+      "Si Khlong",
+      "Thanon Yai"
+    ],
+    "Phatthana Nikhom": [
+      "Phatthana Nikhom",
+      "Chong Sarika",
+      "Manao Wan",
+      "Di Lang",
+      "Khok Salung",
+      "Chon Noi",
+      "Nong Bua",
+      "Huai Khun Ram",
+      "Nam Sut"
+    ],
+    "Khok Samrong": [
+      "Khok Samrong",
+      "Ko Kaeo",
+      "Thalung Lek",
+      "Lum Khao",
+      "Huai Pong",
+      "Khlong Ket",
+      "Sakae Rap",
+      "Phaniat",
+      "Wang Phloeng",
+      "Dong Marum",
+      "Wang Khon Khwang",
+      "Wang Chan",
+      "Nong Khaem"
+    ],
+    "Chai Badan": [
+      "Lam Narai",
+      "Chai Narai",
+      "Sila Thip",
+      "Huai Hin",
+      "Muang Khom",
+      "Bua Chum",
+      "Tha Din Dam",
+      "Makok Wan",
+      "Sap Takhian",
+      "Na Som",
+      "Nong Yai To",
+      "Ko Rang",
+      "Tha Manao",
+      "Nikhom Lam Narai",
+      "Chai Badan",
+      "Ban Mai Samakkhi",
+      "Khao Laem"
+    ],
+    "Tha Wung": [
+      "Tha Wung",
+      "Bang Khu",
+      "Pho Talat Kaeo",
+      "Bang Li",
+      "Bang Nga",
+      "Khok Salut",
+      "Khao Samo Khon",
+      "Hua Samrong",
+      "Lat Sali",
+      "Ban Boek",
+      "Mutchalin"
+    ],
+    "Ban Mi": [
+      "Phai Yai",
+      "Ban Sai",
+      "Ban Kluai",
+      "Dong Phlap",
+      "Ban Chi",
+      "Phu Kha",
+      "Hin Pak",
+      "Bang Phueng",
+      "Nong Sai Khao",
+      "Bang Kaphi",
+      "Nong Tao",
+      "Phon Thong",
+      "Bang Kham",
+      "Don Dueng",
+      "Chon Muang",
+      "Nong Krabian",
+      "Sai Huai Kaeo",
+      "Maha Son",
+      "Ban Mi",
+      "Chiang Nga",
+      "Nong Mueang",
+      "Sanam Chaeng"
+    ],
+    "Tha Luang": [
+      "Tha Luang",
+      "Kaeng Phak Kut",
+      "Sap Champa",
+      "Nong Phak Waen",
+      "Thale Wang Wat",
+      "Hua Lam"
+    ],
+    "Sa Bot": [
+      "Sa Bot",
+      "Maha Phot",
+      "Thung Tha Chang",
+      "Huai Yai",
+      "Niyom Chai"
+    ],
+    "Khok Charoen": [
+      "Khok Charoen",
+      "Yang Rak",
+      "Nong Makha",
+      "Wang Thong",
+      "Khok Samae San"
+    ],
+    "Lam Sonthi": [
+      "Lam Sonthi",
+      "Sap Sombun",
+      "Nong Ri",
+      "Kut Ta Phet",
+      "Khao Ruak",
+      "Khao Noi"
+    ],
+    "Nong Muang": [
+      "Nong Muang",
+      "Bo Thong",
+      "Dong Din Daeng",
+      "Chon Sombun",
+      "Yang Thon",
+      "Chon Saradet"
+    ]
+  },
+  "Sing Buri": {
+    "Mueang Sing Buri": [
+      "Bang Phutsa",
+      "Bang Man",
+      "Phok Ruam",
+      "Muang Mu",
+      "Hua Phai",
+      "Ton Pho",
+      "Chaksi",
+      "Bang Krabue"
+    ],
+    "Bang Rachan": [
+      "Sing",
+      "Mai Dat",
+      "Choeng Klat",
+      "Pho Chon Kai",
+      "Mae La",
+      "Ban Cha",
+      "Phak Than",
+      "Sa Chaeng"
+    ],
+    "Khai Bang Rachan": [
+      "Pho Thale",
+      "Bang Rachan",
+      "Pho Sangkho",
+      "Tha Kham",
+      "Kho Sai",
+      "Nong Krathum"
+    ],
+    "Phrom Buri": [
+      "Phra Ngam",
+      "Phrom Buri",
+      "Bang Nam Chiao",
+      "Ban Mo",
+      "Ban Paeng",
+      "Hua Pa",
+      "Rong Chang"
+    ],
+    "Tha Chang": [
+      "Thon Samo",
+      "Pho Prachak",
+      "Wihan Khao",
+      "Phikun Thong"
+    ],
+    "In Buri": [
+      "In Buri",
+      "Prasuk",
+      "Thap Ya",
+      "Ngio Rai",
+      "Chi Nam Rai",
+      "Tha Ngam",
+      "Namtan",
+      "Thong En",
+      "Huai Chan",
+      "Pho Chai"
+    ]
+  },
+  "Chai Nat": {
+    "Mueang Chai Nat": [
+      "Nai Mueang",
+      "Ban Kluai",
+      "Tha Chai",
+      "Chai Nat",
+      "Khao Tha Phra",
+      "Hat Tha Sao",
+      "Thammamun",
+      "Suea Hok",
+      "Nang Lue"
+    ],
+    "Manorom": [
+      "Khung Samphao",
+      "Wat Khok",
+      "Sila Dan",
+      "Tha Chanuan",
+      "Hang Nam Sakhon",
+      "Rai Phatthana",
+      "U Taphao"
+    ],
+    "Wat Sing": [
+      "Wat Sing",
+      "Makham Thao",
+      "Nong Noi",
+      "Nong Bua",
+      "Nong Khun",
+      "Bo Rae",
+      "Wang Man"
+    ],
+    "Sapphaya": [
+      "Sapphaya",
+      "Taluk",
+      "Khao Kaeo",
+      "Pho Nang Dam Tok",
+      "Pho Nang Dam Ok",
+      "Bang Luang",
+      "Hat Asa"
+    ],
+    "Sankhaburi": [
+      "Phraek Si Racha",
+      "Thiang Thae",
+      "Huai Krot",
+      "Pho Ngam",
+      "Bang Khut",
+      "Dong Khon",
+      "Don Kam",
+      "Huai Krot Phatthana"
+    ],
+    "Hankha": [
+      "Hankha",
+      "Ban Chian",
+      "Phrai Nok Yung",
+      "Nong Saeng",
+      "Huai Ngu",
+      "Wang Kai Thuean",
+      "Den Yai",
+      "Sam Ngam Tha Bot"
+    ],
+    "Nong Mamong": [
+      "Nong Mamong",
+      "Wang Takhian",
+      "Saphan Hin",
+      "Kut Chok"
+    ],
+    "Noen Kham": [
+      "Noen Kham",
+      "Kabok Tia",
+      "Suk Duean Ha"
+    ]
+  },
+  "Saraburi": {
+    "Mueang Saraburi": [
+      "Pak Phriao",
+      "Dao Rueang",
+      "Na Chong",
+      "Khok Sawang",
+      "Nong No",
+      "Nong Yao",
+      "Pak Khao San",
+      "Nong Pla Lai",
+      "Kut Nok Plao",
+      "Taling Chan",
+      "Takut"
+    ],
+    "Kaeng Khoi": [
+      "Kaeng Khoi",
+      "Thap Kwang",
+      "Tan Diao",
+      "Huai Haeng",
+      "Tha Khlo",
+      "Hin Son",
+      "Ban That",
+      "Ban Pa",
+      "Tha Tum",
+      "Cha-om",
+      "Song Khon",
+      "Tao Pun",
+      "Cham Phak Phaeo",
+      "Tha Maprang"
+    ],
+    "Nong Khae": [
+      "Nong Khae",
+      "Kum Hak",
+      "Khotchasit",
+      "Khok Tum",
+      "Khok Yae",
+      "Bua Loi",
+      "Phai Tam",
+      "Phon Thong",
+      "Huai Khamin",
+      "Huai Sai",
+      "Nong Khai Nam",
+      "Nong Khaem",
+      "Nong Chik",
+      "Nong Chorakhe",
+      "Nong Nak",
+      "Nong Pla Mo",
+      "Nong Pling",
+      "Nong Rong"
+    ],
+    "Wihan Daeng": [
+      "Nong Mu",
+      "Ban Lam",
+      "Khlong Ruea",
+      "Wihan Daeng",
+      "Nong Suang",
+      "Charoen Tham"
+    ],
+    "Nong Saeng": [
+      "Nong Saeng",
+      "Nong Khwai So",
+      "Nong Hua Pho",
+      "Nong Sida",
+      "Nong Kop",
+      "Kai Sao",
+      "Khok Sa-at",
+      "Muang Wan",
+      "Khao Din"
+    ],
+    "Ban Mo": [
+      "Ban Mo",
+      "Bang Khamot",
+      "Sang Sok",
+      "Talat Noi",
+      "Horathep",
+      "Khok Yai",
+      "Phai Khwang",
+      "Ban Khrua",
+      "Nong Bua"
+    ],
+    "Don Phut": [
+      "Don Phut",
+      "Phai Lio",
+      "Ban Luang",
+      "Dong Ta-ngao"
+    ],
+    "Nong Don": [
+      "Nong Don",
+      "Ban Klap",
+      "Don Thong",
+      "Ban Prong"
+    ],
+    "Phra Phutthabat": [
+      "Phra Phutthabat",
+      "Khun Khlon",
+      "Than Kasem",
+      "Na Yao",
+      "Phu Kham Chan",
+      "Khao Wong",
+      "Huai Pa Wai",
+      "Phu Krang",
+      "Nong Kae"
+    ],
+    "Sao Hai": [
+      "Sao Hai",
+      "Ban Yang",
+      "Hua Pluak",
+      "Ngio Ngam",
+      "Sala Ri Thai",
+      "Ton Tan",
+      "Tha Chang",
+      "Phraya Thot",
+      "Muang Ngam",
+      "Roeng Rang",
+      "Mueang Kao",
+      "Suan Dok Mai"
+    ],
+    "Muak Lek": [
+      "Muak Lek",
+      "Mittraphap",
+      "Nong Yang Suea",
+      "Lam Somphung",
+      "Lam Phaya Klang",
+      "Sap Sanun"
+    ],
+    "Wang Muang": [
+      "Salaeng Phan",
+      "Kham Phran",
+      "Wang Muang"
+    ],
+    "Chaloem Phra Kiat": [
+      "Khao Din Phatthana",
+      "Ban Kaeng",
+      "Phueng Ruang",
+      "Phu Khae",
+      "Huai Bong",
+      "Na Phra Lan"
+    ]
+  },
+  "Chon Buri": {
+    "Mueang Chon Buri": [
+      "Bang Pla Soi",
+      "Makham Yong",
+      "Ban Khot",
+      "Saen Suk",
+      "Ban Suan",
+      "Nong Ri",
+      "Na Pa",
+      "Nong Khang Khok",
+      "Don Hua Lo",
+      "Nong Mai Daeng",
+      "Bang Sai",
+      "Khlong Tamru",
+      "Mueang",
+      "Ban Puek",
+      "Huai Kapi",
+      "Samet",
+      "Ang Sila",
+      "Samnak Bok"
+    ],
+    "Ban Bueng": [
+      "Ban Bueng",
+      "Khlong Kio",
+      "Map Phai",
+      "Nong Samsak",
+      "Nong Bon Daeng",
+      "Nong Chak",
+      "Nong Irun",
+      "Nong Phai Kaeo"
+    ],
+    "Nong Yai": [
+      "Nong Yai",
+      "Khlong Phlu",
+      "Nong Suea Chang",
+      "Hang Sung",
+      "Khao Sok"
+    ],
+    "Bang Lamung": [
+      "Bang Lamung",
+      "Nong Prue",
+      "Nong Pla Lai",
+      "Pong",
+      "Khao Mai Kaeo",
+      "Huai Yai",
+      "Takhian Tia",
+      "Na Kluea"
+    ],
+    "Phan Thong": [
+      "Phan Thong",
+      "Nong Tamlueng",
+      "Map Pong",
+      "Nong Kakha",
+      "Nong Hong",
+      "Khok Khi Non",
+      "Ban Kao",
+      "Na Pradu",
+      "Bang Nang",
+      "Ko Loi",
+      "Bang Hak"
+    ],
+    "Phanat Nikhom": [
+      "Phanat Nikhom",
+      "Na Phra That",
+      "Wat Luang",
+      "Ban Soet",
+      "Na Roek",
+      "Mon Nang",
+      "Sa Si Liam",
+      "Wat Bot",
+      "Kut Ngong",
+      "Hua Thanon",
+      "Tha Kham",
+      "Nong Prue",
+      "Nong Khayat",
+      "Thung Khwang",
+      "Nong Hiang",
+      "Na Wang Hin",
+      "Ban Chang",
+      "Khok Phlo",
+      "Rai Lak Thong",
+      "Na Matum"
+    ],
+    "Si Racha": [
+      "Si Racha",
+      "Surasak",
+      "Thung Sukhla",
+      "Bueng",
+      "Nong Kham",
+      "Khao Khansong",
+      "Bang Phra",
+      "Bo Win"
+    ],
+    "Ko Sichang": [
+      "Tha Tewatong"
+    ],
+    "Sattahip": [
+      "Sattahip",
+      "Na Chom Thian",
+      "Phlu Ta Luang",
+      "Bang Sare",
+      "Samaesan"
+    ],
+    "Bo Thong": [
+      "Bo Thong",
+      "Wat Suwan",
+      "Bo Kwang Thong",
+      "That Thong",
+      "Kaset Suwan",
+      "Phluang Thong"
+    ],
+    "Ko Chan": [
+      "Ko Chan",
+      "Tha Bun Mi"
+    ]
+  },
+  "Rayong": {
+    "Mueang Rayong": [
+      "Tha Pradu",
+      "Choeng Noen",
+      "Taphong",
+      "Pak Nam",
+      "Phe",
+      "Klaeng",
+      "Ban Laeng",
+      "Na Ta Khwan",
+      "Noen Phra",
+      "Kachet",
+      "Thap Ma",
+      "Nam Khok",
+      "Huai Pong",
+      "Map Ta Phut",
+      "Samnak Thong"
+    ],
+    "Ban Chang": [
+      "Samnak Thon",
+      "Phla",
+      "Ban Chang"
+    ],
+    "Klaeng": [
+      "Thang Kwian",
+      "Wang Wa",
+      "Chak Don",
+      "Noen Kho",
+      "Kram",
+      "Chak Phong",
+      "Krasae Bon",
+      "Ban Na",
+      "Thung Khwai Kin",
+      "Kong Din",
+      "Khlong Pun",
+      "Phang Rat",
+      "Pak Nam Krasae",
+      "Huai Yang",
+      "Song Salueng"
+    ],
+    "Wang Chan": [
+      "Wang Chan",
+      "Chum Saeng",
+      "Pa Yup Nai",
+      "Phlong Ta Iam"
+    ],
+    "Ban Khai": [
+      "Ban Khai",
+      "Nong Lalok",
+      "Nong Taphan",
+      "Ta Khan",
+      "Bang But",
+      "Nong Bua",
+      "Chak Bok"
+    ],
+    "Pluak Daeng": [
+      "Pluak Daeng",
+      "Ta Sit",
+      "Lahan",
+      "Maenam Khu",
+      "Map Yang Phon",
+      "Nong Rai"
+    ],
+    "Khao Chamao": [
+      "Nam Pen",
+      "Huai Thap Mon",
+      "Cham Kho",
+      "Khao Noy"
+    ],
+    "Nikhom Phatthana": [
+      "Nikhom Phatthana",
+      "Map Kha",
+      "Phana Nikhom",
+      "Makham Khu"
+    ]
+  },
+  "Chanthaburi": {
+    "Mueang Chanthaburi": [
+      "Talat",
+      "Wat Mai",
+      "Khlong Narai",
+      "Ko Khwang",
+      "Khom Bang",
+      "Tha Chang",
+      "Chanthanimit",
+      "Bang Kacha",
+      "Salaeng",
+      "Nong Bua",
+      "Phlapphla"
+    ],
+    "Khlung": [
+      "Khlung",
+      "Bo",
+      "Kwian Hak",
+      "Tapon",
+      "Bang Chan",
+      "Wan Yao",
+      "Sueng",
+      "Map Phai",
+      "Wang Sappharot",
+      "Trok Nong",
+      "Tok Phrom",
+      "Bo Welu"
+    ],
+    "Tha Mai": [
+      "Tha Mai",
+      "Yai Ra",
+      "Si Phaya",
+      "Bo Phu",
+      "Phloi Waen",
+      "Khao Wua",
+      "Khao Baisi",
+      "Song Phi Nong",
+      "Ramphan",
+      "Ramphan",
+      "Khamong",
+      "Takat Ngao",
+      "Khlong Khut",
+      "Khao Kaeo"
+    ],
+    "Pong Nam Ron": [
+      "Thap Sai",
+      "Pong Nam Ron",
+      "Nong Ta Khong",
+      "Thep Nimit",
+      "Khlong Yai"
+    ],
+    "Makham": [
+      "Makham",
+      "Tha Luang",
+      "Patthawi",
+      "Wang Saem",
+      "Chaman",
+      "Ang Khiri"
+    ],
+    "Laem Sing": [
+      "Pak Nam Laem Sing",
+      "Ko Proet",
+      "Nong Chim",
+      "Phlio",
+      "Khlong Nam Khem",
+      "Bang Sa Kao",
+      "Bang Kachai"
+    ],
+    "Soi Dao": [
+      "Patong",
+      "Thung Khanan",
+      "Thap Chang",
+      "Sai Khao",
+      "Saton"
+    ],
+    "Kaeng Hang Maeo": [
+      "Kaeng Hang Maeo",
+      "Khun Song",
+      "Sam Phi Nong",
+      "Phawa",
+      "Khao Wongkot"
+    ],
+    "Na Yai Am": [
+      "Na Yai Am",
+      "Wang Tanot",
+      "Krachae",
+      "Sanam Chai",
+      "Chang Kham",
+      "Wang Mai"
+    ],
+    "Khoa Khitchakut": [
+      "Chak Thai",
+      "Phluang",
+      "Takhian Thong",
+      "Khlong Phlu",
+      "Chanthakhlem"
+    ]
+  },
+  "Trat": {
+    "Mueang Trat": [
+      "Bang Phra",
+      "Nong Samet",
+      "Nong Sano",
+      "Nong Khan Song",
+      "Huang Nam Khao",
+      "Ao Yai",
+      "Wang Krachae",
+      "Huai Raeng",
+      "Noen Sai",
+      "Tha Phrik",
+      "Tha Kum",
+      "Takang",
+      "Chamrak",
+      "Laem Klat"
+    ],
+    "Khlong Yai": [
+      "Khlong Yai",
+      "Mai Rut",
+      "Hat Lek"
+    ],
+    "Khao Saming": [
+      "Khao Saming",
+      "Saen Tung",
+      "Wang Takhian",
+      "Tha Som",
+      "Sato",
+      "Pranit",
+      "Thep Nimit",
+      "Thung Nonsi"
+    ],
+    "Bo Rai": [
+      "Bo Phloi",
+      "Chang Thun",
+      "Dan Chumphon",
+      "Nong Bon",
+      "Nonsi"
+    ],
+    "Laem Ngop": [
+      "Laem Ngop",
+      "Nam Chiao",
+      "Bang Pit",
+      "Khlong Yai"
+    ],
+    "Ko Kut": [
+      "Ko Mak",
+      "Ko Kut"
+    ],
+    "Ko Chang": [
+      "Ko Chang",
+      "Ko Chang Tai"
+    ]
+  },
+  "Chachoengsao": {
+    "Mueang Chachoengsao": [
+      "Na Mueang",
+      "Tha Khai",
+      "Ban Mai",
+      "Khlong Na",
+      "Khlong Na",
+      "Bang Phai",
+      "Khlong Chuk Krachoe",
+      "Bang Kaeo",
+      "Bang Khwan",
+      "Khlong Nakhon Nueang Khet",
+      "Wang Takhian",
+      "Sothon",
+      "Bang Phra",
+      "Bang Kahai",
+      "Nam Daeng",
+      "Khlong Preng",
+      "Khlong Udom Chonlachon",
+      "Khlong Luang Phaeng",
+      "Bang Toei"
+    ],
+    "Bang Khla": [
+      "Bang Khla",
+      "Bang Suan",
+      "Bang Krachet",
+      "Pak Nam",
+      "Tha Thonglang",
+      "Sao Cha-ngok",
+      "Samet Nuea",
+      "Samet Tai",
+      "Hua Sai"
+    ],
+    "Bang Nam Priao": [
+      "Bang Nam Priao",
+      "Bang Khanak",
+      "Singto Thong",
+      "Mon Thong",
+      "Bueng Nam Rak",
+      "Don Ko Ka",
+      "Yothaka",
+      "Don Chimphli",
+      "Sala Daeng",
+      "Phrong Akat"
+    ],
+    "Bang Pakong": [
+      "Bang Pakong",
+      "Tha Sa-an",
+      "Bang Wua",
+      "Bang Samak",
+      "Bang Phueng",
+      "Bang Kluea",
+      "Song Khlong",
+      "Nong Chok",
+      "Phimpha",
+      "Tha Kham",
+      "Hom Sin",
+      "Khao Din"
+    ],
+    "Ban Pho": [
+      "Ban Pho",
+      "Ko Rai",
+      "Khlong Khut",
+      "Khlong Ban Pho",
+      "Khlong Prawet",
+      "Don Sai",
+      "Theppharat",
+      "Tha Phlap",
+      "Nong Tin Nok",
+      "Nong Bua",
+      "Bang Son",
+      "Bang Krut",
+      "Laem Pradu",
+      "Lat Khwang",
+      "Sanam Chan",
+      "Saen Phu Dat",
+      "Sip Et Sok"
+    ],
+    "Phanom Sarakham": [
+      "Ko Khanun",
+      "Ban Song",
+      "Phanom Sarakham",
+      "Mueang Kao",
+      "Nong Yao",
+      "Tha Than",
+      "Nong Nae",
+      "Khao Hin Son"
+    ],
+    "Ratchasan": [
+      "Bang Kha",
+      "Mueang Mai",
+      "Dong Noi"
+    ],
+    "Sanam Chai Khet": [
+      "Khu Yai Mi",
+      "Tha Kradan",
+      "Thung Phraya",
+      "Lat Krathing"
+    ],
+    "Plaeng Yao": [
+      "Plaeng Yao",
+      "Wang Yen",
+      "Hua Samrong",
+      "Nong Mai Kaen"
+    ],
+    "Tha Takiap": [
+      "Tha Takiap",
+      "Khlong Takrao"
+    ],
+    "Khlong Khuean": [
+      "Kon Kaeo",
+      "Khlong Khuean",
+      "Bang Lao",
+      "Bang Rong",
+      "Bang Talat"
+    ]
+  },
+  "Prachin Buri": {
+    "Mueang Prachin Buri": [
+      "Na Mueang",
+      "Na Mueang",
+      "Wat Bot",
+      "Bang Decha",
+      "Tha Ngam",
+      "Bang Boribun",
+      "Dong Phra Ram",
+      "Ban Phra",
+      "Khok Mai Lai",
+      "Mai Khet",
+      "Dong Khilek",
+      "Noen Hom",
+      "Non Hom"
+    ],
+    "Kabin Buri": [
+      "Kabin",
+      "Mueang Kao",
+      "Wang Dan",
+      "Nonsi",
+      "Yan Ri",
+      "Wang Takhian",
+      "Hat Nang Kaeo",
+      "Lat Takhian",
+      "Ban Na",
+      "Bo Thong",
+      "Nong Ki",
+      "Na Khaem",
+      "Khao Mai Kaeo",
+      "Wang Tha Chang"
+    ],
+    "Na Di": [
+      "Na Di",
+      "Samphan Ta",
+      "Saphan Hin",
+      "Thung Pho",
+      "Kaeng Dinso",
+      "Bu Phram"
+    ],
+    "Ban Sang": [
+      "Ban Sang",
+      "Bang Krabao",
+      "Bang Toei",
+      "Bang Yang",
+      "Bang Taen",
+      "Bang Phluang",
+      "Bang Pla Ra",
+      "Bang Kham",
+      "Krathum Phaeo"
+    ],
+    "Prachantakham": [
+      "Prachantakham",
+      "Ko Loi",
+      "Ban Hoi",
+      "Nong Saeng",
+      "Dong Bang",
+      "Kham Tanot",
+      "Bu Fai",
+      "Nong Kaeo",
+      "Pho Ngam"
+    ],
+    "Si Maha Phot": [
+      "Si Maha Phot",
+      "Samphan",
+      "Ban Tham",
+      "Tha Tum",
+      "Bang Kung",
+      "Dong Krathong Yam",
+      "Nong Phrong",
+      "Hua Wa",
+      "Hat Yang",
+      "Krok Sombun"
+    ],
+    "Si Mahosot": [
+      "Khok Pip",
+      "Khok Thai",
+      "Khu Lam Phan",
+      "Phai Cha Lueat"
+    ]
+  },
+  "Nakhon Nayok": {
+    "Mueang Nakhon Nayok": [
+      "Nakhon Nayok",
+      "Tha Chang",
+      "Ban Yai",
+      "Wang Krachom",
+      "Tha Sai",
+      "Don Yo",
+      "Si Chula",
+      "Dong Lakhon",
+      "Si Nawa",
+      "Sarika",
+      "Hin Tang",
+      "Khao Phra",
+      "Phrommani"
+    ],
+    "Pak Phli": [
+      "Ko Wai",
+      "Ko Pho",
+      "Pak Phli",
+      "Khok Kruat",
+      "Tha Ruea",
+      "Nong Saeng",
+      "Na Hin Lat"
+    ],
+    "Ban Na": [
+      "Ban Na",
+      "Ban Phrao",
+      "Ban Phrik",
+      "Asa",
+      "Thonglang",
+      "Bang O",
+      "Phikun Ok",
+      "Pa Kha",
+      "Khao Phoem",
+      "Si Ka-ang"
+    ],
+    "Ongkharak": [
+      "Phra Achan",
+      "Bueng San",
+      "Sisa Krabue",
+      "Pho Thaen",
+      "Bang Sombun",
+      "Sai Mun",
+      "Bang Pla Kot",
+      "Bang Luk Suea",
+      "Ongkharak",
+      "Chumphon",
+      "Khlong Yai"
+    ]
+  },
+  "Sa Kaeo": {
+    "Mueang Sa Kaeo": [
+      "Sa Kaeo",
+      "Ban Kaeng",
+      "Sala Lamduan",
+      "Khok Pi Khong",
+      "Tha Yaek",
+      "Tha Kasem",
+      "Sa Khwan",
+      "Nong Bon"
+    ],
+    "Khlong Hat": [
+      "Khlong Hat",
+      "Thai Udom",
+      "Sap Makrut",
+      "Sai Diao",
+      "Khlong Kai Thuean",
+      "Benchakhon",
+      "Sai Thong"
+    ],
+    "Ta Phraya": [
+      "Ta Phraya",
+      "Thap Sadet",
+      "Thap Rat",
+      "Thap Thai",
+      "Kho Khlan"
+    ],
+    "Wang Nam Yen": [
+      "Wang Nam Yen",
+      "Ta Lang Nai",
+      "Khlong Hin Pun",
+      "Thung Maha Charoen"
+    ],
+    "Watthana Nakhon": [
+      "Watthana Nakhon",
+      "Tha Kwian",
+      "Phak Kha",
+      "Non Mak Kheng",
+      "Nong Nam Sai",
+      "Chong Kum",
+      "Nong Waeng",
+      "Sae-o",
+      "Nong Mak Fai",
+      "Nong Takhian Bon",
+      "Huai Chot"
+    ],
+    "Aranyaprathet": [
+      "Aranprathet",
+      "Mueang Phai",
+      "Han Sai",
+      "Khlong Nam Sai",
+      "Tha Kham",
+      "Pa Rai",
+      "Thap Phrik",
+      "Ban Mai Nong Sai",
+      "Phan Suek",
+      "Nong Sang",
+      "Khlong Thap Chan",
+      "Fak Huai",
+      "Ban Dan"
+    ],
+    "Khao Chakan": [
+      "Khao Chakan",
+      "Nong Wa",
+      "Phra Phloeng",
+      "Khao Sam Sip"
+    ],
+    "Khok Sung": [
+      "Khok Sung",
+      "Nong Muang",
+      "Nong Waeng",
+      "Non Mak Mun"
+    ],
+    "Wang Sombun": [
+      "Wang Sombun",
+      "Wang Mai",
+      "Wang Thong"
+    ]
+  },
+  "Nakhon Ratchasima": {
+    "Mueang Nakhon Ratchasima": [
+      "Nai Mueang",
+      "Pho Klang",
+      "Nong Chabok",
+      "Khok Sung",
+      "Maroeng",
+      "Nong Rawiang",
+      "Pru Yai",
+      "Muen Wai",
+      "Phon Krang",
+      "Nong Phai Lom",
+      "Hua Thale",
+      "Ban Ko",
+      "Ban Mai",
+      "Phutsa",
+      "Ban Pho",
+      "Cho Ho",
+      "Khok Kruat",
+      "Chai Mongkhon",
+      "Nong Bua Sala",
+      "Suranari",
+      "Si Mum",
+      "Talat",
+      "Phanao",
+      "Nong Krathum",
+      "Nong Khai Nam"
+    ],
+    "Khon Buri": [
+      "Chae",
+      "Chaliang",
+      "Khon Buri",
+      "Khok Krachai",
+      "Chorakhe Hin",
+      "Map Tako En",
+      "Oraphim",
+      "Ban Mai",
+      "Lam Phiak",
+      "Khon Buri Tai",
+      "Tabaek Ban",
+      "Sa Wan Phraya"
+    ],
+    "Soeng Sang": [
+      "Soeng Sang",
+      "Sa Takhian",
+      "Non Sombun",
+      "Kut Bot",
+      "Suk Phaibun",
+      "Ban Rat"
+    ],
+    "Khong": [
+      "Mueang Khong",
+      "Khu Khat",
+      "Thephalai",
+      "Ta Chan",
+      "Ban Prang",
+      "Nong Manao",
+      "Nong Bua",
+      "Non Teng",
+      "Don Yai",
+      "Kham Sombun"
+    ],
+    "Ban Lueam": [
+      "Ban Lueam",
+      "Wang Pho",
+      "Khok Krabueang",
+      "Cho Raka"
+    ],
+    "Chakkarat": [
+      "Chakkarat",
+      "Tha Chang",
+      "Thonglang",
+      "Si Suk",
+      "Nong Kham",
+      "Nong Ngu Luam",
+      "Nong Phluang",
+      "Nong Yang",
+      "Phra Phut",
+      "Si Lako",
+      "Khlong Mueang",
+      "Chang Thong",
+      "Hin Khon"
+    ],
+    "Chok Chai": [
+      "Krathok",
+      "Phlapphla",
+      "Tha Ang",
+      "Thung Arun",
+      "Tha Lat Khao",
+      "Tha Chalung",
+      "Tha Yiam",
+      "Chok Chai",
+      "Lalom Mai Phatthana",
+      "Dan Kwian"
+    ],
+    "Dan Khun Thot": [
+      "Kut Phiman",
+      "Dan Khun Thot",
+      "Dan Nok",
+      "Dan Nai",
+      "Takhian",
+      "Ban Kao",
+      "Ban Praeng",
+      "Phan Chana",
+      "Sa Chorakhe",
+      "Nong Krat",
+      "Nong Bua Takiat",
+      "Nong Bua Lakhon",
+      "Hin Dat",
+      "Huai Bong",
+      "Non Mueang Phatthana",
+      "Nong Sai"
+    ],
+    "Non Thai": [
+      "Non Thai",
+      "Dan Chak",
+      "Kampang",
+      "Samrong",
+      "Khang Phlu",
+      "Ban Wang",
+      "Banlang",
+      "Sai O",
+      "Thanon Pho",
+      "Phung Theam",
+      "Sra Pra",
+      "Tup Rang",
+      "Nong Hoi",
+      "Makha",
+      "Mab Krad"
+    ],
+    "Non Sung": [
+      "Non Sung",
+      "Mai",
+      "Tanot",
+      "Bing",
+      "Don Chomphu",
+      "Than Prasat",
+      "Lum Khao",
+      "Makha",
+      "Phon Songkhram",
+      "Chan-at",
+      "Kham Thao",
+      "Dan Khla",
+      "Lam Kho Hong",
+      "Mueang Prasat",
+      "Don Wai",
+      "Lam Mun"
+    ],
+    "Kham Sakaesaeng": [
+      "Kham Sakaesaeng",
+      "Non Mueang",
+      "Mueang Nat",
+      "Chiwuek",
+      "Pha-ngat",
+      "Nong Hua Fan",
+      "Mueang Kaset"
+    ],
+    "Bua Yai": [
+      "Bua Yai",
+      "Huai Yang",
+      "Sema Yai",
+      "Don Tanin",
+      "Nong Bua Sa-at",
+      "Non Thonglang",
+      "Nong Wha",
+      "Bua Lai",
+      "Sri Da",
+      "Pon Thong",
+      "Kut Chok",
+      "Dan Chang",
+      "Non Jan",
+      "Sam Muang",
+      "Khun Thong",
+      "Nong Tad Yai",
+      "Mueang Pa Lai",
+      "Non Pradoo",
+      "Nong Chaeng Yai"
+    ],
+    "Prathai": [
+      "Prathai",
+      "Krathum Rai",
+      "Wang Mai Daeng",
+      "Talat Sai",
+      "Nong Phluang",
+      "Nong Khai",
+      "Han Huai Sai",
+      "Don Man",
+      "Nang Ram",
+      "Non Phet",
+      "Thung Sawang",
+      "Khok Klang",
+      "Mueang Don"
+    ],
+    "Pak Thong Chai": [
+      "Mueang Pak",
+      "Takhu",
+      "Khok Thai",
+      "Samrong",
+      "Takhop",
+      "Nok Ok",
+      "Don",
+      "Tum",
+      "Ngio",
+      "Sakae Rat",
+      "Lam Nang Kaeo",
+      "Phu Luang",
+      "Thong Chai Nuea",
+      "Suk Kasem",
+      "Kasem Sap",
+      "Bo Pla Thong"
+    ],
+    "Phimai": [
+      "Nai Mueang",
+      "Samrit",
+      "Bot",
+      "Krabueang Yai",
+      "Tha Luang",
+      "Rang Ka Yai",
+      "Chiwan",
+      "Nikhom Sang Ton-eng",
+      "Krachon",
+      "Dong Yai",
+      "Than Lalot",
+      "Nong Rawiang"
+    ],
+    "Huai Thalaeng": [
+      "Huai Thalaeng",
+      "Thap Sawai",
+      "Mueang Phlapphla",
+      "Lung Takhian",
+      "Hin Dat",
+      "Ngio",
+      "Kong Rot",
+      "Lung Pradu",
+      "Tako",
+      "Huai Khaen"
+    ],
+    "Chum Phuang": [
+      "Chum Phuang",
+      "Prasuk",
+      "Tha Lat",
+      "Sarai",
+      "Talat Sai",
+      "Chong Maew",
+      "Kui",
+      "Non Rang",
+      "Ban Yang",
+      "Nong Lak",
+      "Plai",
+      "Non Tum",
+      "Non Yo"
+    ],
+    "Sung Noen": [
+      "Sung Noen",
+      "Sema",
+      "Khorat",
+      "Bung Khilek",
+      "Non Kha",
+      "Khong Yang",
+      "Makluea Kao",
+      "Makluea Mai",
+      "Na Klang",
+      "Nong Takai",
+      "Kut Chik"
+    ],
+    "Kham Thale So": [
+      "Kham Thale So",
+      "Pong Daeng",
+      "Phan Dung",
+      "Nong Suang",
+      "Bueng O"
+    ],
+    "Sikhio": [
+      "Sikhio",
+      "Ban Han",
+      "Kritsana",
+      "Lat Bua Khao",
+      "Nong Ya Khao",
+      "Kut Noi",
+      "Nong Nam Sai",
+      "Wang Rong Yai",
+      "Mittraphap",
+      "Khlong Phai",
+      "Don Mueang",
+      "Nong Bua Noi"
+    ],
+    "Pak Chong": [
+      "Pak Chong",
+      "Klang Dong",
+      "Chanthuek",
+      "Wang Katha",
+      "Mu Si",
+      "Nong Sarai",
+      "Khanong Phra",
+      "Pong Talong",
+      "Khlong Muang",
+      "Nong Nam Daeng",
+      "Wang Sai",
+      "Phaya Yen"
+    ],
+    "Nong Bunnak": [
+      "Nong Bunnak",
+      "Saraphi",
+      "Thai Charoen",
+      "Nong Hua Raet",
+      "Laem Thong",
+      "Nong Takai",
+      "Lung Khwao",
+      "Nong Mai Phai",
+      "Ban Mai"
+    ],
+    "Kaeng Sanam Nang": [
+      "Kaeng Sanam Nang",
+      "Non Samran",
+      "Bueng Phalai",
+      "Si Suk",
+      "Bueng Samrong"
+    ],
+    "Non Daeng": [
+      "Non Daeng",
+      "Non Ta Then",
+      "Samphaniang",
+      "Wang Hin",
+      "Don Yao Yai"
+    ],
+    "Wang Nam Khiao": [
+      "Wang Nam Khiao",
+      "Wang Mi",
+      "Raroeng",
+      "Udom Sap",
+      "Thai Samakkhi"
+    ],
+    "Thepharak": [
+      "Samnak Takhro",
+      "Nong Waeng",
+      "Bueng Prue",
+      "Wang Yai Thong"
+    ],
+    "Mueang Yang": [
+      "Mueang Yang",
+      "Krabueang Nok",
+      "Lahan Pla Khao",
+      "Non Udom"
+    ],
+    "Phra Thong Kham": [
+      "Sa Phra",
+      "Map Krat",
+      "Phang Thiam",
+      "Thap Rang",
+      "Nong Hoi"
+    ],
+    "Lam Thamenchai": [
+      "Khui",
+      "Ban Yang",
+      "Chong Maeo",
+      "Phlai"
+    ],
+    "Bua Lai": [
+      "Mueang Phalai",
+      "Non Chan",
+      "Bua Lai",
+      "Nong Wa"
+    ],
+    "Sida": [
+      "Sida",
+      "Phon Thong",
+      "Non Pradu",
+      "Sam Mueang",
+      "Nong Tat Yai"
+    ],
+    "Chaloem Phra Kiat": [
+      "Chang Thong",
+      "Tha Chang",
+      "Phra Phut",
+      "Nong Ngu Lueam",
+      "Nong Yang"
+    ]
+  },
+  "Buri Ram": {
+    "Mueang Buri Ram": [
+      "Nai Mueang",
+      "Isan",
+      "Samet",
+      "Ban Bua",
+      "Sakae Phrong",
+      "Sawai Chik",
+      "Ban Yang",
+      "Phra Khru",
+      "Thalung Lek",
+      "Nong Tat",
+      "Lumpuk",
+      "Song Hong",
+      "Bua Thong",
+      "Chum Het",
+      "Lak Khet",
+      "Sakae Sam",
+      "Kalantha",
+      "Krasang",
+      "Mueang Fang"
+    ],
+    "Khu Mueang": [
+      "Khu Mueang",
+      "Pakhiap",
+      "Ban Phae",
+      "Phon Samran",
+      "Hin Lek Fai",
+      "Tum Yai",
+      "Nong Khaman"
+    ],
+    "Krasang": [
+      "Krasang",
+      "Lamduan",
+      "Song Chan",
+      "Sung Noen",
+      "Nong Teng",
+      "Mueang Phai",
+      "Chum Saeng",
+      "Ban Prue",
+      "Huai Samran",
+      "Kanthararom",
+      "Si Phum"
+    ],
+    "Nang Rong": [
+      "Nang Rong",
+      "Sadao",
+      "Chum Saeng",
+      "Nong Bot",
+      "Nong Kong",
+      "Thanon Hak",
+      "Nong Sai",
+      "Kan Lueang",
+      "Ban Sing",
+      "Lam Sai Yong",
+      "Sap Phraya",
+      "Nong Yai Phim",
+      "Hua Thanon",
+      "Thung Saeng Thong",
+      "Nong Sano"
+    ],
+    "Nong Ki": [
+      "Nong Ki",
+      "Yoei Prasat",
+      "Mueang Phai",
+      "Don Arang",
+      "Khok Sawang",
+      "Thung Kratat Phatthana",
+      "Thung Kraten",
+      "Tha Pho Chai",
+      "Khok Sung",
+      "Bu Krasang"
+    ],
+    "Lahan Sai": [
+      "Lahan Sai",
+      "Ta Chong",
+      "Samrong Mai",
+      "Nong Waeng",
+      "Nong Trakhrong",
+      "Khok Wan"
+    ],
+    "Prakhon Chai": [
+      "Prakhon Chai",
+      "Salaeng Thon",
+      "Ban Sai",
+      "Lawia",
+      "Chorakhe Mak",
+      "Pang Ku",
+      "Khok Yang",
+      "Khok Ma",
+      "Phaisan",
+      "Tako Taphi",
+      "Khao Khok",
+      "Nong Bon",
+      "Khok Makham",
+      "Khok Tum",
+      "Prathat Bu",
+      "Si Liam"
+    ],
+    "Ban Kruat": [
+      "Ban Kruat",
+      "Non Charoen",
+      "Nong Mai Ngam",
+      "Prasat",
+      "Sai Taku",
+      "Hin Lat",
+      "Bueng Charoen",
+      "Chanthop Phet",
+      "Khao Din Nuea"
+    ],
+    "Phutthaisong": [
+      "Phutthaisong",
+      "Mafueang",
+      "Ban Chan",
+      "Ban Pao",
+      "Ban Waeng",
+      "Ban Yang",
+      "Hai Sok"
+    ],
+    "Lam Plai Mat": [
+      "Lam Plai Mat",
+      "Nong Khu",
+      "Salaeng Phan",
+      "Thamen Chai",
+      "Talat Pho",
+      "Nong Kathing",
+      "Khok Klang",
+      "Khok Sa-at",
+      "Mueang Faek",
+      "Ban Yang",
+      "Phathairin",
+      "Khok Lam",
+      "Hin Khon",
+      "Nong Bua Khok",
+      "Bu Pho",
+      "Nong Don"
+    ],
+    "Satuek": [
+      "Satuek",
+      "Nikhom",
+      "Thung Wang",
+      "Mueang Kae",
+      "Nong Yai",
+      "Ron Thong",
+      "Don Mon",
+      "Chum Saeng",
+      "Tha Muang",
+      "Sakae",
+      "Sanam Chai",
+      "Krasang"
+    ],
+    "Pakham": [
+      "Pakham",
+      "Thai Charoen",
+      "Nong Bua",
+      "Khok Mamuang",
+      "Hu Thamnop"
+    ],
+    "Na Pho": [
+      "Na Pho",
+      "Ban Khu",
+      "Ban Du",
+      "Don Kok",
+      "Si Sawang"
+    ],
+    "Nong Hong": [
+      "Sa Kaeo",
+      "Huai Hin",
+      "Thai Samakkhi",
+      "Nong Chai Si",
+      "Sao Diao",
+      "Mueang Fai",
+      "Sa Thong"
+    ],
+    "Phlapphla Chai": [
+      "Chan Dum",
+      "Khok Khamin",
+      "Pa Chan",
+      "Sadao",
+      "Samrong"
+    ],
+    "Huai Rat": [
+      "Huai Rat",
+      "Sam Waeng",
+      "Ta Sao",
+      "Ban Tako",
+      "Sanuan",
+      "Khok Lek",
+      "Mueang Pho",
+      "Huai Racha"
+    ],
+    "Non Suwan": [
+      "Non Suwan",
+      "Thung Changhan",
+      "Krok Kaeo",
+      "Dong I Chan"
+    ],
+    "Chamni": [
+      "Chamni",
+      "Nong Plong",
+      "Mueang Yang",
+      "Cho Phaka",
+      "Laluat",
+      "Khok Sanuan"
+    ],
+    "Ban Mai Chaiyaphot": [
+      "Nong Waeng",
+      "Thonglang",
+      "Daeng Yai",
+      "Ku Suan Taeng",
+      "Nong Yueang"
+    ],
+    "Din Daeng": [
+      "Non Din Daeng",
+      "Som Poi",
+      "Lam Nang Rong"
+    ],
+    "Ban Dan": [
+      "Ban Dan",
+      "Prasat",
+      "Wang Nuea",
+      "Non Khwang"
+    ],
+    "Khaen Dong": [
+      "Khaen Dong",
+      "Dong Phlong",
+      "Sa Bua",
+      "Hua Fai"
+    ],
+    "Chaloem Phra Kiat": [
+      "Charoen Suk",
+      "Ta Pek",
+      "Isan Khet",
+      "Thawon",
+      "Yai Yaem Watthana"
+    ]
+  },
+  "Surin": {
+    "Mueang Surin": [
+      "Nai Mueang",
+      "Tang Chai",
+      "Phia Ram",
+      "Na Di",
+      "Tha Sawang",
+      "Salakdai",
+      "Ta Ong",
+      "Samrong",
+      "Kae Yai",
+      "Nok Mueang",
+      "Kho Kho",
+      "Sawai",
+      "Chaniang",
+      "Thenmi",
+      "Na Bua",
+      "Mueang Thi",
+      "Ram",
+      "Bu Ruesi",
+      "Trasaeng",
+      "Salaeng Phan",
+      "Ka Ko"
+    ],
+    "Chumphon Buri": [
+      "Chumphon Buri",
+      "Na Nong Phai",
+      "Phrai Khla",
+      "Si Narong",
+      "Yawuek",
+      "Mueang Bua",
+      "Sa Khut",
+      "Krabueang",
+      "Nong Ruea"
+    ],
+    "Tha Tum": [
+      "Tha Tum",
+      "Krapho",
+      "Phrom Thep",
+      "Phon Khrok",
+      "Mueang Kae",
+      "Ba",
+      "Nong Bua",
+      "Bua Khok",
+      "Nong Methi",
+      "Thung Kula"
+    ],
+    "Chom Phra": [
+      "Chom Phra",
+      "Mueang Ling",
+      "Krahat",
+      "Bu Kraeng",
+      "Nong Sanit",
+      "Ban Phue",
+      "Lum Rawi",
+      "Chum Saeng",
+      "Pen Suk"
+    ],
+    "Prasat": [
+      "Kang-aen",
+      "Thamo",
+      "Phlai",
+      "Prue",
+      "Thung Mon",
+      "Ta Bao",
+      "Nong Yai",
+      "Khok Yang",
+      "Khok Sa-at",
+      "Ban Sai",
+      "Chok Na Sam",
+      "Chuea Phloeng",
+      "Prasat Thanong",
+      "Tani",
+      "Ban Phluang",
+      "Kantuat Ramuan",
+      "Samut",
+      "Prathat Bu"
+    ],
+    "Kap Choeng": [
+      "Kap Choeng",
+      "Khu Tan",
+      "Dan",
+      "Naeng Mut",
+      "Khok Takhian",
+      "Takhian"
+    ],
+    "Rattanaburi": [
+      "Rattanaburi",
+      "That",
+      "Kae",
+      "Don Raet",
+      "Nong Bua Thong",
+      "Nong Bua Ban",
+      "Phai",
+      "Boet",
+      "Nam Khiao",
+      "Kut Kha Khim",
+      "Yang Sawang",
+      "Thap Yai"
+    ],
+    "Sanom": [
+      "Sanom",
+      "Phon Ko",
+      "Nong Rakhang",
+      "Na Nuan",
+      "Khaen",
+      "Hua Ngua",
+      "Nong I Yo"
+    ],
+    "Sikhoraphum": [
+      "Ra-ngaeng",
+      "Truem",
+      "Charaphat",
+      "Yang",
+      "Taen",
+      "Nong Bua",
+      "Khalamae",
+      "Nong Lek",
+      "Nong Khwao",
+      "Chang Pi",
+      "Kut Wai",
+      "Khwao Yai",
+      "Na Rung",
+      "Trom Phrai",
+      "Phak Mai"
+    ],
+    "Sangkha": [
+      "Sangkha",
+      "Khon Taek",
+      "Dom",
+      "Phra Kaeo",
+      "Ban Chan",
+      "Krathiam",
+      "Sakat",
+      "Ta Tum",
+      "Thap Than",
+      "Ta Khong",
+      "Ban Chop",
+      "Thep Raksa"
+    ],
+    "Lamduan": [
+      "Lamduan",
+      "Chok Nuea",
+      "U Lok",
+      "Tram Dom",
+      "Trapiang Tia"
+    ],
+    "Samrong Thap": [
+      "Samrong Thap",
+      "Nong Phai Lom",
+      "Kra-om",
+      "Nong Ha",
+      "Si Suk",
+      "Ko Kaeo",
+      "Muen Si",
+      "Samet",
+      "Sano",
+      "Pradu"
+    ],
+    "Buachet": [
+      "Buachet",
+      "Sadao",
+      "Charat",
+      "Ta Wang",
+      "A Phon",
+      "Samphao Lun"
+    ],
+    "Phanom Dong Rak": [
+      "Bakdai",
+      "Khok Klang",
+      "Chik Daek",
+      "Ta Miang"
+    ],
+    "Si Narong": [
+      "Narong",
+      "Chaenwaen",
+      "Truat",
+      "Nong Waeng",
+      "Si Suk"
+    ],
+    "Khwao Sinarin": [
+      "Khwao Sinarin",
+      "Bueng",
+      "Ta Kuk",
+      "Prasat Thong",
+      "Ban Rae"
+    ],
+    "Non Narai": [
+      "Nong Luang",
+      "Kham Phong",
+      "Non",
+      "Rawiang",
+      "Nong Thep"
+    ]
+  },
+  "Si Sa Ket": {
+    "Mueang Si Sa Ket": [
+      "Mueang Nuea",
+      "Mueang Tai",
+      "Khu Sot",
+      "Sam",
+      "Chan",
+      "Tadop",
+      "Nong Khrok",
+      "Phon Kha",
+      "Phon Kho",
+      "Phon Khwao",
+      "Ya Plong",
+      "Thum",
+      "Nong Hai",
+      "Nong Kaeo",
+      "Nam Kham",
+      "Pho",
+      "Mak Khiap",
+      "Nong Phai"
+    ],
+    "Yang Chum Noi": [
+      "Yang Chum Noi",
+      "Lin Fa",
+      "Khon Kam",
+      "Non Khun",
+      "Kut Mueang Ham",
+      "Bueng Bon",
+      "Yang Chum Yai"
+    ],
+    "Kanthararom": [
+      "Dun",
+      "Non Sang",
+      "Nong Hua Chang",
+      "Yang",
+      "Nong Waeng",
+      "Nong Kaeo",
+      "Tham",
+      "Lathai",
+      "Mueang Noi",
+      "I Pat",
+      "Bua Noi",
+      "Nong Bua",
+      "Du",
+      "Phak Phaeo",
+      "Chan",
+      "Kham Niam"
+    ],
+    "Kantharalak": [
+      "Bueng Malu",
+      "Kut Salao",
+      "Mueang",
+      "Sang Mek",
+      "Nam Om",
+      "Lalai",
+      "Rung",
+      "Trakat",
+      "Chan Yai",
+      "Phu Ngoen",
+      "Cham",
+      "Krachaeng",
+      "Non Samran",
+      "Nong Ya Lat",
+      "Sao Thong Chai",
+      "Khanun",
+      "Suan Kluai",
+      "Wiang Nuea",
+      "Thung Yai",
+      "Phu Pha Mok"
+    ],
+    "Khukhan": [
+      "Kanthararom",
+      "Chakong",
+      "Chai Di",
+      "Dong Kammet",
+      "Sano",
+      "Prue Yai",
+      "Sadao Yai",
+      "Ta Ut",
+      "Huai Nuea",
+      "Huai Tai",
+      "Hua Suea",
+      "Takhian",
+      "Nikhom Phatthana",
+      "Khok Phet",
+      "Prasat",
+      "Samrong Ta Chen",
+      "Huai Samran",
+      "Kritsana",
+      "Lom Sak",
+      "Nong Chalong",
+      "Si Trakun",
+      "Si Sa-at"
+    ],
+    "Phrai Bueng": [
+      "Phrai Bueng",
+      "Din Daeng",
+      "Prasat Yoe",
+      "Samrong Phlan",
+      "Suk Sawat",
+      "Non Pun"
+    ],
+    "Prang Ku": [
+      "Phimai",
+      "Ku",
+      "Nong Chiang Thun",
+      "Tum",
+      "Samo",
+      "Pho Si",
+      "Samrong Prasat",
+      "Du",
+      "Sawai",
+      "Phimai Nuea"
+    ],
+    "Khun Han": [
+      "Si",
+      "Bak Dong",
+      "Phran",
+      "Pho Wong",
+      "Phrai",
+      "Krawan",
+      "Khun Han",
+      "Non Sung",
+      "Kanthrom",
+      "Phu Fai",
+      "Pho Krasang",
+      "Huai Chan"
+    ],
+    "Rasi Salai": [
+      "Mueang Khong",
+      "Muang Khaen",
+      "Nong Khae",
+      "Chik Sang Thong",
+      "Dan",
+      "Du",
+      "Nong Ueng",
+      "Bua Hung",
+      "Phai",
+      "Som Poi",
+      "Nong Mi",
+      "Wan Kham",
+      "Sang Pi"
+    ],
+    "Uthumphon Phisai": [
+      "Kamphaeng",
+      "I Lam",
+      "Kan Lueang",
+      "Thung Chai",
+      "Samrong",
+      "Khaem",
+      "Nong Hai",
+      "Khayung",
+      "Ta Ket",
+      "Hua Chang",
+      "Rang Raeng",
+      "Tae",
+      "Khae",
+      "Pho Chai",
+      "Pa Ao",
+      "Nong Hang",
+      "Sa Kamphaeng Yai",
+      "Khok Lam",
+      "Khok Chan"
+    ],
+    "Bueng Bun": [
+      "Po",
+      "Bueng Bun"
+    ],
+    "Huai Thap Than": [
+      "Huai Thap Than",
+      "Mueang Luang",
+      "Kluai Kwang",
+      "Phak Mai",
+      "Chan Saen Chai",
+      "Prasat"
+    ],
+    "Non Khun": [
+      "Non Kho",
+      "Bok",
+      "Pho",
+      "Nong Kung",
+      "Lao Kwang"
+    ],
+    "Si Rattana": [
+      "Si Kaeo",
+      "Phing Phuai",
+      "Sa Yao",
+      "Tum",
+      "Sueang Khao",
+      "Si Non Ngam",
+      "Saphung"
+    ],
+    "Nam Kliang": [
+      "Nam Kliang",
+      "La-o",
+      "Tong Pit",
+      "Khoen",
+      "Rung Rawi",
+      "Khup"
+    ],
+    "Wang Hin": [
+      "Bu Sung",
+      "That",
+      "Duan Yai",
+      "Bo Kaeo",
+      "Si Samran",
+      "Thung Sawang",
+      "Wang Hin",
+      "Phon Yang"
+    ],
+    "Phu Sing": [
+      "Khok Tan",
+      "Huai Ta Mon",
+      "Huai Tuekchu",
+      "Lalom",
+      "Takhian Ram",
+      "Dong Rak",
+      "Phrai Phatthana"
+    ],
+    "Mueang Chan": [
+      "Mueang Chan",
+      "Takon",
+      "Nong Yai"
+    ],
+    "Benchalak": [
+      "Siao",
+      "Nong Wa",
+      "Nong Ngu Lueam",
+      "Nong Hang",
+      "Tha Khlo"
+    ],
+    "Phayu": [
+      "Phayu",
+      "Phrom Sawat",
+      "Tamyae",
+      "Non Phek",
+      "Nong Kha"
+    ],
+    "Pho Si Suwan": [
+      "Dot",
+      "Siao",
+      "Nong Ma",
+      "Phue Yai",
+      "I Se"
+    ],
+    "Sila Lat": [
+      "Kung",
+      "Kleek Ling",
+      "Nong Bua Dong",
+      "Jod Maung"
+    ]
+  },
+  "Ubon Ratchathani": {
+    "Mueang Ubon Ratchathani": [
+      "Nai Mueang",
+      "Hua Ruea",
+      "Nong Khon",
+      "Pathum",
+      "Kham Yai",
+      "Chaeramae",
+      "Nong Bo",
+      "Rai Noi",
+      "Krasop",
+      "Kut Lat",
+      "Khilek",
+      "Pa-ao"
+    ],
+    "Si Mueang Mai": [
+      "Na Kham",
+      "Kaeng Kok",
+      "Ueat Yai",
+      "Warin",
+      "Lat Khwai",
+      "Song Yang",
+      "Ta Bai",
+      "Kham Lai",
+      "Nam Thaeng",
+      "Na Loen",
+      "Don Yai"
+    ],
+    "Khong Chiam": [
+      "Khong Chiam",
+      "Huai Yang",
+      "Na Pho Klang",
+      "Nong Saeng Yai",
+      "Huai Phai",
+      "Kham Khuen Kaew"
+    ],
+    "Khueang Nai": [
+      "Khueang Nai",
+      "Sang Tho",
+      "Kho Thong",
+      "Ko E",
+      "Hua Don",
+      "Chi Thuan",
+      "Tha Hai",
+      "Na Kham Yai",
+      "Daeng Mo",
+      "That Noi",
+      "Ban Thai",
+      "Ban Kok",
+      "Klang Yai",
+      "Non Rang",
+      "Yang Khi Nok",
+      "Si Suk",
+      "Sahathat",
+      "Nong Lao"
+    ],
+    "Khemarat": [
+      "Khemarat",
+      "Kham Pom",
+      "Chiat",
+      "Nong Phue",
+      "Na Waeng",
+      "Kaeng Nuea",
+      "Nong Nok Tha",
+      "Nong Sim",
+      "Hua Na"
+    ],
+    "Det Udom": [
+      "Mueang Det",
+      "Na Suang",
+      "Na Charoen",
+      "Thung Thoeng",
+      "Som Sa-at",
+      "Kut Prathai",
+      "Top Hu",
+      "Klang",
+      "Kaeng",
+      "Tha Pho Si",
+      "Bua Ngam",
+      "Kham Khrang",
+      "Na Krasaeng",
+      "Phon Ngam",
+      "Pa Mong",
+      "Non Sombun"
+    ],
+    "Na Chaluai": [
+      "Na Chaluai",
+      "Non Sombun",
+      "Phon Sawan",
+      "Ban Tum",
+      "Sok Saeng",
+      "Non Sawan"
+    ],
+    "Nam Yuen": [
+      "Song",
+      "Yang",
+      "Dom Pradit",
+      "Bu Pueai",
+      "Si Wichian",
+      "Yang Yai",
+      "Kao Kham"
+    ],
+    "Buntharik": [
+      "Phon Ngam",
+      "Huai Kha",
+      "Kho Laen",
+      "Na Pho",
+      "Nong Sano",
+      "Non Kho",
+      "Bua Ngam",
+      "Ban Maet"
+    ],
+    "Trakan Phuet Phon": [
+      "Khulu",
+      "Kradian",
+      "Kasem",
+      "Kutsakon",
+      "Kham Pia",
+      "Khon Sai",
+      "Khok Chan",
+      "Na Phin",
+      "Na Samai",
+      "Non Kung",
+      "Trakan",
+      "Tak Daet",
+      "Lai Thung",
+      "Pao",
+      "Se Pet",
+      "Saphue",
+      "Nong Tao",
+      "Tham Khae",
+      "Tha Luang",
+      "Huai Fai Phatthana",
+      "Kut Ya Luan",
+      "Ban Daeng",
+      "Kham Charoen"
+    ],
+    "Kut Khaopun": [
+      "Khaopun",
+      "Non Sawang",
+      "Kaeng Kheng",
+      "Ka Bin",
+      "Nong Than Nam"
+    ],
+    "Muang Sam Sip": [
+      "Muang Sam Sip",
+      "Lao Bok",
+      "Dum Yai",
+      "Nong Chang Yai",
+      "Nong Mueang",
+      "Toei",
+      "Yang Sak Krapho Lum",
+      "Nong Khai Nok",
+      "Nong Lao",
+      "Nong Hang",
+      "Yang Yo Phap",
+      "Phai Yai",
+      "Na Loeng",
+      "Phon Phaeng"
+    ],
+    "Warin Chamrap": [
+      "Warin Chamrap",
+      "That",
+      "Tha Lat",
+      "Non Non",
+      "Khu Mueang",
+      "Sa Saming",
+      "Kham Nam Saep",
+      "Bung Wai",
+      "Kham Khwang",
+      "Pho Yai",
+      "Saen Suk",
+      "Nong Kin Phen",
+      "Non Phueng",
+      "Mueang Si Khai",
+      "Huai Khayung",
+      "Bung Mai"
+    ],
+    "Phibun Mangsahan": [
+      "Phibun",
+      "Kut Chom Phu",
+      "Don Chik",
+      "Sai Mun",
+      "Na Pho",
+      "Non Klang",
+      "Pho Sai",
+      "Pho Si",
+      "Rawe",
+      "Rai Tai",
+      "Nong Bua Hi",
+      "Ang Sila",
+      "Non Kalong",
+      "Ban Khaem"
+    ],
+    "Tan Sum": [
+      "Tan Sum",
+      "Samrong",
+      "Chik Thoeng",
+      "Nong Kung",
+      "Na Khai",
+      "Kham Wa"
+    ],
+    "Pho Sai": [
+      "Pho Sai",
+      "Muang Yai",
+      "Sam Rong",
+      "Song Khon",
+      "Saraphi",
+      "Lao Ngam"
+    ],
+    "Samrong": [
+      "Samrong",
+      "Khok Kong",
+      "Nong Hai",
+      "Kho Noi",
+      "Non Ka Len",
+      "Khok Sawang",
+      "Non Klang",
+      "Bon",
+      "Kham Pom"
+    ],
+    "Don Mot Daeng": [
+      "Don Mot Daeng",
+      "Lao Daeng",
+      "Tha Mueang",
+      "Kham Hai Yai"
+    ],
+    "Sirindhorn": [
+      "Khan Rai",
+      "Chong Mek",
+      "Non Ko",
+      "Nikhom Sang Ton Eng Lam Dom Noi",
+      "Fang Kham",
+      "Kham Khuean Kaeo"
+    ],
+    "Thung Si Udom": [
+      "Nong Om",
+      "Na Kasem",
+      "Kut Ruea",
+      "Khok Chamrae",
+      "Na Hom"
+    ],
+    "Na Yia": [
+      "Na Yia",
+      "Na Di",
+      "Na Rueang"
+    ],
+    "Na Tan": [
+      "Na Tan",
+      "Phalan",
+      "Kong Phon",
+      "Phang Khen"
+    ],
+    "Lao Suea Kok": [
+      "Lao Suea Kok",
+      "Phon Mueang",
+      "Phaeng Yai",
+      "Nong Bok"
+    ],
+    "Sawang Wirawong": [
+      "Kaeng Dom",
+      "Tha Chang",
+      "Bung Malaeng",
+      "Sawang"
+    ],
+    "Nam Khun": [
+      "Ta Kao",
+      "Phaibun",
+      "Khilek",
+      "Khok Sa-at"
+    ]
+  },
+  "Yasothon": {
+    "Mueang Yasothon": [
+      "Nai Mueang",
+      "Nam Kham Yai",
+      "Tat Thong",
+      "Samran",
+      "Kho Nuea",
+      "Du Thung",
+      "Doet",
+      "Khandai Yai",
+      "Thung Tae",
+      "Sing",
+      "Na Samai",
+      "Khueang Kham",
+      "Nong Hin",
+      "Nong Khu",
+      "Khum Ngoen",
+      "Thung Nang Ok",
+      "Nong Ruea",
+      "Nong Pet"
+    ],
+    "Sai Mun": [
+      "Sai Mun",
+      "Du Lat",
+      "Dong Mafai",
+      "Na Wiang",
+      "Phai"
+    ],
+    "Kut Chum": [
+      "Kut Chum",
+      "Non Pueai",
+      "Kammaet",
+      "Na So",
+      "Huai Kaeng",
+      "Nong Mi",
+      "Phon Ngam",
+      "Kham Nam Sang",
+      "Nong Nae"
+    ],
+    "Kham Khuean Kaeo": [
+      "Lumphuk",
+      "Yo",
+      "Song Pueai",
+      "Phon Than",
+      "Thung Mon",
+      "Na Kham",
+      "Dong Khaen Yai",
+      "Ku Chan",
+      "Na Kae",
+      "Kut Kung",
+      "Lao Hai",
+      "Khaen Noi",
+      "Dong Charoen"
+    ],
+    "Pa Tio": [
+      "Pho Sai",
+      "Krachai",
+      "Khok Na Ko",
+      "Chiang Pheng",
+      "Si Than"
+    ],
+    "Maha Chana Chai": [
+      "Fa Yat",
+      "Hua Mueang",
+      "Khu Mueang",
+      "Phue Hi",
+      "Bak Ruea",
+      "Muang",
+      "Non Sai",
+      "Bueng Kae",
+      "Phra Sao",
+      "Song Yang"
+    ],
+    "Kho Wang": [
+      "Fa Huan",
+      "Kut Nam Sai",
+      "Nam Om",
+      "Kho Wang"
+    ],
+    "Loeng Nok Tha": [
+      "Bung Kha",
+      "Sawat",
+      "Hong Saeng",
+      "Samakkhi",
+      "Kut Chiang Mi",
+      "Sam Yaek",
+      "Kut Hae",
+      "Khok Samran",
+      "Sang Ming",
+      "Si Kaeo"
+    ],
+    "Thai Charoen": [
+      "Thai Charoen",
+      "Nam Kham",
+      "Som Pho",
+      "Kham Toei",
+      "Kham Phai"
+    ]
+  },
+  "Chaiyaphum": {
+    "Mueang Chaiyaphum": [
+      "Nai Mueang",
+      "Rop Mueang",
+      "Phon Thong",
+      "Na Fai",
+      "Ban Khai",
+      "Kut Tum",
+      "Chi Long",
+      "Ban Lao",
+      "Na Siao",
+      "Nong Na Saeng",
+      "Lat Yai",
+      "Nong Phai",
+      "Tha Hin Ngom",
+      "Huai Ton",
+      "Huai Bong",
+      "Non Samran",
+      "Khok Sung",
+      "Bung Khla",
+      "Sap Si Thong"
+    ],
+    "Ban Khwao": [
+      "Ban Khwao",
+      "Talat Raeng",
+      "Lum Lam Chi",
+      "Chi Bon",
+      "Phu Laen Kha",
+      "Non Dang"
+    ],
+    "Khon Sawan": [
+      "Khon Sawan",
+      "Yang Wai",
+      "Chong Sam Mo",
+      "Non Sa-at",
+      "Huai Rai",
+      "Ban Sok",
+      "Khok Mang Ngoi",
+      "Nong Kham",
+      "Si Samran"
+    ],
+    "Kaset Sombun": [
+      "Ban Yang",
+      "Ban Han",
+      "Ban Duea",
+      "Ban Pao",
+      "Kut Lo",
+      "Non Kok",
+      "Sa Phon Thong",
+      "Nong Kha",
+      "Nong Phon Ngam",
+      "Ban Bua",
+      "Non Thong"
+    ],
+    "Nong Bua Daeng": [
+      "Nong Bua Daeng",
+      "Kut Chum Saeng",
+      "Tham Wua Daeng",
+      "Nang Daet",
+      "Nong Waeng",
+      "Khu Mueang",
+      "Tha Yai",
+      "Wang Chomphu"
+    ],
+    "Chatturat": [
+      "Ban Kok",
+      "Nong Bua Ban",
+      "Ban Kham",
+      "Kut Nam Sai",
+      "Nong Don",
+      "Lahan",
+      "Nong Bua Yai",
+      "Nong Bua Khok",
+      "Sompoi"
+    ],
+    "Bamnet Narong": [
+      "Ban Chuan",
+      "Ban Phet",
+      "Ban Tan",
+      "Hua Thale",
+      "Khok Roeng Rom",
+      "Ko Manao",
+      "Khok Phet Phatthana"
+    ],
+    "Nong Bua Rawe": [
+      "Nong Bua Rawe",
+      "Wang Takhe",
+      "Huai Yae",
+      "Khok Sa-at",
+      "Sok Pla Duk"
+    ],
+    "Thep Sathit": [
+      "Wa Tabaek",
+      "Huai Yai Chio",
+      "Na Yang Klak",
+      "Ban Rai",
+      "Pong Nok"
+    ],
+    "Phu Khiao": [
+      "Phak Pang",
+      "Kwang Chon",
+      "Nong Khon Thai",
+      "Ban Kaeng",
+      "Kut Yom",
+      "Ban Phet",
+      "Khok Sa-at",
+      "Nong Tum",
+      "Olo",
+      "That Thong",
+      "Ban Don"
+    ],
+    "Ban Thaen": [
+      "Ban Thaen",
+      "Sam Suan",
+      "Sa Phang",
+      "Ban Tao",
+      "Nong Khu"
+    ],
+    "Kaeng Khro": [
+      "Chong Sam Mo",
+      "Nong Kham",
+      "Na Nong Thum",
+      "Ban Kaeng",
+      "Nong Sang",
+      "Lup Kha",
+      "Khok Kung",
+      "Kao Ya Di",
+      "Tha Mafai Wan",
+      "Nong Phai"
+    ],
+    "Khon San": [
+      "Khon San",
+      "Thung Phra",
+      "Non Khun",
+      "Huai Yang",
+      "Thung Luilai",
+      "Dong Bang",
+      "Thung Na Lao",
+      "Dong Klang"
+    ],
+    "Phakdi Chumphon": [
+      "Ban Chiang",
+      "Chao Thong",
+      "Wang Thong",
+      "Laem Thong"
+    ],
+    "Noen Sa-nga": [
+      "Nong Chim",
+      "Ta Noen",
+      "Kahat",
+      "Rang Ngam"
+    ],
+    "Sap Yai": [
+      "Sap Yai",
+      "Tha Kup",
+      "Tako Thong"
+    ]
+  },
+  "Amnat Charoen": {
+    "Mueang Amnat Charoen": [
+      "Bung",
+      "Kai Kham",
+      "Na Chik",
+      "Pla Khao",
+      "Lao Pruan",
+      "Sang Nok Tha",
+      "Khuem Yai",
+      "Na Phue",
+      "Nam Plik",
+      "Na Wang",
+      "Na Mo Ma",
+      "Non Pho",
+      "Non Nam Thaeng",
+      "Huai Rai",
+      "Nong Masaeo",
+      "Kut Pla Duk",
+      "Don Moei",
+      "Na Yom",
+      "Na Tae"
+    ],
+    "Chanuman": [
+      "Chanuman",
+      "Khok San",
+      "Kham Khuean Kaeo",
+      "Khok Kong",
+      "Pa Ko"
+    ],
+    "Pathum Ratchawongsa": [
+      "Nong Kha",
+      "Kham Phon",
+      "Na Wa",
+      "Lue",
+      "Huai",
+      "Non Ngam",
+      "Na Pa Saeng"
+    ],
+    "Phana": [
+      "Phana",
+      "Chan Lan",
+      "Mai Klon",
+      "Phra Lao"
+    ],
+    "Senangkhanikhom": [
+      "Senangkhanikhom",
+      "Phon Thong",
+      "Rai Si Suk",
+      "Na Wiang",
+      "Nong Hai",
+      "Nong Sam Si"
+    ],
+    "Hua Taphan": [
+      "Hua Taphan",
+      "Kham Phra",
+      "Kheng Yai",
+      "Nong Kaeo",
+      "Phon Mueang Noi",
+      "Sang Tho Noi",
+      "Chik Du",
+      "Rattanawari"
+    ],
+    "Lue Amnat": [
+      "Amnat",
+      "Dong Mayang",
+      "Pueai",
+      "Dong Bang",
+      "Rai Khi",
+      "Maet",
+      "Khok Klang"
+    ]
+  },
+  "Bueng Kan": {
+    "Mueang Bueng Kan": [
+      "Bueng Kan",
+      "Non Sombun",
+      "Non Sawang",
+      "Ho Kham",
+      "Nong Loeng",
+      "Khok Kong",
+      "Na Sawan",
+      "Khai Si",
+      "Chaiyaphon",
+      "Wisit",
+      "Kham Na Di",
+      "Pong Pueai"
+    ],
+    "Seka": [
+      "Si Chomphu",
+      "Don Ya Nang",
+      "Phon Charoen",
+      "Nong Hua Chang",
+      "Wang Chomphu",
+      "Pa Faek",
+      "Si Samran"
+    ],
+    "So Phisai": [
+      "So",
+      "Nong Phan Tha",
+      "Si Chomphu",
+      "Kham Kaeo",
+      "Bua Tum",
+      "Tham Charoen",
+      "Lao Thong"
+    ],
+    "Phon Charoen": [
+      "Seka",
+      "Sang",
+      "Tha Kok Daeng",
+      "Ban Tong",
+      "Pong Hai",
+      "Nam Chan",
+      "Tha Sa-at",
+      "Nong Thum",
+      "Sok Kam"
+    ],
+    "Si Wilai": [
+      "Pak Khat",
+      "Nong Yong",
+      "Na Kang",
+      "Non Sila",
+      "Som Sanuk",
+      "Na Dong"
+    ],
+    "Bueng Khong Long": [
+      "Bueng Khong Long",
+      "Pho Mak Khaeng",
+      "Dong Bang",
+      "Tha Dok Kham"
+    ],
+    "Pak Khat": [
+      "Si Wilai",
+      "Chumphu Phon",
+      "Na Saeng",
+      "Na Sabaeng",
+      "Na Sing"
+    ],
+    "Bung Khla": [
+      "Bung Khla",
+      "Nong Doen",
+      "Khok Kwang"
+    ]
+  },
+  "Nong Bua Lam Phu": {
+    "Mueang Nong Bua Lam Phu": [
+      "Nong Bua",
+      "Nong Phai Sun",
+      "Pho Chai",
+      "Nong Sawan",
+      "Hua Na",
+      "Ban Kham",
+      "Na Mafueang",
+      "Ban Phrao",
+      "Non Khamin",
+      "Lam Phu",
+      "Kut Chik",
+      "Non Than",
+      "Na Kham Hai",
+      "Pa Mai Ngam",
+      "Nong Wa"
+    ],
+    "Na Klang": [
+      "Na Klang",
+      "Dan Chang",
+      "Kut Din Chi",
+      "Fang Daeng",
+      "Kao Kloi",
+      "Non Mueang",
+      "Uthai Sawan",
+      "Dong Sawan",
+      "Kut Hae"
+    ],
+    "Non Sang": [
+      "Non Sang",
+      "Ban Thin",
+      "Nong Ruea",
+      "Kut Du",
+      "Ban Kho",
+      "Non Mueang",
+      "Khok Yai",
+      "Khok Muang",
+      "Nikhom Phatthana",
+      "Pang Ku"
+    ],
+    "Si Bun Rueang": [
+      "Mueang Mai",
+      "Si Bun Rueang",
+      "Nong Bua Tai",
+      "Kut Sathian",
+      "Na Kok",
+      "Non Sa-at",
+      "Yang Lo",
+      "Non Muang",
+      "Nong Kung Kaeo",
+      "Nong Kae",
+      "Sai Thong",
+      "Han Na Ngam"
+    ],
+    "Suwannakhuha": [
+      "Nasi",
+      "Ban Khok",
+      "Na Di",
+      "Na Dan",
+      "Dong Mafai",
+      "Suwannakhuha",
+      "Bun Than",
+      "Kut Phueng"
+    ],
+    "Na Wang": [
+      "Na Lao",
+      "Na Kae",
+      "Wang Thong",
+      "Wang Pla Pom",
+      "Thep Khiri"
+    ]
+  },
+  "Khon Kaen": {
+    "Mueang Khon Kaen": [
+      "Nai Mueang",
+      "Samran",
+      "Khok Si",
+      "Tha Phra",
+      "Ban Thum",
+      "Mueang Kao",
+      "Phra Lap",
+      "Sawathi",
+      "Ban Wa",
+      "Ban Kho",
+      "Daeng Yai",
+      "Don Chang",
+      "Don Han",
+      "Sila",
+      "Ban Pet",
+      "Nong Tum",
+      "Bueng Niam",
+      "Non Thon"
+    ],
+    "Ban Fang": [
+      "Nong Bua",
+      "Pa Wai Nang",
+      "Non Khong",
+      "Ban Lao",
+      "Pa Manao",
+      "Ban Fang",
+      "Khok Ngam"
+    ],
+    "Phra Yuen": [
+      "Phra Yuen",
+      "Phra Bu",
+      "Ban Ton",
+      "Nong Waeng",
+      "Kham Pom"
+    ],
+    "Nong Ruea": [
+      "Nong Ruea",
+      "Ban Meng",
+      "Ban Kong",
+      "Yang Kham",
+      "Chorakhe",
+      "Non Thong",
+      "Kut Kwang",
+      "Non Than",
+      "Non Sa-at",
+      "Ban Phue"
+    ],
+    "Chum Phae": [
+      "Chum Phae",
+      "Non Han",
+      "Na Nong Thum",
+      "Non Udom",
+      "Khua Riang",
+      "Nong Phai",
+      "Chai So",
+      "Wang Hin Lat",
+      "Na Phiang",
+      "Nong Khiat",
+      "Nong Sao Lao",
+      "Non Sa-at"
+    ],
+    "Si Chomphu": [
+      "Si Chomphu",
+      "Si Suk",
+      "Na Chan",
+      "Wang Phoem",
+      "Sam Yang",
+      "Nong Daeng",
+      "Dong Lan",
+      "Boribun",
+      "Ban Mai",
+      "Phu Han"
+    ],
+    "Nam Phong": [
+      "Nam Phong",
+      "Wang Chai",
+      "Nong Kung",
+      "Bua Yai",
+      "Sa-at",
+      "Muang Wan",
+      "Ban Kham",
+      "Bua Ngoen",
+      "Sai Mun",
+      "Tha Krasoem",
+      "Phang Thui",
+      "Kut Nam Sai"
+    ],
+    "Ubolratana": [
+      "Khok Sung",
+      "Ban Dong",
+      "Khuean Ubolratana",
+      "Na Kham",
+      "Si Suk Samran",
+      "Thung Pong"
+    ],
+    "Kranuan": [
+      "Nong Ko",
+      "Nong Kung Yai",
+      "Huai Chot",
+      "Huai Yang",
+      "Ban Fang",
+      "Dun Sat",
+      "Nong No",
+      "Nam Om",
+      "Hua Na Kham"
+    ],
+    "Ban Phai": [
+      "Ban Phai",
+      "Nai Mueang",
+      "Mueang Phia",
+      "Ban Lan",
+      "Khaen Nuea",
+      "Phu Lek",
+      "Pa Po",
+      "Hin Tang",
+      "Nong Nam Sai",
+      "Hua Nong"
+    ],
+    "Pueai Noi": [
+      "Pueai Noi",
+      "Wang Muang",
+      "Kham Pom",
+      "Sa Kaeo"
+    ],
+    "Phon": [
+      "Mueang Phon",
+      "Chot Nong Kae",
+      "Kao Ngio",
+      "Nong Makhuea",
+      "Nong Waeng Sok Phra",
+      "Phek Yai",
+      "Khok Sa-nga",
+      "Nong Waeng Nang Bao",
+      "Lom Khom",
+      "Non Kha",
+      "Sok Nok Ten",
+      "Hua Thung"
+    ],
+    "Waeng Yai": [
+      "Khon Chim",
+      "Mai Na Phiang",
+      "Non Thong",
+      "Waeng Yai",
+      "Non Sa-at"
+    ],
+    "Waeng Noi": [
+      "Waeng Noi",
+      "Kan Lueang",
+      "Tha Nang Naeo",
+      "Lahan Na",
+      "Tha Wat",
+      "Thang Khwang"
+    ],
+    "Nong Song Hong": [
+      "Nong Song Hong",
+      "Khuemchat",
+      "Non That",
+      "Takua Pa",
+      "Samrong",
+      "Nong Mek",
+      "Don Du",
+      "Dong Kheng",
+      "Han Chot",
+      "Don Dang",
+      "Wang Hin",
+      "Nong Phai Lom"
+    ],
+    "Phu Wiang": [
+      "Ban Ruea",
+      "Wa Thong",
+      "Kut Khon Kaen",
+      "Na Chum Saeng",
+      "Na Wa",
+      "Nong Kung Thanasan",
+      "Nong Kung Soen",
+      "Song Pueai",
+      "Thung Chomphu",
+      "Din Dam",
+      "Phu Wiang"
+    ],
+    "Mancha Khiri": [
+      "Kut Khao",
+      "Suan Mon",
+      "Nong Paen",
+      "Phon Phek",
+      "Kham Khaen",
+      "Na Kha",
+      "Na Ngam",
+      "Tha Sala"
+    ],
+    "Chonnabot": [
+      "Chonnabot",
+      "Kut Phia Khom",
+      "Wang Saeng",
+      "Huai Kae",
+      "Ban Thaen",
+      "Si Bun Rueang",
+      "Non Phayom",
+      "Po Daeng"
+    ],
+    "Khao Suan Kwang": [
+      "Khao Suan Kwang",
+      "Dong Mueang Aem",
+      "Na Ngio",
+      "Non Sombun",
+      "Kham Muang"
+    ],
+    "Phu Pha Man": [
+      "Non Khom",
+      "Na Fai",
+      "Phu Pha Man",
+      "Wang Sawap",
+      "Huai Muang"
+    ],
+    "Sam Sung": [
+      "Kranuan",
+      "Kham Maet",
+      "Ban Non",
+      "Khu Kham",
+      "Huai Toei"
+    ],
+    "Khok Pho Chai": [
+      "Ban Khok",
+      "Pho Chai",
+      "Sap Sombun",
+      "Na Phaeng"
+    ],
+    "Nong Na Kham": [
+      "Kut That",
+      "Ban Khok",
+      "Khanuan"
+    ],
+    "Ban Haet": [
+      "Ban Haet",
+      "Khok Samran",
+      "Non Sombun",
+      "Nong Saeng"
+    ],
+    "Non Sila": [
+      "Non Sila",
+      "Nong Pla Mo",
+      "Ban Han",
+      "Pueai Yai",
+      "Non Daeng"
+    ],
+    "Wiang Kao": [
+      "Nai Mueang",
+      "Mueang Kao Phatthana",
+      "Khao Noi"
+    ]
+  },
+  "Udon Thani": {
+    "Mueang Udon Thani": [
+      "Mak Khaeng",
+      "Nikhom Songkhro",
+      "Ban Khao",
+      "Nong Bua",
+      "Ban Tat",
+      "Non Sung",
+      "Mu Mon",
+      "Chiang Yuen",
+      "Nong Na Kham",
+      "Kut Sa",
+      "Na Di",
+      "Ban Lueam",
+      "Chiang Phin",
+      "Sam Phrao",
+      "Nong Hai",
+      "Na Kha",
+      "Ban Chan",
+      "Nong Khon Kwang",
+      "Khok Sa-at",
+      "Na Kwang",
+      "Nong Phai"
+    ],
+    "Kut Chap": [
+      "Kut Chap",
+      "Pakho",
+      "Khon Yung",
+      "Chiang Pheng",
+      "Sang Ko",
+      "Mueang Phia",
+      "Tan Lian"
+    ],
+    "Nong Wua So": [
+      "Mak Ya",
+      "Nong O",
+      "Up Mung",
+      "Kut Mak Fai",
+      "Nam Phon",
+      "Nong Bua Ban",
+      "Non Wai",
+      "Nong Wua So"
+    ],
+    "Kumphawapi": [
+      "Tum Tai",
+      "Phan Don",
+      "Wiang Kham",
+      "Chaelae",
+      "Chiang Wae",
+      "Huai Koeng",
+      "Soephloe",
+      "Si O",
+      "Pa Kho",
+      "Phasuk",
+      "Tha Li",
+      "Kumphawapi",
+      "Nong Wa"
+    ],
+    "Non Sa-at": [
+      "Non Sa-at",
+      "Bung Kaeo",
+      "Pho Si Samran",
+      "Thom Na Ngam",
+      "Nong Kung Si",
+      "Khok Klang"
+    ],
+    "Nong Han": [
+      "Nong Han",
+      "Nong Mek",
+      "Phang Ngu",
+      "Sabaeng",
+      "Soi Phrao",
+      "Ban Chiang",
+      "Ban Ya",
+      "Phon Ngam",
+      "Phak Top",
+      "Nong Phai",
+      "Don Hai Sok",
+      "Nong Sa Pla"
+    ],
+    "Thung Fon": [
+      "Thung Fon",
+      "Thung Yai",
+      "Na Chum Saeng",
+      "Na Thom"
+    ],
+    "Chai Wan": [
+      "Chai Wan",
+      "Nong Lak",
+      "Kham Lo",
+      "Phon Sung"
+    ],
+    "Si That": [
+      "Si That",
+      "Champi",
+      "Ban Prong",
+      "Hua Na Kham",
+      "Nong Nok Khian",
+      "Na Yung",
+      "Tat Thong"
+    ],
+    "Wang Sam Mo": [
+      "Nong Kung Thap Ma",
+      "Nong Ya Sai",
+      "Ba Yao",
+      "Phasuk",
+      "Kham Khok Sung",
+      "Wang Sam Mo"
+    ],
+    "Ban Dung": [
+      "Si Suttho",
+      "Ban Dung",
+      "Dong Yen",
+      "Phon Sung",
+      "Om Ko",
+      "Ban Chan",
+      "Ban Chai",
+      "Na Mai",
+      "Thon Na Lap",
+      "Wang Thong",
+      "Ban Muang",
+      "Ban Tat",
+      "Na Kham"
+    ],
+    "Ban Phue": [
+      "Ban Phue",
+      "Hai Sok",
+      "Khuea Nam",
+      "Kham Bong",
+      "Non Thong",
+      "Khao San",
+      "Champa Mong",
+      "Klang Yai",
+      "Mueang Phan",
+      "Kham Duang",
+      "Nong Hua Khu",
+      "Ban Kho",
+      "Nong Waeng"
+    ],
+    "Nam Som": [
+      "Na Ngua",
+      "Nam Som",
+      "Nong Waeng",
+      "Ban Yuak",
+      "Som Yiam",
+      "Si Samran",
+      "Samakkhi"
+    ],
+    "Phen": [
+      "Phen",
+      "Ban That",
+      "Na Phu",
+      "Chiang Wang",
+      "Sum Sao",
+      "Na Bua",
+      "Ban Lao",
+      "Chom Si",
+      "Tao Hai",
+      "Khok Klang",
+      "Sang Paen"
+    ],
+    "Sang Khom": [
+      "Sang Khom",
+      "Chiang Da",
+      "Ban Yuat",
+      "Ban Khok",
+      "Na Sa-at",
+      "Ban Hin Ngom"
+    ],
+    "Nong Saeng": [
+      "Nong Saeng",
+      "Saeng Sawang",
+      "Na Di",
+      "Thap Kung"
+    ],
+    "Na Yung": [
+      "Na Yung",
+      "Ban Kong",
+      "Na Khae",
+      "Non Thong"
+    ],
+    "Phibun Rak": [
+      "Ban Daeng",
+      "Na Sai",
+      "Don Kloi"
+    ],
+    "Ku Kaeo": [
+      "Ban Chit",
+      "Non Thong In",
+      "Kho Yai",
+      "Khon Sai"
+    ],
+    "rachak-sinlapakhom": [
+      "Na Muang",
+      "Huai Sam Phat",
+      "Um Chan"
+    ]
+  },
+  "Loei": {
+    "Mueang Loei": [
+      "Kut Pong",
+      "Mueang",
+      "Na O",
+      "Kok Du",
+      "Nam Man",
+      "Siao",
+      "Na An",
+      "Na Pong",
+      "Na Din Dam",
+      "Nam Suai",
+      "Chaiyaphruek",
+      "Na Khaem",
+      "Si Song Rak",
+      "Kok Thong"
+    ],
+    "Na Duang": [
+      "Na Duang",
+      "Na Dok Kham",
+      "Tha Sa-at",
+      "Tha Sawan"
+    ],
+    "Chiang Khan": [
+      "Chiang Khan",
+      "That",
+      "Na Sao",
+      "Khao Kaeo",
+      "Pak Tom",
+      "Bu Hom",
+      "Chom Si",
+      "Hat Sai Khao"
+    ],
+    "Pak Chom": [
+      "Pak Chom",
+      "Chiang Klom",
+      "Hat Khamphi",
+      "Huai Bo Suen",
+      "Huai Phichai",
+      "Chom Charoen"
+    ],
+    "Dan Sai": [
+      "Dan Sai",
+      "Pak Man",
+      "Na Di",
+      "Khok Ngam",
+      "Phon Sung",
+      "Ipum",
+      "Kok Sathon",
+      "Pong",
+      "Wang Yao",
+      "Na Ho"
+    ],
+    "Na Haeo": [
+      "Na Haeo",
+      "Saeng Pha",
+      "Na Phueng",
+      "Na Ma La",
+      "Lao Ko Hok"
+    ],
+    "Phu Ruea": [
+      "Nong Bua",
+      "Tha Sala",
+      "Rong Chik",
+      "Pla Ba",
+      "Lat Khang",
+      "San Tom"
+    ],
+    "Tha Li": [
+      "Tha Li",
+      "Nong Phue",
+      "A Hi",
+      "Nam Khaem",
+      "Khok Yai",
+      "Nam Thun"
+    ],
+    "Wang Saphung": [
+      "Wang Saphung",
+      "Sai Khao",
+      "Nong Ya Plong",
+      "Nong Ngio",
+      "Pak Puan",
+      "Pha Noi",
+      "Pha Bing",
+      "Khao Luang",
+      "Khok Khamin",
+      "Si Songkhram"
+    ],
+    "Phu Kradueng": [
+      "Si Than",
+      "Pha Nok Khao",
+      "Phu Kradueng",
+      "Huai Som"
+    ],
+    "Phu Luang": [
+      "Phu Ho",
+      "Nong Khan",
+      "Huai Sisiat",
+      "Loei Wang Sai",
+      "Kaeng Si Phum"
+    ],
+    "Pha Khao": [
+      "Pha Khao",
+      "Tha Chang Khlong",
+      "Non Po Daeng",
+      "Non Pa Sang",
+      "Ban Phoem"
+    ],
+    "Erawan": [
+      "Erawan",
+      "Pha In Plaeng",
+      "Pha Sam Yot",
+      "Sap Phaiwan"
+    ],
+    "Nong Hin": [
+      "Nong Hin",
+      "Tat Kha",
+      "Puan Phu"
+    ]
+  },
+  "Nong Khai": {
+    "Mueang Nong Khai": [
+      "Nai Mueang",
+      "Mi Chai",
+      "Pho Chai",
+      "Kuan Wan",
+      "Wiang Khuk",
+      "Wat That",
+      "Hat Kham",
+      "Hin Ngom",
+      "Ban Duea",
+      "Khai Bok Wan",
+      "Phon Sawang",
+      "Phra That Bang Phuan",
+      "Nong Kom Ko",
+      "Pa Kho",
+      "Mueang Mi",
+      "Si Kai"
+    ],
+    "Tha Bo": [
+      "Tha Bo",
+      "Nam Mong",
+      "Kong Nang",
+      "Khok Khon",
+      "Ban Duea",
+      "Ban Thon",
+      "Ban Wan",
+      "Na Kha",
+      "Phon Sa",
+      "Nong Nang"
+    ],
+    "Phon Phisai": [
+      "Chumphon",
+      "Wat Luang",
+      "Kut Bong",
+      "Chum Chang",
+      "Thung Luang",
+      "Lao Tang Kham",
+      "Na Nang",
+      "Soem",
+      "Ban Pho",
+      "Ban Phue",
+      "Sang Nang Khao"
+    ],
+    "Si Chiang Mai": [
+      "Phan Phrao",
+      "Ban Mo",
+      "Phra Phutthabat",
+      "Nong Pla Pak"
+    ],
+    "Sangkhom": [
+      "Kaeng Kai",
+      "Pha Tang",
+      "Ban Muang",
+      "Na Ngio",
+      "Sangkhom"
+    ],
+    "Sakhrai": [
+      "Sakhrai",
+      "Khok Chang",
+      "Ban Fang"
+    ],
+    "Fao Rai": [
+      "Fao Rai",
+      "Na Di",
+      "Nong Luang",
+      "Wang Luang",
+      "Udom Phon"
+    ],
+    "Rattanawapi": [
+      "Rattanawapi",
+      "Na Thap Hai",
+      "Ban Ton",
+      "Phra Bat Na Sing",
+      "Phon Phaeng"
+    ],
+    "Pho Tak": [
+      "Pho Tak",
+      "Phon Thong",
+      "Dan Si Suk"
+    ]
+  },
+  "Maha Sarakham": {
+    "Mueang Maha Sarakham": [
+      "Talat",
+      "Khwao",
+      "Tha Tum",
+      "Waeng Nang",
+      "Khok Ko",
+      "Don Wan",
+      "Koeng",
+      "Kaeng Loeng Chan",
+      "Tha Song Khon",
+      "Lat Phatthana",
+      "Nong Pling",
+      "Huai Aeng",
+      "Nong No",
+      "Bua Kho"
+    ],
+    "Kae Dam": [
+      "Kae Dam",
+      "Wang Saeng",
+      "Mittraphap",
+      "Nong Kung",
+      "Non Phiban"
+    ],
+    "Kosum Phisai": [
+      "Hua Khwang",
+      "Yang Noi",
+      "Wang Yao",
+      "Khwao Rai",
+      "Phaeng",
+      "Kaeng Kae",
+      "Nong Lek",
+      "Nong Bua",
+      "Lao",
+      "Khuean",
+      "Nong Bon",
+      "Phon Ngam",
+      "Yang Tha Chaeng",
+      "Hae Tai",
+      "Nong Kung Sawan",
+      "Loeng Tai",
+      "Don Klang"
+    ],
+    "Kantharawichai": [
+      "Khok Phra",
+      "Khanthararat",
+      "Makha",
+      "Tha Khon Yang",
+      "Na Si Nuan",
+      "Kham Riang",
+      "Khwao Yai",
+      "Si Suk",
+      "Kut Sai Cho",
+      "Kham Thao Phatthana",
+      "Chiang Yuen",
+      "Nong Son",
+      "Don Ngoen",
+      "Ku Thong",
+      "Na Thong",
+      "Suea Thao",
+      "Phon Thong",
+      "Lao Bua Ban"
+    ],
+    "Borabue": [
+      "Borabue",
+      "Bo Yai",
+      "Wang Chai",
+      "Nong Muang",
+      "Kamphi",
+      "Non Rasi",
+      "Non Daeng",
+      "Nong Chik",
+      "Bua Mat",
+      "Nong Khu Khat",
+      "Wang Mai",
+      "Yang",
+      "Nong Sim",
+      "Nong Ko",
+      "Don Ngua"
+    ],
+    "Na Chueak": [
+      "Na Chueak",
+      "Samrong",
+      "Nong Daeng",
+      "Khwao Rai",
+      "Nong Pho",
+      "Po Phan",
+      "Nong Mek",
+      "Nong Ruea",
+      "Nong Kung",
+      "San Pa Ton"
+    ],
+    "Phayakkhaphum Phisai": [
+      "Palan",
+      "Kam Pu",
+      "Wiang Sa-at",
+      "Mek Dam",
+      "Na Si Nuan",
+      "Rat Charoen",
+      "Nong Bua Kaeo",
+      "Mueang Tao",
+      "Lan Sakae",
+      "Wiang Chai",
+      "Nong Bua",
+      "Rat Phatthana",
+      "Mueang Suea",
+      "Phan Aen"
+    ],
+    "Wapi Pathum": [
+      "Nong Saeng",
+      "Kham Pom",
+      "Suea Kok",
+      "Dong Yai",
+      "Pho Chai",
+      "Hua Ruea",
+      "Khaen",
+      "Ngua Ba",
+      "Na Kha",
+      "Ban Wai",
+      "Nong Hai",
+      "Pracha Phatthana",
+      "Nong Thum",
+      "Nong Saen",
+      "Khok Si Thonglang"
+    ],
+    "Na Dun": [
+      "Na Dun",
+      "Nong Phai",
+      "Nong Khu",
+      "Dong Bang",
+      "Dong Duan",
+      "Hua Dong",
+      "Dong Yang",
+      "Ku Santarat",
+      "Phra That"
+    ],
+    "Yang Sisurat": [
+      "Yang Sisurat",
+      "Na Phu",
+      "Waeng Dong",
+      "Ban Ku",
+      "Dong Mueang",
+      "Sang Saeng",
+      "Nong Bua Santu"
+    ],
+    "Kut Rang": [
+      "Kud Rang",
+      "Na Pho",
+      "Loeng Faek",
+      "Nong Waeng",
+      "Huai Toei"
+    ],
+    "Chuen Chom": [
+      "Chuen Chom",
+      "Kut Pla Duk",
+      "Lao Dok Mai",
+      "Nong Kung"
+    ]
+  },
+  "Roi Et": {
+    "Mueang Roi Et": [
+      "Nai Mueang",
+      "Rop Mueang",
+      "Nuea Mueang",
+      "Khon Kaen",
+      "Na Pho",
+      "Sa-at Sombun",
+      "Si Kaeo",
+      "Po Phan",
+      "Non Rang",
+      "Nong Kaeo",
+      "Nong Waeng",
+      "Dong Lan",
+      "Khaen Yai",
+      "Non Tan",
+      "Mueang Thong"
+    ],
+    "Kaset Wisai": [
+      "Kaset Wisai",
+      "Mueang Bua",
+      "Lao Luang",
+      "Sing Khok",
+      "Dong Khrang Yai",
+      "Ban Fang",
+      "Nong Waeng",
+      "Kamphaeng",
+      "Ku Ka Sing",
+      "Nam Om",
+      "Non Sawang",
+      "Thung Thong",
+      "Dong Khrang Noi"
+    ],
+    "Pathum Rat": [
+      "Bua Daeng",
+      "Dok Lam",
+      "Nong Khaen",
+      "Phon Sung",
+      "Non Sawan",
+      "Sa Bua",
+      "Non Sa-nga",
+      "Khilek"
+    ],
+    "Chaturaphak Phiman": [
+      "Hua Chang",
+      "Nong Phue",
+      "Mueang Hong",
+      "Khok Lam",
+      "Nam Sai",
+      "Dong Daeng",
+      "Dong Klang",
+      "Pa Sang",
+      "I Ngong",
+      "Lin Fa",
+      "Du Noi",
+      "Si Khot"
+    ],
+    "Thawat Buri": [
+      "Niwet",
+      "Thong Thani",
+      "Nong Phai",
+      "Thawat Buri",
+      "Um Mao",
+      "Ma-ue",
+      "Khwao Thung",
+      "Phaisan",
+      "Mueang Noi",
+      "Bueng Nakhon",
+      "Ratchathani",
+      "Nong Phok"
+    ],
+    "Phanom Phrai": [
+      "Phanom Phrai",
+      "Saen Suk",
+      "Kut Nam Sai",
+      "Nong Thap Thai",
+      "Pho Yai",
+      "Wari Sawat",
+      "Khok Sawang",
+      "Pho Chai",
+      "Na Nuan",
+      "Kham Hai",
+      "Sa Kaeo",
+      "Kho Yai",
+      "Chanuwan"
+    ],
+    "Phon Thong": [
+      "Waeng",
+      "Khok Kok Muang",
+      "Na Udom",
+      "Sawang",
+      "Nong Yai",
+      "Pho Thong",
+      "Non Chai Si",
+      "Pho Si Sawang",
+      "Um Mao",
+      "Kham Na Di",
+      "Phrom Sawan",
+      "Sa Nok Kaeo",
+      "Wang Samakkhi",
+      "Khok Sung"
+    ],
+    "Pho Chai": [
+      "Kham Pia",
+      "Chiang Mai",
+      "Bua Kham",
+      "Akkha Kham",
+      "Sa-at",
+      "Kham Pha-ung",
+      "Nong Ta Kai",
+      "Don Ong",
+      "Pho Si"
+    ],
+    "Nong Phok": [
+      "Nong Phok",
+      "Bueng Ngam",
+      "Phukhao Thong",
+      "Kok Pho",
+      "Khok Sawang",
+      "Nong Khun Yai",
+      "Rop Mueang",
+      "Pha Nam Yoi",
+      "Ta See Da"
+    ],
+    "Selaphum": [
+      "Klang",
+      "Na Ngam",
+      "Mueang Phrai",
+      "Na Saeng",
+      "Na Mueang",
+      "Wang Luang",
+      "Tha Muang",
+      "Khwao",
+      "Pho Thong",
+      "Phu Ngoen",
+      "Ko Kaeo",
+      "Na Loeng",
+      "Lao Noi",
+      "Si Wilai",
+      "Nong Luang",
+      "Phon Sawan",
+      "Khwan Mueang",
+      "Bueng Kluea"
+    ],
+    "Suwannaphum": [
+      "Sa Khu",
+      "Dok Mai",
+      "Na Yai",
+      "Hin Kong",
+      "Mueang Thung",
+      "Hua Thon",
+      "Bo Phan Khan",
+      "Thung Luang",
+      "Hua Chang",
+      "Nam Kham",
+      "Huai Hin Lat",
+      "Chang Phueak",
+      "Thung Kula",
+      "Thung Si Mueang",
+      "Champa Khan"
+    ],
+    "Mueang Suang": [
+      "Nong Phue",
+      "Nong Hin",
+      "Khu Mueang",
+      "Kok Kung",
+      "Mueang Suang"
+    ],
+    "Phon Sai": [
+      "Phon Sai",
+      "Sam Kha",
+      "Si Sawang",
+      "Yang Kham",
+      "Tha Hat Yao"
+    ],
+    "At Samat": [
+      "At Samat",
+      "Phon Mueang",
+      "Ban Chaeng",
+      "Nom",
+      "Nong Muen Than",
+      "Nong Kham",
+      "Hora",
+      "Nong Bua",
+      "Khilek",
+      "Ban Du"
+    ],
+    "Moei Wadi": [
+      "Moei Wadi",
+      "Chumphon",
+      "Bung Loet",
+      "Chom Sa-at"
+    ],
+    "Si Somdet": [
+      "Pho Thong",
+      "Si Somdet",
+      "Mueang Plueai",
+      "Nong Yai",
+      "Suan Chik",
+      "Pho Sai",
+      "Nong Waeng Khuang",
+      "Ban Bak"
+    ],
+    "Changhan": [
+      "Din Dam",
+      "Pa Fa",
+      "Muang Lat",
+      "Changhan",
+      "Dong Sing",
+      "Yang Yai",
+      "Phak Waen",
+      "Saen Chat"
+    ],
+    "Chiang Khwan": [
+      "Chiang Khwan",
+      "Phlapphla",
+      "Phra That",
+      "Phra Chao",
+      "Mu Mon",
+      "Ban Khueang"
+    ],
+    "Nong Hi": [
+      "Nong Hi",
+      "Sao Hae",
+      "Duk Ueng",
+      "Den Rat"
+    ],
+    "Thung Khao Luangกิ่": [
+      "Thung Khao Luang",
+      "Thoet Thai",
+      "Bueng Ngam",
+      "Maba",
+      "Lao"
+    ]
+  },
+  "Kalasin": {
+    "Mueang Kalasin": [
+      "Kalasin",
+      "Nuea",
+      "Lup",
+      "Phai",
+      "Lam Pao",
+      "Lam Phan",
+      "Chiang Khruea",
+      "Bueng Wichai",
+      "Huai Pho",
+      "Phu Po",
+      "Phu Din",
+      "Nong Kung",
+      "Klang Muen",
+      "Khamin",
+      "Phon Thong",
+      "Na Chan",
+      "Lam Khlong"
+    ],
+    "Na Mon": [
+      "Na Mon",
+      "Yot Kaeng",
+      "Song Plueai",
+      "Lak Liam",
+      "Nong Bua"
+    ],
+    "Kamalasai": [
+      "Kamalasai",
+      "Lak Mueang",
+      "Phon Ngam",
+      "Dong Ling",
+      "Thanya",
+      "Nong Paen",
+      "Chao Tha",
+      "Khok Sombun"
+    ],
+    "Rong Kham": [
+      "Rong Kham",
+      "Samakkhi",
+      "Lao Oi"
+    ],
+    "Kuchinarai": [
+      "Bua Khao",
+      "Chaen Laen",
+      "Lao Yai",
+      "Chum Chang",
+      "Lao Hai Ngam",
+      "Kut Wa",
+      "Sam Kha",
+      "Na Kham",
+      "Nong Hang",
+      "Na Ko",
+      "Som Sa-at",
+      "Kut Khao"
+    ],
+    "Khao Wong": [
+      "Khum Kao",
+      "Song Plueai",
+      "Nong Phue",
+      "Kut Sim Khum Mai",
+      "Saphang Thong",
+      "Kut Pla Khao"
+    ],
+    "Yang Talat": [
+      "Yang Talat",
+      "Hua Ngua",
+      "Um Mao",
+      "Bua Ban",
+      "Woe",
+      "Itue",
+      "Hua Na Kham",
+      "Nong I Thao",
+      "Don Sombun",
+      "Na Chueak",
+      "Khlong Kham",
+      "Khao Phra Non",
+      "Na Di",
+      "Non Sung",
+      "Nong Tok Paen"
+    ],
+    "Huai Mek": [
+      "Huai Mek",
+      "Kham Yai",
+      "Kut Don",
+      "Bueng Na Riang",
+      "Hua Hin",
+      "Phimun",
+      "Kham Mueat Kaeo",
+      "Non Sa-at",
+      "Sai Thong"
+    ],
+    "Sahatsakhan": [
+      "Phu Sing",
+      "Sahatsakhan",
+      "Na Makhuea",
+      "Non Sila",
+      "Nikhom",
+      "Non Laem Thong",
+      "Non Buri",
+      "Non Nam Kliang"
+    ],
+    "Kham Muang": [
+      "Thung Khlong",
+      "Phon",
+      "Din Chi",
+      "Na Bon",
+      "Na Than",
+      "Noen Yang"
+    ],
+    "Tha Khantho": [
+      "Tha Khantho",
+      "Kung Kao",
+      "Yang Um",
+      "Kut Chik",
+      "Na Tan",
+      "Dong Sombun"
+    ],
+    "Nong Kung Si": [
+      "Nong Kung Si",
+      "Nong Bua",
+      "Khok Khruea",
+      "Nong Suang",
+      "Sao Lao",
+      "Nong Yai",
+      "Dong Mun",
+      "Lam Nong Saen",
+      "Nong Hin"
+    ],
+    "Somdet": [
+      "Somdet",
+      "Nong Waeng",
+      "Saeng Badan",
+      "Maha Chai",
+      "Mu Mon",
+      "Pha Sawoei",
+      "Si Somdet",
+      "Lam Huai Lua"
+    ],
+    "Huai Phueng": [
+      "Kham Bong",
+      "Khai Nun",
+      "Nikhom Huai Phueng",
+      "Nong I But"
+    ],
+    "Sam Chai": [
+      "Samran",
+      "Samran Tai",
+      "Kham Sang Thiang",
+      "Nong Chang"
+    ],
+    "Na Khu": [
+      "Na Khu",
+      "Sai Na Wang",
+      "Non Na Chan",
+      "Bo Kaeo",
+      "Phu Laen Chang"
+    ],
+    "Don Chan": [
+      "Don Chan",
+      "Sa-at Chai Si",
+      "Dong Phayung",
+      "Muang Na",
+      "Na Champa"
+    ],
+    "Khong Chai": [
+      "Khong Chai Phatthana",
+      "Lao Klang",
+      "Khok Sa-at",
+      "Non Sila Loeng",
+      "Lam Chi"
+    ]
+  },
+  "Sakon Nakhon": {
+    "Mueang Sakon Nakhon": [
+      "That Choeng Chum",
+      "Khamin",
+      "Ngio Don",
+      "Non Hom",
+      "Chiang Khruea",
+      "Tha Rae",
+      "Muang Lai",
+      "Dong Chon",
+      "Huai Yang",
+      "Phang Khwang",
+      "Dong Mafai",
+      "That Na Weng",
+      "Lao Po Daeng",
+      "Nong Lat",
+      "Hang Hong",
+      "Khok Kong"
+    ],
+    "Kusuman": [
+      "Kusuman",
+      "Na Pho",
+      "Na Phiang",
+      "Phothi Phaisan",
+      "Um Chan"
+    ],
+    "Kut Bak": [
+      "Kut Bak",
+      "Na Mong",
+      "Kut Hai"
+    ],
+    "Phanna Nikhom": [
+      "Phanna",
+      "Wang Yang",
+      "Phok Noi",
+      "Na Hua Bo",
+      "Rai",
+      "Chang Ming",
+      "Na Nai",
+      "Sawang",
+      "Ba Hi",
+      "Choeng Chum"
+    ],
+    "Phang Khon": [
+      "Phang Khon",
+      "Muang Khai",
+      "Rae",
+      "Hai Yong",
+      "Ton Phueng"
+    ],
+    "Waritchaphum": [
+      "Waritchaphum",
+      "Pla Lo",
+      "Nong Lat",
+      "Kham Bo",
+      "Kho Khiao"
+    ],
+    "Nikhom Nam Un": [
+      "Nikhom Nam Un",
+      "Nong Pling",
+      "Nong Bua",
+      "*Suwannakarm"
+    ],
+    "Wanon Niwat": [
+      "Wanon Niwat",
+      "Duea Si Khan Chai",
+      "Khua Kai",
+      "Nong Sanom",
+      "Khu Sakham",
+      "That",
+      "Nong Waeng",
+      "Si Wichai",
+      "Na So",
+      "In Plaeng",
+      "Na Kham",
+      "Khon Sawan",
+      "Kut Ruea Kham",
+      "Nong Waeng Tai"
+    ],
+    "Kham Ta Kla": [
+      "Kham Ta Kla",
+      "Nong Bua Sim",
+      "Na Tae",
+      "Phaet"
+    ],
+    "Ban Muang": [
+      "Muang",
+      "Mai",
+      "Dong Mo Thong",
+      "Dong Nuea",
+      "Dong Mo Thong Tai",
+      "Huai Lua",
+      "Non Sa-at",
+      "Nong Kwang",
+      "Bo Kaeo"
+    ],
+    "Akat Amnuai": [
+      "Akat",
+      "Phon Phaeng",
+      "Wa Yai",
+      "Phon Ngam",
+      "Tha Kon",
+      "Na Hi",
+      "Ba Wa",
+      "Samakkhi Phatthana"
+    ],
+    "Sawang Daen Din": [
+      "Sawang Daen Din",
+      "Kham Sa-at",
+      "Ban Tai",
+      "Bong Nuea",
+      "Phon Sung",
+      "Khok Si",
+      "Nong Luang",
+      "Bong Tai",
+      "Kho Tai",
+      "Phan Na",
+      "Waeng",
+      "Sai Mun",
+      "Tan Kon",
+      "Tan Noeng",
+      "That Thong",
+      "Ban Thon"
+    ],
+    "Song Dao": [
+      "Song Dao",
+      "Tha Sila",
+      "Watthana",
+      "Pathum Wapi"
+    ],
+    "Tao Ngoi": [
+      "Tao Ngoi",
+      "Bueng Thawai",
+      "Na Tan",
+      "Chan Phen"
+    ],
+    "Khok Si Suphan": [
+      "Tong Khop",
+      "Lao Phon Kho",
+      "Dan Muang Kham",
+      "Maet Na Thom"
+    ],
+    "Charoen Sin": [
+      "Ban Lao",
+      "Charoen Sin",
+      "Thung Kae",
+      "Khok Sila",
+      "Nong Paen"
+    ],
+    "Phon Na Kaeo": [
+      "Ban Phon",
+      "Na Kaeo",
+      "Na Tong Watthana",
+      "Ban Paen",
+      "Chiang Sue"
+    ],
+    "Phu Phan": [
+      "Sang Kho",
+      "Lup Lao",
+      "Khok Phu",
+      "Kok Pla Sio"
+    ]
+  },
+  "Nakhon Phanom": {
+    "Mueang Nakhon Phanom": [
+      "Nai Mueang",
+      "Nong Saeng",
+      "Na Sai",
+      "Na Rat Khwai",
+      "Kurukhu",
+      "Ban Phueng",
+      "At Samat",
+      "Kham Thao",
+      "Ban Klang",
+      "Tha Kho",
+      "Kham Toei",
+      "Nong Yat",
+      "Dong Khwang",
+      "Wang Ta Mua",
+      "Pho Tak"
+    ],
+    "Pla Pak": [
+      "Pla Pak",
+      "Nong Hi",
+      "Kutakai",
+      "Khok Sawan",
+      "Khok Sung",
+      "Maha Chai",
+      "Na Makhuea",
+      "Nong Thao Yai"
+    ],
+    "Tha Uthen": [
+      "Tha Uthen",
+      "Non Tan",
+      "Tha Champa",
+      "Chai Buri",
+      "Phanom",
+      "Phathai",
+      "Woen Phra Bat",
+      "Ram Rat",
+      "Nong Thao"
+    ],
+    "Ban Phaeng": [
+      "Ban Phaeng",
+      "Phai Lom",
+      "Phon Thong",
+      "Nong Waeng",
+      "Na Ngua",
+      "Na Khe"
+    ],
+    "That Phanom": [
+      "That Phanom",
+      "Fang Daeng",
+      "Phon Phaeng",
+      "Phra Klang Thung",
+      "Na Thon",
+      "Saen Phan",
+      "Don Nang Hong",
+      "Nam Kam",
+      "Um Mao",
+      "Na Nat",
+      "Kut Chim",
+      "That Phanom Nuea"
+    ],
+    "Renu Nakhon": [
+      "Renu",
+      "Phon Thong",
+      "Tha Lat",
+      "Na Ngam",
+      "Khok Hin Hae",
+      "Nong Yang Chin",
+      "Renu Tai",
+      "Na Kham"
+    ],
+    "Na Kae": [
+      "Na Kae",
+      "Phra Song",
+      "Nong Sang",
+      "Na Khu",
+      "Phiman",
+      "Phum Kae",
+      "Kan Lueang",
+      "Nong Bo",
+      "Na Liang",
+      "Ban Kaeng",
+      "Kham Phi",
+      "Si Chomphu"
+    ],
+    "Si Songkhram": [
+      "Si Songkhram",
+      "Na Duea",
+      "Ban Ueang",
+      "Sam Phong",
+      "Tha Bo Songkhram",
+      "Ban Kha",
+      "Na Kham",
+      "Phon Sawang",
+      "Hat Phaeng"
+    ],
+    "Na Wa": [
+      "Na Wa",
+      "Na Ngua",
+      "Ban Siao",
+      "Na Khun Yai",
+      "Lao Phatthana",
+      "Tha Ruea"
+    ],
+    "Phon Sawan": [
+      "Phon Sawan",
+      "Na Hua Bo",
+      "Na Khamin",
+      "Phon Bok",
+      "Ban Kho",
+      "Phon Chan",
+      "Na Nai"
+    ],
+    "Na Thom": [
+      "Na Thom",
+      "Nong Son",
+      "Don Toei"
+    ],
+    "Wang Yang": [
+      "Wang Yang",
+      "Khok Si",
+      "Yot Chat",
+      "Nong Pho"
+    ]
+  },
+  "Mukdahan": {
+    "Mueang Mukdahan": [
+      "Mukdahan",
+      "Si Bun Rueang",
+      "Ban Khok",
+      "Bang Sai Yai",
+      "Phon Sai",
+      "Phueng Daet",
+      "Na Sok",
+      "Na Si Nuan",
+      "Kham Pa Lai",
+      "Kham Ahuan",
+      "Dong Yen",
+      "Dong Mon",
+      "Kut Khae"
+    ],
+    "Nikhom Kham Soi": [
+      "Nikhom Kham Soi",
+      "Na Kok",
+      "Nong Waeng",
+      "Kok Daeng",
+      "Na Udom",
+      "Chok Chai",
+      "Rom Klao"
+    ],
+    "Don Tan": [
+      "Don Tan",
+      "Pho Sai",
+      "Pa Rai",
+      "Lao Mi",
+      "Ban Bak",
+      "Na Sameng",
+      "Ban Kaeng"
+    ],
+    "Dong Luang": [
+      "Dong Luang",
+      "Nong Bua",
+      "Kok Tum",
+      "Nong Khaen",
+      "Chanot Noi",
+      "Phang Daeng"
+    ],
+    "Khamcha-i": [
+      "Ban Song",
+      "Khamcha-i",
+      "Nong Ian",
+      "Ban Kho",
+      "Ban Lao",
+      "Phon Ngam",
+      "Lao Sang Tho",
+      "Kham Bok",
+      "Nam Thiang"
+    ],
+    "Wan Yai": [
+      "Wan Yai",
+      "Pong Kham",
+      "Bang Sai Noi",
+      "Chanot",
+      "Dong Mu"
+    ],
+    "Nong Sung": [
+      "Nong Sung",
+      "Non Yang",
+      "Phu Wong",
+      "Ban Pao",
+      "Nong Sung Tai",
+      "Nong Sung Nuea"
+    ]
+  },
+  "Chiang Mai": {
+    "Mueang Chiang Mai": [
+      "Si Phum",
+      "Phra Sing",
+      "Haiya",
+      "Chang Moi",
+      "Chang Khlan",
+      "Wat Ket",
+      "Chang Phueak",
+      "Suthep",
+      "Mae Hia",
+      "Pa Daet",
+      "Nong Hoi",
+      "Tha Sala",
+      "Nong Pa Khrang",
+      "Fa Ham",
+      "Pa Tan",
+      "San Phi Suea"
+    ],
+    "Chom Thong": [
+      "Ban Luang",
+      "Khuang Pao",
+      "Sop Tia",
+      "Ban Pae",
+      "Doi Kaeo",
+      "Mae Soi"
+    ],
+    "Mae Chaem": [
+      "Chang Khoeng",
+      "Tha Pha",
+      "Ban Thap",
+      "Mae Suek",
+      "Mae Na Chon",
+      "Ban Chan",
+      "Pang Hin Fon",
+      "Kong Khaek",
+      "Mae Dad",
+      "Chaem Luang"
+    ],
+    "Chiang Dao": [
+      "Chiang Dao",
+      "Mueang Na",
+      "Mueang Ngai",
+      "Mae Na",
+      "Mueang Khong",
+      "Ping Khong",
+      "Thung Khao Phuang"
+    ],
+    "Doi Saket": [
+      "Choeng Doi",
+      "San Pu Loei",
+      "Luang Nuea",
+      "Pa Pong",
+      "Sa-nga Ban",
+      "Pa Lan",
+      "Talat Khwan",
+      "Samran Rat",
+      "Mae Khue",
+      "Talat Yai",
+      "Mae Hoi Ngoen",
+      "Mae Pong",
+      "Pa Miang",
+      "Thep Sadet"
+    ],
+    "Mae Taeng": [
+      "San Maha Phon",
+      "Mae Taeng",
+      "Khilek",
+      "Cho Lae",
+      "Mae Ho Phra",
+      "Sop Poeng",
+      "Ban Pao",
+      "San Pa Yang",
+      "Pa Pae",
+      "Mueang Kai",
+      "Ban Chang",
+      "Kuet Chang",
+      "Inthakhin",
+      "Som Kai"
+    ],
+    "Mae Rim": [
+      "Rim Tai",
+      "Rim Nuea",
+      "San Pong",
+      "Khilek",
+      "Saluang",
+      "Huai Sai",
+      "Mae Raem",
+      "Pong Yaeng",
+      "Mae Sa",
+      "Don Kaeo",
+      "Mueang Kaeo"
+    ],
+    "Samoeng": [
+      "Samoeng Tai",
+      "Samoeng Nuea",
+      "Mae Sap",
+      "Bo Kaeo",
+      "Yang Moen"
+    ],
+    "Fang": [
+      "Wiang",
+      "Mon Pin",
+      "Mae Ngon",
+      "Mae Sun",
+      "San Sai",
+      "Mae Kha",
+      "Mae Kha",
+      "Pong Nam Ron"
+    ],
+    "Mae Ai": [
+      "Mae Ai",
+      "Mae Sao",
+      "San Ton Mue",
+      "Mae Na Wang",
+      "Tha Ton",
+      "Ban Luang",
+      "Malika"
+    ],
+    "Phrao": [
+      "Wiang",
+      "Thung Luang",
+      "Pa Tum",
+      "Pa Nai",
+      "San Sai",
+      "Ban Pong",
+      "Nam Phrae",
+      "Khuean Phak",
+      "Mae Waen",
+      "Mae Pang",
+      "Long Khot"
+    ],
+    "San Pa Tong": [
+      "Yu Wa",
+      "San Klang",
+      "Tha Wang Phrao",
+      "Makham Luang",
+      "Mae Ka",
+      "Ban Mae",
+      "Ban Klang",
+      "Thung Satok",
+      "Thung Tom",
+      "Nam Bo Luang",
+      "Makhun Wan"
+    ],
+    "San Kamphaeng": [
+      "San Kamphaeng",
+      "Sai Mun",
+      "Rong Wua Daeng",
+      "Buak Khang",
+      "Chae Chang",
+      "On Tai",
+      "Mae Pu Kha",
+      "Huai Sai",
+      "Ton Pao",
+      "San Klang"
+    ],
+    "San Sai": [
+      "San Sai Luang",
+      "San Sai Noi",
+      "San Phranet",
+      "San Na Meng",
+      "San Pa Pao",
+      "Nong Yaeng",
+      "Nong Chom",
+      "Nong Han",
+      "Mae Faek",
+      "Mae Faek Mai",
+      "Mueang Len",
+      "Pa Phai"
+    ],
+    "Hang Dong": [
+      "Hang Dong",
+      "Nong Kaeo",
+      "Han Kaeo",
+      "Nong Tong",
+      "Khun Khong",
+      "Sop Mae Kha",
+      "Ban Waen",
+      "San Phak Wan",
+      "Nong Khwai",
+      "Ban Pong",
+      "Nam Phrae"
+    ],
+    "Hot": [
+      "Hang Dong",
+      "Hot",
+      "Ban Tan",
+      "Bo Luang",
+      "Bo Sali",
+      "Na Kho Ruea"
+    ],
+    "Doi Tao": [
+      "Doi Tao",
+      "Tha Duea",
+      "Muet Ka",
+      "Ban Aen",
+      "Bong Tan",
+      "Pong Thung"
+    ],
+    "Omkoi": [
+      "Omkoi",
+      "Yang Piang",
+      "Mae Tuen",
+      "Mon Chong",
+      "Sop Khong",
+      "Na Kian"
+    ],
+    "Saraphi": [
+      "Yang Noeng",
+      "Saraphi",
+      "Chom Phu",
+      "Chai Sathan",
+      "Khua Mung",
+      "Nong Faek",
+      "Nong Phueng",
+      "Tha Kwang",
+      "Don Kaeo",
+      "Tha Wang Tan",
+      "San Sai",
+      "Pa Bong"
+    ],
+    "Wiang Haeng": [
+      "Mueang Haeng",
+      "Piang Luang",
+      "Saen Hai"
+    ],
+    "Chai Prakan": [
+      "Pong Tam",
+      "Si Dong Yen",
+      "Mae Thalop",
+      "Nong Bua"
+    ],
+    "Mae Wang": [
+      "Ban Kat",
+      "Thung Pi",
+      "Thung Ruang Thong",
+      "Mae Win",
+      "Don Pao"
+    ],
+    "Mae On": [
+      "On Nuea",
+      "On Klang",
+      "Ban Sahakon",
+      "Huai Kaeo",
+      "Mae Tha",
+      "Tha Nuea"
+    ],
+    "Doi Lo": [
+      "Doi Lo",
+      "Song Khwae",
+      "Yang Khram",
+      "Santi Suk"
+    ]
+  },
+  "Lamphun": {
+    "Mueang Lamphun": [
+      "Nai Mueang",
+      "Mueang Nga",
+      "Umong",
+      "Nong Chang Khuen",
+      "Pratu Pa",
+      "Rim Ping",
+      "Ton Thong",
+      "Ban Paen",
+      "Mueang Chi",
+      "Pa Sak",
+      "Wiang Yong",
+      "Ban Klang",
+      "Makhuea Chae",
+      "Si Bua Ban",
+      "Nong Nam"
+    ],
+    "Mae Tha": [
+      "Tha Pla Duk",
+      "Tha Sop Sao",
+      "Tha Kat",
+      "Tha Khum Ngoen",
+      "Tha Thung Luang",
+      "Tha Mae Lop"
+    ],
+    "Ban Hong": [
+      "Ban Hong",
+      "Pa Phlu",
+      "Lao Yao",
+      "Si Tia",
+      "Nong Pla Sawai"
+    ],
+    "Li": [
+      "Li",
+      "Mae Tuen",
+      "Na Sai",
+      "Dong Dam",
+      "Ko",
+      "Mae Lan",
+      "Pa Phai",
+      "Si Wichai"
+    ],
+    "Thung Hua Chang": [
+      "Thung Hua Chang",
+      "Ban Puang",
+      "Takhian Pom"
+    ],
+    "Pa Sang": [
+      "Pak Bong",
+      "Pa Sang",
+      "Mae Raeng",
+      "Muang Noi",
+      "Ban Ruean",
+      "Makok",
+      "Tha Tum",
+      "Nam Dip",
+      "Nakhon Chedi"
+    ],
+    "Ban Thi": [
+      "Ban Thi",
+      "Huai Yap"
+    ],
+    "Wiang Nong Long": [
+      "Nong Long",
+      "Nong Yuang",
+      "Wang Phang"
+    ]
+  },
+  "Lampang": {
+    "Mueang Lampang": [
+      "Wiang Nuea",
+      "Hua Wiang",
+      "Suan Dok",
+      "Sop Tui",
+      "Phra Bat",
+      "Chomphu",
+      "Kluai Phae",
+      "Pong Saen Thong",
+      "Ban Laeng",
+      "Ban Sadet",
+      "Phichai",
+      "Thung Fai",
+      "Ban Ueam",
+      "Ban Pao",
+      "Ban Kha",
+      "Bo Haeo",
+      "Ton Thong Chai",
+      "Nikhom Phatthana",
+      "Bunnak Phatthana"
+    ],
+    "Mae Mo": [
+      "Ban Dong",
+      "Na Sak",
+      "Chang Nuea",
+      "Mae Mo",
+      "Sop Pat"
+    ],
+    "Ko Kha": [
+      "Lampang Luang",
+      "Na Kaeo",
+      "Lai Hin",
+      "Wang Phrao",
+      "Sala",
+      "Ko Kha",
+      "Na Saeng",
+      "Tha Pha",
+      "Mai Phatthana"
+    ],
+    "Soem Ngam": [
+      "Thung Ngam",
+      "Soem Khwa",
+      "Soem Sai",
+      "Soem Klang"
+    ],
+    "Ngao": [
+      "Luang Nuea",
+      "Luang Tai",
+      "Ban Pong",
+      "Ban Rong",
+      "Pong Tao",
+      "Na Kae",
+      "Ban On",
+      "Ban Haeng",
+      "Ban Huat",
+      "Mae Tip"
+    ],
+    "Chae Hom": [
+      "Chae Hom",
+      "Ban Sa",
+      "Pong Don",
+      "Mae Suk",
+      "Mueang Mai",
+      "Thung Phueng",
+      "Wichet Nakhon"
+    ],
+    "Wang Nuea": [
+      "Thung Hua",
+      "Wang Nuea",
+      "Wang Tai",
+      "Rong Kho",
+      "Wang Thong",
+      "Wang Sai",
+      "Wang Kaeo",
+      "Wang Sai Kham"
+    ],
+    "Thoen": [
+      "Lom Raet",
+      "Mae Wa",
+      "Mae Pa",
+      "Mae Mok",
+      "Wiang Mok",
+      "Na Pong",
+      "Mae Thot",
+      "Thoen Buri"
+    ],
+    "Mae Phrik": [
+      "Mae Phrik",
+      "Pha Pang",
+      "Mae Pu",
+      "Phra Bat Wang Tuang"
+    ],
+    "Mae Tha": [
+      "Mae Tha",
+      "Na Khrua",
+      "Pa Tan",
+      "Ban Kio",
+      "Ban Bom",
+      "Nam Cho",
+      "Don Fai",
+      "Hua Suea",
+      "Wang Ngoen",
+      "San Don Kaeo"
+    ],
+    "Sop Prap": [
+      "Sop Prap",
+      "Samai",
+      "Mae Kua",
+      "Na Yang"
+    ],
+    "Hang Chat": [
+      "Hang Chat",
+      "Nong Lom",
+      "Mueang Yao",
+      "Pong Yang Khok",
+      "Wiang Tan",
+      "Mae San",
+      "Wo Kaeo"
+    ],
+    "Mueang Pan": [
+      "Mueang Pan",
+      "Ban Kho",
+      "Thung Kwao",
+      "Chae Son",
+      "Hua Mueang"
+    ]
+  },
+  "Uttaradit": {
+    "Mueang Uttaradit": [
+      "Tha It",
+      "Tha Sao",
+      "Ban Ko",
+      "Pa Sao",
+      "Khung Taphao",
+      "Wang Kaphi",
+      "Hat Kruat",
+      "Nam Rit",
+      "Ngio Ngam",
+      "Ban Dan Na Kham",
+      "Ban Dan",
+      "Pha Chuk",
+      "Wang Din",
+      "Saen To",
+      "Hat Ngio",
+      "Khun Fang",
+      "Tham Chalong"
+    ],
+    "Tron": [
+      "Wang Daeng",
+      "Ban Kaeng",
+      "Hat Song Khwae",
+      "Nam Ang",
+      "Khoi Sung"
+    ],
+    "Tha Pla": [
+      "Tha Pla",
+      "Hat La",
+      "Pha Lueat",
+      "Charim",
+      "Nam Man",
+      "Tha Faek",
+      "Nang Phaya",
+      "Ruam Chit"
+    ],
+    "Nam Pat": [
+      "Saen To",
+      "Ban Fai",
+      "Den Lek",
+      "Nam Khrai",
+      "Nam Phai",
+      "Huai Mun",
+      "Tha Faek"
+    ],
+    "Fak Tha": [
+      "Fak Tha",
+      "Song Khon",
+      "Ban Siao",
+      "Song Hong"
+    ],
+    "Ban Khok": [
+      "Muang Chet Ton",
+      "Ban Khok",
+      "Na Khum",
+      "Bo Bia"
+    ],
+    "Phichai": [
+      "Nai Mueang",
+      "Ban Dara",
+      "Rai Oi",
+      "Tha Sak",
+      "Kho Rum",
+      "Ban Mo",
+      "Tha Mafueang",
+      "Ban Khon",
+      "Phaya Maen",
+      "Na In",
+      "Na Yang"
+    ],
+    "Laplae": [
+      "Si Phanom Mat",
+      "Mae Phun",
+      "Na Nok Kok",
+      "Fai Luang",
+      "Chai Chumphon",
+      "Phai Lom",
+      "Thung Yang",
+      "Dan Mae Kham Man"
+    ],
+    "Thong Saen Khan": [
+      "Phak Khuang",
+      "Bo Thong",
+      "Pa Khai",
+      "Nam Phi"
+    ]
+  },
+  "Phrae": {
+    "Mueang Phrae": [
+      "Nai Wiang",
+      "Na Chak",
+      "Nam Cham",
+      "Pa Daeng",
+      "Thung Hong",
+      "Mueang Mo",
+      "Wang Thong",
+      "Mae Lai",
+      "Huai Ma",
+      "Pa Maet",
+      "Ban Thin",
+      "Suan Khuean",
+      "Wang Hong",
+      "Mae Kham Mi",
+      "Thung Kwao",
+      "Tha Kham",
+      "Mae Yom",
+      "Cho Hae",
+      "Rong Fong",
+      "Kanchana"
+    ],
+    "Rong Kwang": [
+      "Rong Kwang",
+      "Rong Khem",
+      "Nam Lao",
+      "Ban Wiang",
+      "Thung Si",
+      "Mae Yang Tan",
+      "Mae Yang Ho",
+      "Phai Thon",
+      "Huai Rong",
+      "Mae Sai",
+      "Mae Yang Rong"
+    ],
+    "Long": [
+      "Huai O",
+      "Ban Pin",
+      "Ta Pha Mok",
+      "Wiang Ta",
+      "Pak Kang",
+      "Hua Thung",
+      "Thung Laeng",
+      "Bo Lek Long",
+      "Mae Pan"
+    ],
+    "Sung Men": [
+      "Sung Men",
+      "Nam Cham",
+      "Hua Fai",
+      "Don Mun",
+      "Ban Lao",
+      "Ban Kwang",
+      "Ban Pong",
+      "Ban Kat",
+      "Rong Kat",
+      "Sop Sai",
+      "Wiang Thong",
+      "Phra Luang"
+    ],
+    "Den Chai": [
+      "Den Chai",
+      "Mae Chua",
+      "Sai Yoi",
+      "Huai Rai",
+      "Pong Pa Wai"
+    ],
+    "Song": [
+      "Ban Nun",
+      "Ban Klang",
+      "Huai Mai",
+      "Tao Pun",
+      "Hua Mueang",
+      "Sa-iap",
+      "Daen Chumphon",
+      "Thung Nao"
+    ],
+    "Wang Chin": [
+      "Wang Chin",
+      "Saroi",
+      "Mae Pak",
+      "Na Phun",
+      "Mae Phung",
+      "Pa Sak",
+      "Mae Koeng"
+    ],
+    "Nong Muang Khai": [
+      "Mae Kham Mi",
+      "Nong Muang Khai",
+      "Nam Rat",
+      "Wang Luang",
+      "Tamnak Tham",
+      "Thung Khaeo"
+    ]
+  },
+  "Nan": {
+    "Mueang Nan": [
+      "Nai Wiang",
+      "Bo",
+      "Pha Sing",
+      "Chai Sathan",
+      "Thuem Tong",
+      "Rueang",
+      "Na Sao",
+      "Du Tai",
+      "Kong Khwai",
+      "Bo Suak",
+      "Sanian"
+    ],
+    "Mae Charim": [
+      "Nong Daeng",
+      "Mo Mueang",
+      "Nam Phang",
+      "Nam Pai",
+      "Mae Charim"
+    ],
+    "Ban Luang": [
+      "Ban Fa",
+      "Pa Kha Luang",
+      "Suat",
+      "Ban Phi"
+    ],
+    "Na Noi": [
+      "Na Noi",
+      "Chiang Khong",
+      "Sisaket",
+      "Sathan",
+      "Santha",
+      "Bua Yai",
+      "Nam Tok"
+    ],
+    "Pua": [
+      "Pua",
+      "Ngaeng",
+      "Sathan",
+      "Sila Laeng",
+      "Sila Phet",
+      "Uan",
+      "Chai Watthana",
+      "Chedi Chai",
+      "Phu Kha",
+      "Sakat",
+      "Pa Klang",
+      "Woranakhon"
+    ],
+    "Tha Wang Pha": [
+      "Rim",
+      "Pa Kha",
+      "Pha To",
+      "Yom",
+      "Tan Chum",
+      "Si Phum",
+      "Chom Phra",
+      "Saen Thong",
+      "Tha Wang Pha",
+      "Pha Thong"
+    ],
+    "Wiang Sa": [
+      "Klang Wiang",
+      "Khueng",
+      "Lai Nan",
+      "Tan Chum",
+      "Na Lueang",
+      "San",
+      "Nam Muap",
+      "Nam Pua",
+      "Yap Hua Na",
+      "Pong Sanuk",
+      "Ai Na Lai",
+      "San Na Nong Mai",
+      "Mae Khaning",
+      "Mae Sakhon",
+      "Chom Chan",
+      "Mae Sa",
+      "Thung Si Thong"
+    ],
+    "Thung Chang": [
+      "Pon",
+      "Ngop",
+      "Lae",
+      "Thung Chang"
+    ],
+    "Chiang Klang": [
+      "Chiang Klang",
+      "Puea",
+      "Chiang Khan",
+      "Phra That",
+      "Phaya Kaeo",
+      "Phra Phutthabat"
+    ],
+    "Na Muen": [
+      "Na Thanung",
+      "Bo Kaeo",
+      "Mueang Li",
+      "Ping Luang"
+    ],
+    "Santi Suk": [
+      "Du Phong",
+      "Pa Laeo Luang",
+      "Phong"
+    ],
+    "Bo Kluea": [
+      "Bo Kluea Nuea",
+      "Bo Kluea Tai",
+      "Phu Fa",
+      "Dong Phaya"
+    ],
+    "Song Khwae": [
+      "Na Rai Luang",
+      "Chon Daen",
+      "Yot"
+    ],
+    "Phu Phiang": [
+      "Muang Tuet",
+      "Na Pang",
+      "Nam Kaen",
+      "Nam Kian",
+      "Mueang Chang",
+      "Tha Nao",
+      "Fai Kaeo"
+    ],
+    "Chaloem Phra Kiat": [
+      "Huai Kon",
+      "Khun Nan"
+    ]
+  },
+  "Phayao": {
+    "Mueang Phayao": [
+      "Wiang",
+      "Mae Tam",
+      "Mae Na Ruea",
+      "Ban Tun",
+      "Ban Tam",
+      "Ban Tom",
+      "Mae Puem",
+      "Mae Ka",
+      "Ban Mai",
+      "Cham Pa Wai",
+      "Tha Wang Thong",
+      "Mae Sai",
+      "Ban Sang",
+      "Tha Champi",
+      "San Pa Muang"
+    ],
+    "Chun": [
+      "Huai Khao Kam",
+      "Chun",
+      "Lo",
+      "Hong Hin",
+      "Thung Ruang Thong",
+      "Huai Yang Kham",
+      "Phra That Khing Kaeng"
+    ],
+    "Chiang Kham": [
+      "Yuan",
+      "Nam Waen",
+      "Wiang",
+      "Fai Kwang",
+      "Chedi Kham",
+      "Rom Yen",
+      "Chiang Ban",
+      "Mae Lao",
+      "Ang Thong",
+      "Thung Pha Suk"
+    ],
+    "Chiang Muan": [
+      "Chiang Muan",
+      "Ban Mang",
+      "Sa"
+    ],
+    "Dok Khamtai": [
+      "Dok Khamtai",
+      "Don Si Chum",
+      "Ban Tham",
+      "Ban Pin",
+      "Huai Lan",
+      "San Khong",
+      "Pa Sang",
+      "Nong Lom",
+      "Dong Suwan",
+      "Bun Koet",
+      "Sawang Arom",
+      "Khue Wiang"
+    ],
+    "Pong": [
+      "Pong",
+      "Khuan",
+      "Oi",
+      "Ngim",
+      "Pha Chang Noi",
+      "Na Prang",
+      "Khun Khuan"
+    ],
+    "Mae Chai": [
+      "Mae Chai",
+      "Si Thoi",
+      "Mae Suk",
+      "Pa Faek",
+      "Ban Lao",
+      "Charoen Rat"
+    ],
+    "Phu Sang": [
+      "Phu Sang",
+      "Pa Sak",
+      "Thung Kluai",
+      "Chiang Raeng",
+      "Sop Bong"
+    ],
+    "Phu Kamyao": [
+      "Huai Kaeo",
+      "Dong Chen",
+      "Mae Ing"
+    ]
+  },
+  "Chiang Rai": {
+    "Mueang Chiang Rai": [
+      "Wiang",
+      "Rop Wiang",
+      "Ban Du",
+      "Nang Lae",
+      "Mae Khao Tom",
+      "Mae Yao",
+      "San Sai",
+      "Mae Kon",
+      "Huai Chomphu",
+      "Huai Sak",
+      "Rim Kok",
+      "Doi Lan",
+      "Pa O Don Chai",
+      "Tha Sai",
+      "Doi Hang",
+      "Tha Sut"
+    ],
+    "Wiang Chai": [
+      "Wiang Chai",
+      "Pha Ngam",
+      "Wiang Nuea",
+      "Don Sila",
+      "Mueang Chum"
+    ],
+    "Chiang Khong": [
+      "Wiang",
+      "Sathan",
+      "Khrueng",
+      "Bun Rueang",
+      "Huai So",
+      "Si Don Chai",
+      "Rim Khong"
+    ],
+    "Thoeng": [
+      "Wiang",
+      "Ngio",
+      "Plong",
+      "Mae Loi",
+      "Chiang Khian",
+      "Tap Tao",
+      "Ngao",
+      "San Sai Ngam",
+      "Si Don Chai",
+      "Nong Raet"
+    ],
+    "Phan": [
+      "San Makhet",
+      "Mae O",
+      "Than Thong",
+      "Santi Suk",
+      "Doi Ngam",
+      "Hua Ngom",
+      "Charoen Mueang",
+      "Pa Hung",
+      "Muang Kham",
+      "Sai Khao",
+      "San Klang",
+      "Mae Yen",
+      "Mueang Phan",
+      "Than Tawan",
+      "Wiang Hao"
+    ],
+    "Pa Daet": [
+      "Pa Daet",
+      "Pa Ngae",
+      "San Makha",
+      "Rong Chang",
+      "Si Pho Ngoen"
+    ],
+    "Mae Chan": [
+      "Mae Chan",
+      "Chan Chwa",
+      "Mae Kham",
+      "Pa Sang",
+      "San Sai",
+      "Tha Khao Plueak",
+      "Pa Tueng",
+      "Mae Rai",
+      "Si Kham",
+      "Chan Chwa Tai",
+      "Chom Sawan"
+    ],
+    "Chiang Saen": [
+      "Wiang",
+      "Pa Sak",
+      "Ban Saeo",
+      "Si Don Mun",
+      "Mae Ngoen",
+      "Yonok"
+    ],
+    "Mae Sai": [
+      "Mae Sai",
+      "Huai Khrai",
+      "Ko Chang",
+      "Pong Pha",
+      "Si Mueang Chum",
+      "Wiang Phang Kham",
+      "Ban Dai",
+      "Pong Ngam"
+    ],
+    "Mae Suai": [
+      "Mae Suai",
+      "Pa Daet",
+      "Mae Phrik",
+      "Si Thoi",
+      "Tha Ko",
+      "Wawi",
+      "Chedi Luang"
+    ],
+    "Wiang Pa Pao": [
+      "San Sali",
+      "Wiang",
+      "Ban Pong",
+      "Pa Ngio",
+      "Wiang Kalong",
+      "Mae Chedi",
+      "Mae Chedi Mai"
+    ],
+    "Phaya Mengrai": [
+      "Mae Pao",
+      "Mae Tam",
+      "Mai Ya",
+      "Mengrai",
+      "Tat Khwan"
+    ],
+    "Wiang Kaen": [
+      "Muang Yai",
+      "Por",
+      "Lai Ngao",
+      "Tha Kham"
+    ],
+    "Khun Tan": [
+      "Ta",
+      "Pa Tan",
+      "Yang Hom"
+    ],
+    "Mae Fa Luang": [
+      "Thoet Thai",
+      "Mae Salong Nai",
+      "Mae Salong Nok",
+      "Mae Fa Luang"
+    ],
+    "Mae Lao": [
+      "Dong Mada",
+      "Chom Mok Kaeo",
+      "Bua Sali",
+      "Pa Ko Dam",
+      "Pong Phrae"
+    ],
+    "Wiang Chiang Rung": [
+      "Thung Ko",
+      "Dong Maha Wan",
+      "Pa Sang"
+    ],
+    "Doi Luang": [
+      "Pong Noi",
+      "Chok Chai",
+      "Nong Pa Ko"
+    ]
+  },
+  "Mae Hong Son": {
+    "Mueang Mae Hong Son": [
+      "Chong Kham",
+      "Huai Pong",
+      "Pha Bong",
+      "Pang Mu",
+      "Mok Champae",
+      "Huai Pha",
+      "Huai Pu Ling"
+    ],
+    "Khun Yuam": [
+      "Khun Yuam",
+      "Mae Ngao",
+      "Mueang Pon",
+      "Mae Yuam Noi",
+      "Mae Ki",
+      "Mae Uo Kor"
+    ],
+    "Pai": [
+      "Wiang Tai",
+      "Wiang Nuea",
+      "Mae Na Toeng",
+      "Mae Hi",
+      "Thung Yao",
+      "Mueang Paeng",
+      "Pong Sa"
+    ],
+    "Mae Sariang": [
+      "Ban Kat",
+      "Mae Sariang",
+      "Mae Khong",
+      "Mae Ho",
+      "Mae Yuam",
+      "Sao Hin",
+      "Pa Pae"
+    ],
+    "Mae La Noi": [
+      "Mae La Noi",
+      "Mae La Luang",
+      "Tha Pha Pum",
+      "Mae Tho",
+      "Huai Hom",
+      "Mae Na Chang",
+      "Santi Khiri",
+      "Khun Mae La Noi"
+    ],
+    "Sop Moei": [
+      "Sop Moei",
+      "Mae Khatuan",
+      "Kong Koi",
+      "Mae Suat",
+      "Pa Pong",
+      "Mae Sam Laep"
+    ],
+    "Pang Mapha": [
+      "Sop Pong",
+      "Pang Mapha",
+      "Tham Lot",
+      "Na Pu Pom"
+    ]
+  },
+  "Nakhon Sawan": {
+    "Mueang Nakhon Sawan": [
+      "Paknam Pho",
+      "Klang Daet",
+      "Kriangkrai",
+      "Khwae Yai",
+      "Takhian Luean",
+      "Nakhon Sawan Tok",
+      "Nakhon Sawan Ok",
+      "Bang Phra Luang",
+      "Bang Muang",
+      "Ban Makluea",
+      "Ban Kaeng",
+      "Phra Non",
+      "Wat Sai",
+      "Nong Krot",
+      "Nong Kradon",
+      "Nong Pling",
+      "Bueng Senat"
+    ],
+    "Krok Phra": [
+      "Krok Phra",
+      "Yang Tan",
+      "Bang Mafo",
+      "Bang Pramung",
+      "Na Klang",
+      "Sala Daeng",
+      "Noen Kwao",
+      "Noen Sala",
+      "Hat Sung"
+    ],
+    "Chum Saeng": [
+      "Chum Saeng",
+      "Thap Krit",
+      "Phikun",
+      "Koei Chai",
+      "Tha Mai",
+      "Bang Khian",
+      "Nong Krachao",
+      "Phan Lan",
+      "Khok Mo",
+      "Phai Sing",
+      "Khamang",
+      "Thap Krit Tai"
+    ],
+    "Nong Bua": [
+      "Nong Bua",
+      "Nong Klap",
+      "Than Thahan",
+      "Huai Ruam",
+      "Huai Thua Tai",
+      "Huai Thua Nuea",
+      "Huai Yai",
+      "Thung Thong",
+      "Wang Bo"
+    ],
+    "Banphot Phisai": [
+      "Tha Ngio",
+      "Bang Ta Ngai",
+      "Hukwang",
+      "Ang Thong",
+      "Ban Daen",
+      "Bang Kaeo",
+      "Ta Khit",
+      "Ta Sang",
+      "Dan Chang",
+      "Nong Krot",
+      "Nong Ta Ngu",
+      "Bueng Pla Thu",
+      "Charoen Phon"
+    ],
+    "Kao Liao": [
+      "Maha Phot",
+      "Kao Liao",
+      "Nong Tao",
+      "Khao Din",
+      "Hua Dong"
+    ],
+    "Takhli": [
+      "Takhli",
+      "Chong Khae",
+      "Chan Sen",
+      "Huai Hom",
+      "Hua Wai",
+      "Nong Pho",
+      "Nong Mo",
+      "Soi Thong",
+      "Lat Thippharot",
+      "Phrom Nimit",
+      "Tha Tako",
+      "Phanom Rok",
+      "Hua Thanon",
+      "Sai Lamphong",
+      "Wang Mahakon",
+      "Don Kha",
+      "Thamnop",
+      "Wang Yai",
+      "Phanom Set",
+      "Nong Luang"
+    ],
+    "Phaisali": [
+      "Khok Duea",
+      "Samrong Chai",
+      "Wang Nam Lat",
+      "Takhro",
+      "Pho Prasat",
+      "Wang Khoi",
+      "Na Khom",
+      "Phaisali"
+    ],
+    "Phayuha Khiri": [
+      "Phayuha",
+      "Noen Makok",
+      "Nikhom Khao Bo Kaeo",
+      "Muang Hak",
+      "Yang Khao",
+      "Yan Matsi",
+      "Khao Thong",
+      "Tha Nam Oi",
+      "Nam Song",
+      "Khao Kala",
+      "Sa Thale",
+      "Lat Yao",
+      "Huai Nam Hom",
+      "Wang Ma",
+      "Wang Mueang",
+      "Soi Lakhon",
+      "Map Kae",
+      "Nong Yao",
+      "Nong Nom Wua",
+      "Ban Rai",
+      "Noen Khilek",
+      "San Chao Kai To",
+      "Sa Kaeo"
+    ],
+    "Tak Fa": [
+      "Tak Fa",
+      "Lam Phayon",
+      "Suk Samran",
+      "Nong Phikun",
+      "Phu Nok Yung",
+      "Udom Thanya",
+      "Khao Chai Thong"
+    ],
+    "Mae Wong": [
+      "Mae Wong",
+      "Mae Le",
+      "Wang San",
+      "Khao Chon Kan"
+    ],
+    "Mae Poen": [
+      "Mae Poen"
+    ],
+    "Chum Ta Bong": [
+      "Chum Ta Bong",
+      "Pang Sawan"
+    ]
+  },
+  "Uthai Thani": {
+    "Mueang Uthai Thani": [
+      "Uthai Mai",
+      "Nam Suem",
+      "Sakae Krang",
+      "Don Khwang",
+      "Hat Thanong",
+      "Ko Thepho",
+      "Tha Sung",
+      "Nong Kae",
+      "Non Lek",
+      "Nong Tao",
+      "Nong Phai Baen",
+      "Nong Phang Kha",
+      "Thung Yai",
+      "Noen Chaeng"
+    ],
+    "Thap Than": [
+      "Thap Than",
+      "Thung Na Thai",
+      "Khao Khi Foi",
+      "Nong Ya Plong",
+      "Khok Mo",
+      "Nong Yai Da",
+      "Nong Klang Dong",
+      "Nong Krathum",
+      "Nong Sa",
+      "Taluk Du"
+    ],
+    "Sawang Arom": [
+      "Sawang Arom",
+      "Nong Luang",
+      "Phluang Song Nang",
+      "Phai Khiao",
+      "Bor Yang"
+    ],
+    "Nong Chang": [
+      "Nong Chang",
+      "Nong Yang",
+      "Nong Nang Nuan",
+      "Nong Suang",
+      "Ban Kao",
+      "Uthai Kao",
+      "Thung Pho",
+      "Thung Phong",
+      "Khao Bang Kraek",
+      "Khao Kwang Thong"
+    ],
+    "Nong Khayang": [
+      "Nong Khayang",
+      "Nong Phai",
+      "Don Kloi",
+      "Huai Rop",
+      "Thung Phueng",
+      "Tha Pho",
+      "Mok Thaeo",
+      "Lum Khao",
+      "Dong Kwang"
+    ],
+    "Ban Rai": [
+      "Ban Rai",
+      "Thap Luang",
+      "Huai Haeng",
+      "Khok Khwai",
+      "Wang Hin",
+      "Mueang Ka Rung",
+      "Kaen Makrut",
+      "Nong Chok",
+      "Hu Chang",
+      "Ban Bueng",
+      "Ban Mai Khlong Khian",
+      "Nong Bom Kluai",
+      "Chao Wat"
+    ],
+    "Lan Sak": [
+      "Lan Sak",
+      "Pradu Yuen",
+      "Pa O",
+      "Rabam",
+      "Nam Rop",
+      "Thung Na Ngam"
+    ],
+    "Huai Khot": [
+      "Suk Ruethai",
+      "Thonglang",
+      "Huai Khot"
+    ]
+  },
+  "Kamphaeng Phet": {
+    "Mueang Kamphaeng Phet": [
+      "Nai Mueang",
+      "Trai Trueng",
+      "Ang Thong",
+      "Na Bo Kham",
+      "Nakhon Chum",
+      "Song Tham",
+      "Lan Dokmai",
+      "Nong Pling",
+      "Khonthi",
+      "Nikhom Thung Pho Thale",
+      "Thep Nakhon",
+      "Wang Thong",
+      "Tha Khun Ram",
+      "Khlong Mae Lai",
+      "Thammarong",
+      "Sa Kaeo"
+    ],
+    "Sai Ngam": [
+      "Sai Ngam",
+      "Nong Khla",
+      "Nong Thong",
+      "Nong Mai Kong",
+      "Maha Chai",
+      "Phan Thong",
+      "Nong Mae Taeng"
+    ],
+    "Khlong Lan": [
+      "Khlong Nam Lai",
+      "Pong Nam Ron",
+      "Khlong Lan Phatthana",
+      "Sak Ngam"
+    ],
+    "Khanu Woralaksaburi": [
+      "Yang Sung",
+      "Pa Phutsa",
+      "Saen To",
+      "Salok Bat",
+      "Bo Tham",
+      "Don Taeng",
+      "Wang Chaphlu",
+      "Khong Phai",
+      "Pang Makha",
+      "Wang Ham Hae",
+      "Ko Tan"
+    ],
+    "Khlong Khlung": [
+      "Khlong Khlung",
+      "Tha Makhuea",
+      "Tha Phutsa",
+      "Mae Lat",
+      "Wang Yang",
+      "Wang Khaem",
+      "Hua Thanon",
+      "Wang Sai",
+      "Wang Bua",
+      "Khlong Sombun"
+    ],
+    "Phran Kratai": [
+      "Phran Kratai",
+      "Nong Hua Wua",
+      "Tha Mai",
+      "Wang Khuang",
+      "Wang Tabaek",
+      "Khao Khirit",
+      "Khui Ban Ong",
+      "Khlong Phikrai",
+      "Tham Kratai Thong",
+      "Huai Yang"
+    ],
+    "Lan Krabue": [
+      "Lan Krabue",
+      "Chong Lom",
+      "Nong Luang",
+      "Non Phluang",
+      "Pracha Suk San",
+      "Bueng Thap Raet",
+      "Chanthima"
+    ],
+    "Sai Thong Watthana": [
+      "Thung Sai",
+      "Thung Thong",
+      "Thawon Watthana"
+    ],
+    "Pang Sila Thong": [
+      "Pho Thong",
+      "Hin Dat",
+      "Pang Ta Wai"
+    ],
+    "Bueng Samakkhi": [
+      "Bueng Samakkhi",
+      "Wang Cha-on",
+      "Rahan",
+      "Thep Nimit"
+    ],
+    "Kosamphi Nakhon": [
+      "Kosamphi",
+      "Phet Chomphu",
+      "Lan Dokmai Tok"
+    ]
+  },
+  "Tak": {
+    "Mueang Tak": [
+      "Rahaeng",
+      "Nong Luang",
+      "Chiang Ngoen",
+      "Hua Diat",
+      "Nong Bua Nuea",
+      "Mai Ngam",
+      "Pong Daeng",
+      "Nam Ruem",
+      "Wang Hin",
+      "Mae Tho",
+      "Pa Mamuang",
+      "Nong Bua Tai",
+      "Wang Prachop",
+      "Taluk Klang Thung"
+    ],
+    "Ban Tak": [
+      "Tak Ok",
+      "Samo Khon",
+      "Mae Salit",
+      "Tak Tok",
+      "Ko Taphao",
+      "Thung Kracho",
+      "Thong Fa"
+    ],
+    "Sam Ngao": [
+      "Sam Ngao",
+      "Wang Man",
+      "Yokkrabat",
+      "Yan Ri",
+      "Ban Na",
+      "Wang Chan"
+    ],
+    "Mae Ramat": [
+      "Mae Ramat",
+      "Mae Charao",
+      "Khane Chue",
+      "Mae Tuen",
+      "Sam Muen",
+      "Phra That"
+    ],
+    "Tha Song Yang": [
+      "Tha Song Yang",
+      "Mae Tan",
+      "Mae Song",
+      "Mae La",
+      "Mae Wa Luang",
+      "Mae Usu"
+    ],
+    "Mae Sot": [
+      "Mae Sot",
+      "Mae Ku",
+      "Phawo",
+      "Mae Tao",
+      "Mae Kasa",
+      "Tha Sai Luat",
+      "Mae Pa",
+      "Mahawan",
+      "Dan Mae Lamao",
+      "Phra That Pha Daeng"
+    ],
+    "Phop Phra": [
+      "Phop Phra",
+      "Chong Khaep",
+      "Khiri Rat",
+      "Wale",
+      "Ruam Thai Phatthana"
+    ],
+    "Umphang": [
+      "Umphang",
+      "Nong Luang",
+      "Mokro",
+      "Mae Chan",
+      "Mae Lamung",
+      "Mae Klong"
+    ],
+    "Wang Chao": [
+      "Chiang Thong",
+      "Na Bot",
+      "Pradang"
+    ]
+  },
+  "Sukhothai": {
+    "Mueang Sukhothai": [
+      "Thani",
+      "Ban Suan",
+      "Mueang Kao",
+      "Pak Khwae",
+      "Yang Sai",
+      "Ban Kluai",
+      "Ban Lum",
+      "Tan Tia",
+      "Pak Phra",
+      "Wang Thongdaeng"
+    ],
+    "Ban Dan Lan Hoi": [
+      "Lan Hoi",
+      "Ban Dan",
+      "Wang Takhro",
+      "Wang Nam Khao",
+      "Taling Chan",
+      "Nong Ya Plong",
+      "Wang Luek"
+    ],
+    "Khiri Mat": [
+      "Tanot",
+      "Thung Luang",
+      "Ban Pom",
+      "Sam Phuang",
+      "Si Khiri Mat",
+      "Nong Chik",
+      "Na Choeng Khiri",
+      "Nong Krading",
+      "Ban Nam Phu",
+      "Thung Yang Mueang"
+    ],
+    "Kong Krailat": [
+      "Kong",
+      "Ban Krang",
+      "Krai Nok",
+      "Krai Klang",
+      "Krai Nai",
+      "Dong Dueai",
+      "Pa Faek",
+      "Kok Raet",
+      "Tha Chanuan",
+      "Nong Tum",
+      "Ban Mai Suk Kasem"
+    ],
+    "Si Satchanalai": [
+      "Hat Siao",
+      "Pa Ngio",
+      "Mae Sam",
+      "Mae Sin",
+      "Ban Tuek",
+      "Nong O",
+      "Tha Chai",
+      "Si Satchanalai",
+      "Dong Khu",
+      "Ban Kaeng",
+      "San Chit"
+    ],
+    "Si Samrong": [
+      "Khlong Tan",
+      "Wang Luek",
+      "Sam Ruean",
+      "Ban Na",
+      "Wang Thong",
+      "Na Khun Krai",
+      "Ko Ta Liang",
+      "Wat Ko",
+      "Ban Rai",
+      "Thap Phueng",
+      "Ban San",
+      "Wang Yai",
+      "Rao Ton Chan"
+    ],
+    "Sawankhalok": [
+      "Mueang Sawankhalok",
+      "Nai Mueang",
+      "Khlong Krachong",
+      "Wang Phinphat",
+      "Wang Mai Khon",
+      "Yan Yao",
+      "Na Thung",
+      "Khlong Yang",
+      "Mueang Bang Yom",
+      "Tha Thong",
+      "Pak Nam",
+      "Pa Kum Ko",
+      "Mueang Bang Khlang",
+      "Nong Klap"
+    ],
+    "Si Nakhon": [
+      "Si Nakhon",
+      "Nakhon Doet",
+      "Nam Khum",
+      "Khlong Maphlap",
+      "Nong Bua"
+    ],
+    "Thung Saliam": [
+      "Ban Mai Chai Mongkhon",
+      "Thai Chana Suek",
+      "Thung Saliam",
+      "Klang Dong",
+      "Khaokaw Si Somboon"
+    ]
+  },
+  "Phitsanulok": {
+    "Mueang Phitsanulok": [
+      "Nai Mueang",
+      "Wang Nam Khu",
+      "Wat Chan",
+      "Wat Phrik",
+      "Tha Thong",
+      "Tha Pho",
+      "Samo Khae",
+      "Don Thong",
+      "Ban Pa",
+      "Pak Thok",
+      "Hua Ro",
+      "Chom Thong",
+      "Ban Krang",
+      "Ban Khlong",
+      "Phlai Chumphon",
+      "Makham Sung",
+      "Aranyik",
+      "Bueng Phra",
+      "Phai Kho Don",
+      "Ngio Ngam"
+    ],
+    "Nakhon Thai": [
+      "Nakhon Thai",
+      "Nong Kathao",
+      "Ban Yaeng",
+      "Noen Phoem",
+      "Na Bua",
+      "Nakhon Chum",
+      "Nam Kum",
+      "Yang Klon",
+      "Bo Pho",
+      "Ban Phrao",
+      "Huai Hia"
+    ],
+    "Chat Trakan": [
+      "Pa Daeng",
+      "Chat Trakan",
+      "Suan Miang",
+      "Ban Dong",
+      "Bo Phak",
+      "Tha Sakae"
+    ],
+    "Bang Rakam": [
+      "Bang Rakam",
+      "Plak Raet",
+      "Phan Sao",
+      "Wang Ithok",
+      "Bueng Kok",
+      "Nong Kula",
+      "Chum Saeng Songkhram",
+      "Nikhom Phatthana",
+      "Bo Thong",
+      "Tha Nang Ngam",
+      "Khui Muang"
+    ],
+    "Bang Krathum": [
+      "Bang Krathum",
+      "Ban Rai",
+      "Khok Salut",
+      "Sanam Khli",
+      "Tha Tan",
+      "Phai Lom",
+      "Nakhon Pa Mak",
+      "Noen Kum",
+      "Wat Ta Yom"
+    ],
+    "Phrom Phiram": [
+      "Phrom Phiram",
+      "Tha Chang",
+      "Wong Khong",
+      "Matum",
+      "Ho Klong",
+      "Si Phirom",
+      "Taluk Thiam",
+      "Wang Won",
+      "Nong Khaem",
+      "Matong",
+      "Thap Yai Chiang",
+      "Dong Prakham"
+    ],
+    "Wat Bot": [
+      "Wat Bot",
+      "Tha Ngam",
+      "Thothae",
+      "Ban Yang",
+      "Hin Lat",
+      "Khan Chong"
+    ],
+    "Wang Thong": [
+      "Wang Thong",
+      "Phan Chali",
+      "Mae Raka",
+      "Ban Klang",
+      "Wang Phikun",
+      "Kaeng Sopha",
+      "Tha Muen Ram",
+      "Wang Nok Aen",
+      "Nong Phra",
+      "Chaiyanam",
+      "Din Thong"
+    ],
+    "Noen Maprang": [
+      "Chomphu",
+      "Ban Mung",
+      "Sai Yoi",
+      "Wang Phrong",
+      "Ban Noi Sum Khilek",
+      "Noen Maprang",
+      "Wang Yang",
+      "Khok Laem"
+    ]
+  },
+  "Phichit": {
+    "Mueang Phichit": [
+      "Nai Mueang",
+      "Phai Khwang",
+      "Yan Yao",
+      "Tha Lo",
+      "Pak Thang",
+      "Khlong Khachen",
+      "Rong Chang",
+      "Mueang Kao",
+      "Tha Luang",
+      "Ban Bung",
+      "Khamang",
+      "Dong Pa Kham",
+      "Hua Dong",
+      "Pa Makhap",
+      "Sai Kham Ho",
+      "Dong Klang"
+    ],
+    "Wang Sai Phun": [
+      "Wang Sai Phun",
+      "Nong Pla Lai",
+      "Nong Phra",
+      "Nong Plong"
+    ],
+    "Pho Prathap Chang": [
+      "Pho Prathap Chang",
+      "Phai Tha Pho",
+      "Wang Chik",
+      "Phai Rop",
+      "Dong Suea Lueang",
+      "Noen Sawang",
+      "Thung Yai"
+    ],
+    "Taphan Hin": [
+      "Taphan Hin",
+      "Ngio Rai",
+      "Huai Ket",
+      "Sai Rong Khon",
+      "Nong Phayom",
+      "Tung Pho",
+      "Dong Takhop",
+      "Khlong Khun",
+      "Wang Samrong",
+      "Wang Wa",
+      "Wang Lum",
+      "Thap Man",
+      "Phai Luang"
+    ],
+    "Bang Mun Nak": [
+      "Bang Mun Nak",
+      "Bang Phai",
+      "Ho Krai",
+      "Noen Makok",
+      "Wang Samrong",
+      "Phum",
+      "Wang Krot",
+      "Huai Khen",
+      "Wang Taku",
+      "Lam Prad"
+    ],
+    "Pho Thale": [
+      "Pho Thale",
+      "Thai Nam",
+      "Thanong",
+      "Tha Bua",
+      "Thung Noi",
+      "Tha Khamin",
+      "Tha Sao",
+      "Bang Khlan",
+      "Tha Nang",
+      "Ban Noi",
+      "Wat Khwang"
+    ],
+    "Sam Ngam": [
+      "Sam Ngam",
+      "Kamphaeng Din",
+      "Rang Nok",
+      "Noen Po",
+      "Nong Sano"
+    ],
+    "Tap Khlo": [
+      "Thap Khlo",
+      "Khao Sai",
+      "Khao Chet Luk",
+      "Tai Toong"
+    ],
+    "Sak Lek": [
+      "Sak Lek",
+      "Tha Yiam",
+      "Khlong Sai",
+      "Nong Ya Sai",
+      "Wang Thap Sai"
+    ],
+    "Bueng Na Rang": [
+      "Huai Kaeo",
+      "Pho Sai Ngam",
+      "Laem Rang",
+      "Bang Lai",
+      "Bueng Na Rang"
+    ],
+    "Dong Charoen": [
+      "Wang Ngio Tai",
+      "Wang Ngio",
+      "Huai Ruam",
+      "Huai Phuk",
+      "Samnak Khun Nen"
+    ],
+    "Wachirabarami": [
+      "Ban Na",
+      "Bueng Bua",
+      "Wang Mok",
+      "Nong Lum"
+    ]
+  },
+  "Phetchabun": {
+    "Mueang Phetchabun": [
+      "Nai Mueang",
+      "Tabo",
+      "Ban Tok",
+      "Sadiang",
+      "Pa Lao",
+      "Na Ngua",
+      "Tha Phon",
+      "Dong Mun Lek",
+      "Ban Khok",
+      "Chon Phrai",
+      "Na Pa",
+      "Na Yom",
+      "Wang Chomphu",
+      "Nam Ron",
+      "Huai Sakae",
+      "Huai Yai",
+      "Rawing"
+    ],
+    "Chon Daen": [
+      "Chon Daen",
+      "Dong Khui",
+      "Tha Kham",
+      "Phutthabat",
+      "Lat Khae",
+      "Ban Kluai",
+      "Sap Phutsa",
+      "Takut Rai",
+      "Sala Lai"
+    ],
+    "Lom Sak": [
+      "Lom Sak",
+      "Wat Pa",
+      "Tan Diao",
+      "Fai Na Saeng",
+      "Nong Sawang",
+      "Nam Hia",
+      "Sak Long",
+      "Tha Ibun",
+      "Ban Sok",
+      "Ban Tio",
+      "Huai Rai",
+      "Nam Ko",
+      "Pak Chong",
+      "Nam Chun",
+      "Nong Khwai",
+      "Lan Ba",
+      "Bung Khla",
+      "Bung Namtao",
+      "Ban Klang",
+      "Chang Talut",
+      "Ban Rai",
+      "Pak Duk",
+      "Ban Wai"
+    ],
+    "Lom Kao": [
+      "Lom Kao",
+      "Na Sam",
+      "Hin Hao",
+      "Ban Noen",
+      "Sila",
+      "Na Saeng",
+      "Wang Ban",
+      "Na Ko",
+      "Tat Kloi"
+    ],
+    "Wichian Buri": [
+      "Tha Rong",
+      "Sa Pradu",
+      "Sam Yaek",
+      "Khok Prong",
+      "Nam Ron",
+      "Bo Rang",
+      "Phu Toei",
+      "Phu Kham",
+      "Phu Nam Yot",
+      "Sap Sombun",
+      "Bueng Krachap",
+      "Wang Yai",
+      "Yang Sao",
+      "Sap Noi"
+    ],
+    "Si Thep": [
+      "Si Thep",
+      "Sa Kruat",
+      "Khlong Krachang",
+      "Na Sanun",
+      "Khok Sa-at",
+      "Nong Yang Thoi",
+      "Pradu Ngam"
+    ],
+    "Nong Phai": [
+      "Kong Thun",
+      "Na Chaliang",
+      "Ban Phot",
+      "Tha Daeng",
+      "Phet Lakhon",
+      "Bo Thai",
+      "Huai Pong",
+      "Wang Tha Di",
+      "Bua Watthana",
+      "Nong Phai",
+      "Wang Bot",
+      "Yang Ngam",
+      "Tha Duang"
+    ],
+    "Bueng Sam Phan": [
+      "Sap Samo Thot",
+      "Sap Mai Daeng",
+      "Nong Chaeng",
+      "Kan Chu",
+      "Wang Phikun",
+      "Phaya Wang",
+      "Si Mongkhon",
+      "Sa Kaeo",
+      "Bueng Sam Phan"
+    ],
+    "Nam Nao": [
+      "Nam Nao",
+      "Lak Dan",
+      "Wang Kwang",
+      "Khok Mon"
+    ],
+    "Wang Pong": [
+      "Wang Pong",
+      "Thai Dong",
+      "Sap Poep",
+      "Wang Hin",
+      "Wang San"
+    ],
+    "Khao Kho": [
+      "Thung Samo",
+      "Khaem Son",
+      "Khao Kho",
+      "Rim Si Muang",
+      "Sado Phong",
+      "Nong Mae Na",
+      "Khek Noi"
+    ]
+  },
+  "Ratchaburi": {
+    "Mueang Ratchaburi": [
+      "Na Mueang",
+      "Chedi Hak",
+      "Don Tako",
+      "Nong Klang Na",
+      "Huai Phai",
+      "Khung Nam Won",
+      "Khung Krathin",
+      "Ang Thong",
+      "Khok Mo",
+      "Sam Ruean",
+      "Phikun Thong",
+      "Nam Phu",
+      "Don Rae",
+      "Hin Kong",
+      "Khao Raeng",
+      "Ko Phlapphla",
+      "Lum Din",
+      "Bang Pa",
+      "Phong Sawai",
+      "Khu Bua",
+      "Tha Rap",
+      "Ban Rai"
+    ],
+    "Chom Bueng": [
+      "Chom Bueng",
+      "Pak Chong",
+      "Boek Phrai",
+      "Dan Thap Tako",
+      "Kaem On",
+      "Rang Bua"
+    ],
+    "Suan Phueng": [
+      "Suan Phueng",
+      "Pa Wai",
+      "Tha Khoei",
+      "Tanao Si"
+    ],
+    "Damnoen Saduak": [
+      "Damnoen Saduak",
+      "Prasat Sit",
+      "Si Surat",
+      "Ta Luang",
+      "Don Kruai",
+      "Don Khlang",
+      "Bua Ngam",
+      "Ban Rai",
+      "Phaengphuai",
+      "Si Muen",
+      "Tha Nat",
+      "Khun Phithak",
+      "Don Phai"
+    ],
+    "Ban Pong": [
+      "Ban Pong",
+      "Tha Pha",
+      "Krap Yai",
+      "Pak Raet",
+      "Nong Kop",
+      "Nong O",
+      "Don Krabueang",
+      "Suan Kluai",
+      "Nakhon Chum",
+      "Ban Muang",
+      "Khung Phayom",
+      "Nong Pla Mo",
+      "Khao Khlung",
+      "Boek Phrai",
+      "Lat Bua Khao"
+    ],
+    "Bang Phae": [
+      "Bang Phae",
+      "Wang Yen",
+      "Hua Pho",
+      "Wat Kaeo",
+      "Don Yai",
+      "Don Kha",
+      "Pho Hak"
+    ],
+    "Photharam": [
+      "Photharam",
+      "Don Krabueang",
+      "Nong Pho",
+      "Ban Lueak",
+      "Khlong Ta Khot",
+      "Ban Khong",
+      "Ban Sing",
+      "Don Sai",
+      "Chet Samian",
+      "Khlong Khoi",
+      "Chamrae",
+      "Soi Fa",
+      "Tha Chumphon",
+      "Bang Tanot",
+      "Tao Pun",
+      "Nang Kaeo",
+      "Thammasen",
+      "Khao Cha-ngum",
+      "Nong Kwang"
+    ],
+    "Pak Tho": [
+      "Thung Luang",
+      "Wang Manao",
+      "Don Sai",
+      "Nong Krathum",
+      "Pak Tho",
+      "Pa Kai",
+      "Wat Yang Ngam",
+      "Ang Hin",
+      "Bo Kradan",
+      "Yang Hak",
+      "Wan Dao",
+      "Huai Yang Thon"
+    ],
+    "Wat Phleng": [
+      "Ko San Phra",
+      "Chom Prathat",
+      "Wat Pleng"
+    ],
+    "Ban Kha": [
+      "Ban Kha",
+      "Ban Bueng",
+      "Nong Phan Chan"
+    ]
+  },
+  "Kanchanaburi": {
+    "Mueang Kanchanaburi": [
+      "Ban Nuea",
+      "Ban Tai",
+      "Pak Phraek",
+      "Tha Makham",
+      "Kaeng Sian",
+      "Nong Bua",
+      "Lat Ya",
+      "Wang Dong",
+      "Chong Sadao",
+      "Nong Ya",
+      "Ko Samrong",
+      "Ban Kao",
+      "Wang Yen"
+    ],
+    "Sai Yok": [
+      "Lum Sum",
+      "Tha Sao",
+      "Sing",
+      "Sai Yok",
+      "Wang Krachae",
+      "Si Mongkhon",
+      "Bongti"
+    ],
+    "Bo Phloi": [
+      "Bo Phloi",
+      "Nong Kum",
+      "Nong Ri",
+      "Lum Rang",
+      "Chong Dan",
+      "Nong Krang"
+    ],
+    "Si Sawat": [
+      "Na Suan",
+      "Dan Mae Chalaep",
+      "Nong Pet",
+      "Tha Kradan",
+      "Khao Chot",
+      "Mae Krabung"
+    ],
+    "Tha Maka": [
+      "Phong Tuek",
+      "Yang Muang",
+      "Don Cha-em",
+      "Tha Mai",
+      "Takhram En",
+      "Tha Maka",
+      "Tha Ruea",
+      "Khok Tabong",
+      "Don Khamin",
+      "Ulok Si Muen",
+      "Khao Samsip Hap",
+      "Phra Thaen",
+      "Wai Niao",
+      "Saen To",
+      "Sanam Yae",
+      "Tha Sao",
+      "Nong Lan"
+    ],
+    "Tha Muang": [
+      "Tha Muang",
+      "Wang Khanai",
+      "Wang Sala",
+      "Tha Lo",
+      "Nong Khao",
+      "Thung Thong",
+      "Khao Noi",
+      "Muang Chum",
+      "Ban Mai",
+      "Phang Tru",
+      "Tha Takhro",
+      "Rang Sali",
+      "Nong Tak Ya"
+    ],
+    "Pha Phum": [
+      "Tha Khanun",
+      "Pilok",
+      "Hin Dat",
+      "Linthin",
+      "Chalae",
+      "Huai Khayeng",
+      "Sahakon Nikhom"
+    ],
+    "Sangkhla Buri": [
+      "Nong Lu",
+      "Prangphle",
+      "Lai Wo"
+    ],
+    "Phanom Thuan": [
+      "Phanom Thuan",
+      "Nong Rong",
+      "Thung Samo",
+      "Don Chedi",
+      "Phang Tru",
+      "Rang Wai",
+      "Nong Sarai",
+      "Don Ta Phet"
+    ],
+    "Lao Khwan": [
+      "Lao Khwan",
+      "Nong Sano",
+      "Nong Pradu",
+      "Nong Pling",
+      "Nong Nok Kaeo",
+      "Thung Krabam",
+      "Nong Fai"
+    ],
+    "Dan Makham Tia": [
+      "Dan Makham Tia",
+      "Klondo",
+      "Chorakhe Phueak",
+      "Nong Phai"
+    ],
+    "Nong Prue": [
+      "Nong Prue",
+      "Nong Pla Lai",
+      "Somdet Charoen"
+    ],
+    "Huai Krachao": [
+      "Huai Krachao",
+      "Wang Phai",
+      "Don Salaep",
+      "Sa Long Ruea"
+    ]
+  },
+  "Suphan Buri": {
+    "Mueang Suphan Buri": [
+      "Tha Phi Liang",
+      "Rua Yai",
+      "Thap Ti Lek",
+      "Tha Rahat",
+      "Phai Kwang",
+      "Khok Kho Thao",
+      "Don Tan",
+      "Don Masang",
+      "Phihan Daeng",
+      "Don Kamyan",
+      "Don Pho Thong",
+      "Ban Pho",
+      "Sa Kaeo",
+      "Taling Chan",
+      "Bang Kung",
+      "Sala Khao",
+      "Suan Taeng",
+      "Sanam Chai",
+      "Pho Phraya",
+      "Sanam Klee"
+    ],
+    "Doem Bang Nang Buat": [
+      "Khao Phra",
+      "Doem Bang",
+      "Nang Buat",
+      "Khao Din",
+      "Pak Nam",
+      "Thung Khli",
+      "Khok Chang",
+      "Hua Khao",
+      "Hua Na",
+      "Bo Kru",
+      "Wang Si Rat",
+      "Pa Sakae",
+      "Yang Non",
+      "Nong Krathum"
+    ],
+    "Dan Chang": [
+      "Nong Makha Mong",
+      "Dan Chang",
+      "Huai Khamin",
+      "Ong Phra",
+      "Wang Khan",
+      "Nikhom Krasiao",
+      "Wang Yao"
+    ],
+    "Bang Pla Ma": [
+      "Khok Khram",
+      "Bang Pla Ma",
+      "Takha",
+      "Bang Yai",
+      "Kritsana",
+      "Sali",
+      "Phai Kong Din",
+      "Ongkharak",
+      "Chorakhe Yai",
+      "Ban Laem",
+      "Makham Lom",
+      "Wang Nam Yen",
+      "Wat Bot",
+      "Wad Daw"
+    ],
+    "Si Prachan": [
+      "Si Prachan",
+      "Ban Krang",
+      "Mot Daeng",
+      "Bang Ngam",
+      "Don Pru",
+      "Plai Na",
+      "Wang Wa",
+      "Wang Nam Sap",
+      "Wang Yang"
+    ],
+    "Don Chedi": [
+      "Don Chedi",
+      "Nong Sarai",
+      "Rai Rot",
+      "Sa Krachom",
+      "Talae Bok"
+    ],
+    "Song Phi Nong": [
+      "Song Phi Nong",
+      "Bang Len",
+      "Bang Ta Then",
+      "Bang Takhian",
+      "Ban Kum",
+      "Hua Pho",
+      "Bang Phlap",
+      "Noen Phra Prang",
+      "Ban Chang",
+      "Ton Tan",
+      "Si Samran",
+      "Thung Khok",
+      "Nong Bo",
+      "Bo Suphan",
+      "Don Manao"
+    ],
+    "Sam Chuk": [
+      "Yan Yao",
+      "Wang Luek",
+      "Sam Chuk",
+      "Nong Phak Nak",
+      "Ban Sa",
+      "Nong Sadao",
+      "Krasiao"
+    ],
+    "U Thong": [
+      "U Thong",
+      "Sa Yai Som",
+      "Chorakhe Sam Phan",
+      "Ban Don",
+      "Yung Thalai",
+      "Don Makluea",
+      "Nong Ong",
+      "Don Kha",
+      "Phlapphla Chai",
+      "Ban Khong",
+      "Chedi",
+      "Sa Phang Lan",
+      "Krachan"
+    ],
+    "Nong Ya Sai": [
+      "Nong Ya Sai",
+      "Nong Ratchawat",
+      "Nong Pho",
+      "Chaeng Ngam",
+      "Nong Kham",
+      "Thap Luang"
+    ]
+  },
+  "Nakhon Pathom": {
+    "Mueang Nakhon Pathom": [
+      "Phra Pathom Chedi",
+      "Bang Khaem",
+      "Phra Prathon",
+      "Thammasala",
+      "Ta Kong",
+      "Map Khae",
+      "Sanam Chan",
+      "Don Yai Hom",
+      "Thanon Khat",
+      "Bo Phlap",
+      "Nakhon Pathom",
+      "Wang Taku",
+      "Nong Pak Long",
+      "Sam Khwai Phueak",
+      "Thung Noi",
+      "Nong Din Daeng",
+      "Wang Yen",
+      "Phrong Maduea",
+      "Lam Phaya",
+      "Sa Kathiam",
+      "Suan Pan",
+      "Huai Chorakhe",
+      "Thap Luang",
+      "Nong Ngulueam",
+      "Ban Yang"
+    ],
+    "Kamphaeng Saen": [
+      "Thung Kraphanghom",
+      "Kratip",
+      "Thung Luk Nok",
+      "Huai Khwang",
+      "Thung Khwang",
+      "Sa Si Mum",
+      "Thung Bua",
+      "Don Khoi",
+      "Sa Phatthana",
+      "Huai Mon Thong",
+      "Huai Muang",
+      "Kamphaeng Saen",
+      "Rang Phikun",
+      "Nong Krathum",
+      "Wang Nam Khiao"
+    ],
+    "Nakhon Chai Si": [
+      "Nakhon Chai Si",
+      "Bang Krabao",
+      "Wat Khae",
+      "Tha Tamnak",
+      "Bang Kaeo",
+      "Tha Krachap",
+      "Khun Kaeo",
+      "Tha Phraya",
+      "Phaniat",
+      "Bang Rakam",
+      "Khok Phra Chedi",
+      "Sisa Thong",
+      "Laem Bua",
+      "Si Maha Pho",
+      "Sampathuan",
+      "Wat Samrong",
+      "Don Faek",
+      "Huai Phlu",
+      "Wat Lamut",
+      "Bang Phra",
+      "Bang Kaeo Fa",
+      "Lan Tak Fa",
+      "Ngio Rai",
+      "Thaiyawat"
+    ],
+    "Don Tum": [
+      "Sam Ngam",
+      "Huai Phra",
+      "Lam Hoei",
+      "Don Phutsa",
+      "Ban Luang",
+      "Don Ruak",
+      "Huai Duan",
+      "Lam Luk Bua"
+    ],
+    "Bang Len": [
+      "Bang Len",
+      "Bang Pla",
+      "Bang Luang",
+      "Bang Phasi",
+      "Bang Rakam",
+      "Bang Sai Pa",
+      "Hin Mun",
+      "Sai Ngam",
+      "Don Tum",
+      "Ninlaphet",
+      "Bua Pak Tha",
+      "Khlong Nok Krathung",
+      "Naraphirom",
+      "Lam Phaya",
+      "Phai Hu Chang"
+    ],
+    "Sam Phran": [
+      "Tha Kham",
+      "Song Khanong",
+      "Hom Kret",
+      "Bang Krathuek",
+      "Bang Toei",
+      "Sam Phran",
+      "Bang Chang",
+      "Rai Khing",
+      "Tha Talat",
+      "Krathum Lom",
+      "Khlong Mai",
+      "Talat Chinda",
+      "Khlong Chinda",
+      "Yai Cha",
+      "Ban Mai",
+      "Om Yai"
+    ],
+    "Phutthamonthon": [
+      "Sala Ya",
+      "Khlong Yong",
+      "Maha Sawat"
+    ]
+  },
+  "Samut Sakhon": {
+    "Mueang Samut Sakhon": [
+      "Maha Chai",
+      "Tha Chalom",
+      "Krok Krak",
+      "Ban Bo",
+      "Bang Tho Rat",
+      "Ka Long",
+      "Na Khok",
+      "Tha Chin",
+      "Na Di",
+      "Tha Sai",
+      "Khok Krabue",
+      "Bang Nam Chuet",
+      "Phan Thai Norasing",
+      "Khok Kham",
+      "Ban Ko",
+      "Bang Krachao",
+      "Bang Ya Phraek",
+      "Chai Mongkon"
+    ],
+    "Krathum Baen": [
+      "Talat Krathum Baen",
+      "Om Noi",
+      "Tha Mai",
+      "Suan Luang",
+      "Bang Yang",
+      "Khlong Maduea",
+      "Nong Nok Khai",
+      "Don Kai Di",
+      "Khae Rai",
+      "Tha Sao"
+    ],
+    "Ban Phaeo": [
+      "Ban Phaeo",
+      "Lak Sam",
+      "Yokkrabat",
+      "Rong Khe",
+      "Nong Song Hong",
+      "Nong Bua",
+      "Lak Song",
+      "Chet Rio",
+      "Khlong Tan",
+      "Amphaeng",
+      "Suan Som",
+      "Kaset Phatthana"
+    ]
+  },
+  "Samut Songkhram": {
+    "Mueang Samut Songkhram": [
+      "Mae Klong",
+      "Bang Khan Taek",
+      "Lat Yai",
+      "Ban Prok",
+      "Bang Kaeo",
+      "Thai Hat",
+      "Laem Yai",
+      "Khlong Khoen",
+      "Khlong Khon",
+      "Nang Takhian",
+      "Bang Chakreng"
+    ],
+    "Bang Khonthi": [
+      "Kradangnga",
+      "Bang Sakae",
+      "Bang Yi Rong",
+      "Rong Hip",
+      "Bang Khonthi",
+      "Don Manora",
+      "Bang Phrom",
+      "Bang Kung",
+      "Chom Pluak",
+      "Bang Nok Khwaek",
+      "Yai Phaeng",
+      "Bang Krabue",
+      "Ban Pramot"
+    ],
+    "Amphawa": [
+      "Amphawa",
+      "Suan Luang",
+      "Tha Kha",
+      "Wat Pradu",
+      "Mueang Mai",
+      "Bang Chang",
+      "Khwae Om",
+      "Plai Phongphang",
+      "Bang Khae",
+      "Phraek Nam Daeng",
+      "Yi San",
+      "Bang Nang Lee"
+    ]
+  },
+  "Phetchaburi": {
+    "Mueang Phetchaburi": [
+      "Tha Rap",
+      "Khlong Krachaeng",
+      "Bang Chan",
+      "Na Phan Sam",
+      "Thong Chai",
+      "Ban Kum",
+      "Nong Sano",
+      "Rai Som",
+      "Wiang Khoi",
+      "Bang Chak",
+      "Ban Mo",
+      "Ton Mamuang",
+      "Chong Sakae",
+      "Na Wung",
+      "Sam Marong",
+      "Pho Phra",
+      "Hat Chao Samran",
+      "Hua Saphan",
+      "Ton Maphrao",
+      "Wang Tako",
+      "Pho Rai Wan",
+      "Don Yang",
+      "Nong Khanan",
+      "Nong Phlap"
+    ],
+    "Khao Yoi": [
+      "Khao Yoi",
+      "Sa Phang",
+      "Bang Khem",
+      "Thap Khang",
+      "Nong Pla Lai",
+      "Nong Prong",
+      "Nong Chumphon",
+      "Huai Rong",
+      "Huai Tha Chang",
+      "Nong Chumphon Nuea"
+    ],
+    "Nong Ya Plong": [
+      "Nong Ya Plong",
+      "Yang Nam Klat Nuea",
+      "Yang Nam Klat Tai",
+      "Tha Takror"
+    ],
+    "Cha-am": [
+      "Cha-am",
+      "Bang Kao",
+      "Na Yang",
+      "Khao Yai",
+      "Nong Sala",
+      "Huai Sai Nuea",
+      "Rai Mai Phatthana",
+      "Sam Phraya",
+      "Don Khun Huai"
+    ],
+    "Tha Yang": [
+      "Tha Yang",
+      "Tha Khoi",
+      "Yang Yong",
+      "Nong Chok",
+      "Map Pla Khao",
+      "Tha Mai Ruak",
+      "Wang Khrai",
+      "Klat Luang",
+      "Puek Tian",
+      "Khao Krapuk",
+      "Tha Laeng",
+      "Ban Nai Dong"
+    ],
+    "Ban Lat": [
+      "Ban Lat",
+      "Ban Hat",
+      "Ban Than",
+      "Tamru",
+      "Samo Phlue",
+      "Rai Makham",
+      "Tha Sen",
+      "Nong Krachet",
+      "Nong Kapu",
+      "Lat Pho",
+      "Saphan Krai",
+      "Rai Khok",
+      "Rong Khe",
+      "Rai Sathon",
+      "Huai Khong",
+      "Tha Chang",
+      "Tham Rong",
+      "Huay Lueg"
+    ],
+    "Ban Laem": [
+      "Ban Laem",
+      "Bang Khun Sai",
+      "Pak Thale",
+      "Bang Kaeo",
+      "Laem Phak Bia",
+      "Bang Tabun",
+      "Bang Tabun Ok",
+      "Bang Khrok",
+      "Tha Raeng",
+      "Tha Raeng Ok"
+    ],
+    "Kaeng Krachan": [
+      "Kaeng Krachan",
+      "Song Phi Nong",
+      "Wang Chan",
+      "Pa Deng",
+      "Phu Sawan",
+      "Huai Mae Phriang"
+    ]
+  },
+  "Prachuap Khiri Khan": {
+    "Mueang Prachuap Khiri Khan": [
+      "Prachuap Khiri Khan",
+      "Ko Lak",
+      "Khlong Wan",
+      "Huai Sai",
+      "Ao Noi",
+      "Bo Nok"
+    ],
+    "Kui Buri": [
+      "Kui Buri",
+      "Kui Nuea",
+      "Khao Daeng",
+      "Don Yai Nu",
+      "Sam Krathai",
+      "Hat Kham"
+    ],
+    "Thap Sakae": [
+      "Thap Sakae",
+      "Ang Thong",
+      "Na Hukwang",
+      "Khao Lan",
+      "Huai Yang",
+      "Saeng Arun"
+    ],
+    "Bang Saphan": [
+      "Kamnoet Nopphakhun",
+      "Phong Prasat",
+      "Ron Thong",
+      "Thong Chai",
+      "Chai Kasem",
+      "Thong Mongkhon",
+      "Mae Ramphueng"
+    ],
+    "Bang Saphan Noi": [
+      "Pak Phraek",
+      "Bang Saphan",
+      "Sai Thong",
+      "Chang Raek",
+      "Chaiyarat"
+    ],
+    "Pran Buri": [
+      "Pran Buri",
+      "Khao Noi",
+      "Pak Nam Pran",
+      "Nong Ta Taem",
+      "Wang Phong",
+      "Khao Chao"
+    ],
+    "Hua Hin": [
+      "Hua Hin",
+      "Nong Kae",
+      "Hin Lek Fai",
+      "Nong Phlap",
+      "Thap Tai",
+      "Huai Sat Yai",
+      "Bueng Nakhon"
+    ],
+    "Sam Roi Yot": [
+      "Sam Roi Yot",
+      "Sila Loi",
+      "Rai Kao",
+      "Salalai",
+      "Rai Mai"
+    ]
+  },
+  "Nakhon Si Thammarat": {
+    "Mueang Nakhon Si Thammarat": [
+      "Nai Mueang",
+      "Tha Wang",
+      "Khlang",
+      "Tha Rai",
+      "Pak Nakhon",
+      "Na Sai",
+      "Kamphaeng Sao",
+      "Chai Montri",
+      "Mamuang Song Ton",
+      "Na Khian",
+      "Tha Ngio",
+      "Pho Sadet",
+      "Bang Chak",
+      "Pak Phun",
+      "Tha Sak",
+      "Tha Ruea"
+    ],
+    "Phrom Khiri": [
+      "Phrommalok",
+      "Ban Ko",
+      "In Khiri",
+      "Thon Hong",
+      "Na Reang"
+    ],
+    "Lan Saka": [
+      "Khao Kaeo",
+      "Lan Saka",
+      "Tha Di",
+      "Kamlon",
+      "Khun Thale"
+    ],
+    "Chawang": [
+      "Chawang",
+      "La-ai",
+      "Na Wae",
+      "Mai Riang",
+      "Kapiat",
+      "Na Kacha",
+      "Huai Prik",
+      "Saira",
+      "Na Khliang",
+      "Chan Di"
+    ],
+    "Phipun": [
+      "Phipun",
+      "Kathun",
+      "Khao Phra",
+      "Yang Khom",
+      "Khuan Klang"
+    ],
+    "Chian Yai": [
+      "Chian Yai",
+      "Tha Khanan",
+      "Ban Klang",
+      "Ban Noen",
+      "Sai Mak",
+      "Thong Lamchiak",
+      "Suea Hueng",
+      "Karaket",
+      "Khao Phra Bat",
+      "Mae Chao Yu Hua"
+    ],
+    "Cha-uat": [
+      "Cha-uat",
+      "Tha Samet",
+      "Tha Pracha",
+      "Khreng",
+      "Wang Ang",
+      "Ban Tun",
+      "Khon Hat",
+      "Khuan Nong Hong",
+      "Khao Phra Thong",
+      "Nang Long",
+      "Nang Long"
+    ],
+    "Tha Sala": [
+      "Tha Sala",
+      "Klai",
+      "Tha Khuen",
+      "Hua Taphan",
+      "Sa Kaeo",
+      "Mokkhalan",
+      "Thai buri",
+      "Don tako",
+      "Taling Chan",
+      "Pho Thong"
+    ],
+    "Thung Song": [
+      "Pak Phraek",
+      "Chamai",
+      "Nong Hong",
+      "Khuan Krot",
+      "Na Mai Phai",
+      "Na Luang Sen",
+      "Khao Ro",
+      "Kapang",
+      "Thi Wang",
+      "Namtok",
+      "Tham Yai",
+      "Na Pho",
+      "Khao Khao"
+    ],
+    "Na Bon": [
+      "Na Bon",
+      "Thung Song",
+      "Kaeo Saen"
+    ],
+    "Thung Yai": [
+      "Tha Yang",
+      "Thung Sang",
+      "Thung Yai",
+      "Kurae",
+      "Prik",
+      "Bang Rup",
+      "Krung Yan"
+    ],
+    "Pak Phanang": [
+      "Pak Phanang",
+      "Khlong Noi",
+      "Pa Rakam",
+      "Chamao",
+      "Khlong Krabue",
+      "Ko Thuat",
+      "Ban Mai",
+      "Hu Long",
+      "Laem Talumphuk",
+      "Pak Phanang Fang Tawantok",
+      "Bang Sala",
+      "Bang Phra",
+      "Bang Taphong",
+      "Pak Phanang Fang Tawan-ok",
+      "Ban Phoeng",
+      "Tha Phaya",
+      "Pak Phraek",
+      "Khanap Nak"
+    ],
+    "Ron Phibun": [
+      "Ron Phibun",
+      "Hin Tok",
+      "Sao Thong",
+      "Khuan Koei",
+      "Khuan Phang",
+      "Khuan Chum"
+    ],
+    "Sichon": [
+      "Sichon",
+      "Thung Prang",
+      "Chalong",
+      "Sao Phao",
+      "Plian",
+      "Si Khit",
+      "Theppharat",
+      "Khao Noi",
+      "Thung Sai"
+    ],
+    "Khanom": [
+      "Khanom",
+      "Khuan Thong",
+      "Thong Nian"
+    ],
+    "Hua Sai": [
+      "Hua Sai",
+      "Na Saton",
+      "Sai Khao",
+      "Laem",
+      "Khao Phang Krai",
+      "Ban Ram",
+      "Bang Nop",
+      "Tha Som",
+      "Khuan Chalik",
+      "Ram Kaeo",
+      "Ko Phet"
+    ],
+    "Bang Khan": [
+      "Bang Khan",
+      "Ban Lamnao",
+      "Wang Hin",
+      "Ban Nikhom"
+    ],
+    "Tham Phannara": [
+      "Tham Phannara",
+      "Khlong Se",
+      "Dusit"
+    ],
+    "Chulabhorn": [
+      "Ban Khuan Mut",
+      "Ban Cha-uat",
+      "Khuan Nong Khwa",
+      "Thung Pho",
+      "Na Mo Bun",
+      "Sam Tambon"
+    ],
+    "Phra Phrom": [
+      "Na Phru",
+      "Na San",
+      "Thai Samphao",
+      "Chang Sai"
+    ],
+    "Nopphitam": [
+      "Nopphitam",
+      "Krung Ching",
+      "Karo",
+      "Na Reng"
+    ],
+    "Chang Klang": [
+      "Chang Klang",
+      "Lak Chang",
+      "Suan Kan"
+    ],
+    "Chaloem Phra Kiat": [
+      "Chian Khao",
+      "Don Tro",
+      "Suan Luang",
+      "Thang Phun"
+    ]
+  },
+  "Krabi": {
+    "Mueang Krabi": [
+      "Pak Nam",
+      "Krabi Yai",
+      "Krabi Noi",
+      "Khao Khram",
+      "Khao Thong",
+      "Thap Prik",
+      "Sai Thai",
+      "Ao Nang",
+      "Nong Thale",
+      "Khlong Prasong"
+    ],
+    "Khao Phanom": [
+      "Khao Phanom",
+      "Khao Din",
+      "Sin Pun",
+      "Phru Tiao",
+      "Na Khao",
+      "Khok Han"
+    ],
+    "Ko Lanta": [
+      "Ko Lanta Yai",
+      "Ko Lanta Noi",
+      "Ko Klang",
+      "Khlong Yang",
+      "Sala Dan"
+    ],
+    "Khlong Thom": [
+      "Khlong Thom Tai",
+      "Khlong Thom Nuea",
+      "Khlong Phon",
+      "Sai Khao",
+      "Huai Nam Khao",
+      "Phru Din Na",
+      "Phela"
+    ],
+    "Ao Luek": [
+      "Ao Luek Tai",
+      "Laem Sak",
+      "Na Nuea",
+      "Khlong Hin",
+      "Ao Luek Noi",
+      "Ao Luek Nuea",
+      "Khao Yai",
+      "Khlong Ya",
+      "Ban Klang"
+    ],
+    "Plai Phraya": [
+      "Plai Phraya",
+      "Khao Khen",
+      "Khao To",
+      "Khiri Wong"
+    ],
+    "Lam Thap": [
+      "Lam Thap",
+      "Din Udom",
+      "Thung Sai Thong",
+      "Din Daeng"
+    ],
+    "Nuea Khlong": [
+      "Nuea Khlong",
+      "Ko Si Boya",
+      "Khlong Khanan",
+      "Khlong Khamao",
+      "Khok Yang",
+      "Taling Chan",
+      "Pakasai",
+      "Huai Yung"
+    ]
+  },
+  "Phangnga": {
+    "Mueang Phang-nga": [
+      "Thai Chang",
+      "Nop Pring",
+      "Tham Nam Phut",
+      "Bang Toei",
+      "Tak Daet",
+      "Song Phraek",
+      "Thung Kha Ngok",
+      "Ko Panyi",
+      "Pa Ko"
+    ],
+    "Ko Yao": [
+      "Ko Yao Noi",
+      "Ko Yao Yai",
+      "Pru Nai"
+    ],
+    "Kapong": [
+      "Kapong",
+      "Tha Na",
+      "Mo",
+      "Le",
+      "Rommani"
+    ],
+    "Takua Thung": [
+      "Tham",
+      "Krasom",
+      "Kalai",
+      "Tha Yu",
+      "Lo Yung",
+      "Khok Kloi",
+      "Khlong Khian"
+    ],
+    "Takua Pa": [
+      "Takua Pa",
+      "Bang Nai Si",
+      "Bang Sai",
+      "Bang Muang",
+      "Tam Tua",
+      "Khok Khian",
+      "Khuekkhak",
+      "Ko Kho Khao"
+    ],
+    "Khura Buri": [
+      "Khura",
+      "Bang Wan",
+      "Ko Phra Thong",
+      "Mae Nang Khao"
+    ],
+    "Thap Put": [
+      "Thap Put",
+      "Marui",
+      "Bo Saen",
+      "Tham Thonglang",
+      "Khok Charoen",
+      "Bang Riang"
+    ],
+    "Thai Mueang": [
+      "Thai Mueang",
+      "Na Toei",
+      "Bang Thong",
+      "Thung Maphrao",
+      "Lam Phi",
+      "Lam Kaen"
+    ]
+  },
+  "Phuket": {
+    "Mueang Phuket": [
+      "Talat Yai",
+      "Talat Nuea",
+      "Ko Kaeo",
+      "Ratsada",
+      "Wichit",
+      "Chalong",
+      "Rawai",
+      "Karon"
+    ],
+    "Kathu": [
+      "Kathu",
+      "Pa Tong",
+      "Kamala"
+    ],
+    "Thalang": [
+      "Thep Krasattri",
+      "Si Sunthon",
+      "Choeng Thale",
+      "Pa Khlok",
+      "Mai Khao",
+      "Sakhu"
+    ]
+  },
+  "Surat Thani": {
+    "Mueang Surat Thani": [
+      "Talat",
+      "Makham Tia",
+      "Wat Pradu",
+      "Khun Thale",
+      "Bang Bai Mai",
+      "Bang Chana",
+      "Khlong Noi",
+      "Bang Sai",
+      "Bang Pho",
+      "Bang Kung",
+      "Khlong Chanak"
+    ],
+    "Kanchanadit": [
+      "Tha Thong",
+      "Tha Thong Mai",
+      "Kadae",
+      "Thung Kong",
+      "Krut",
+      "Chang Sai",
+      "Phlai Wat",
+      "Pa Ron",
+      "Takhian Thong",
+      "Chang Khwa",
+      "Tha Uthae",
+      "Thung Rung",
+      "Khlong Sa"
+    ],
+    "Don Sak": [
+      "Don Sak",
+      "Chonlakhram",
+      "Chaiyakhram",
+      "Pak Phraek"
+    ],
+    "Ko Samui": [
+      "Ang Thong",
+      "Lipa Noi",
+      "Taling Ngam",
+      "Na Mueang",
+      "Maret",
+      "Bo Phut",
+      "Mae Nam"
+    ],
+    "Ko Pha-ngan": [
+      "Ko Pha-ngan",
+      "Ban Tai",
+      "Koh Tao"
+    ],
+    "Chaiya": [
+      "Talat Chaiya",
+      "Phumriang",
+      "Lamet",
+      "Wiang",
+      "Thung",
+      "Pa We",
+      "Takrop",
+      "Mo Thai",
+      "Pak Mak"
+    ],
+    "Tha Chana": [
+      "Tha Chana",
+      "Samo Thong",
+      "Prasong",
+      "Khan Thuli",
+      "Wang",
+      "Khlong Pha"
+    ],
+    "Khiri Rat Nikhom": [
+      "Tha Khanon",
+      "Ban Yang",
+      "Nam Hak",
+      "Kapao",
+      "Tha Kradan",
+      "Yan Yao",
+      "Tham Singkhon",
+      "Ban Thamniap"
+    ],
+    "Ban Ta Khun": [
+      "Khao Wong",
+      "Phasaeng",
+      "Phru Thai",
+      "Khao Phang"
+    ],
+    "Phanom": [
+      "Phanom",
+      "Ton Yuan",
+      "Khlong Sok",
+      "Phlu Thuean",
+      "Phang Kan",
+      "Khlong Cha-un"
+    ],
+    "Tha Chang": [
+      "Tha Chang",
+      "Tha Khoei",
+      "Khlong Sai",
+      "Khao Than",
+      "Sawiat",
+      "Pak Chalui"
+    ],
+    "Ban Na San": [
+      "Na San",
+      "Phru Phi",
+      "Thung Tao",
+      "Lamphun",
+      "Tha Chi",
+      "Khuan Si",
+      "Khuan Suban",
+      "Khlong Prap",
+      "Nam Phu",
+      "Thung Tao Mai",
+      "Phoem Phun Sap"
+    ],
+    "Ban Na Doem": [
+      "Ban Na",
+      "Tha Ruea",
+      "Sap Thawi",
+      "Na Tai"
+    ],
+    "Khian Sa": [
+      "Khian Sa",
+      "Phuang Phromkhon",
+      "Khao Tok",
+      "Aranyakham Wari",
+      "Ban Sadet"
+    ],
+    "Wiang Sa": [
+      "Wiang Sa",
+      "Ban Song",
+      "Khlong Chanuan",
+      "Thung Luang",
+      "*Khao Niphan"
+    ],
+    "Phrasaeng": [
+      "Ipan",
+      "Sin Pun",
+      "Bang Sawan",
+      "Sai Khueng",
+      "Sin Charoen",
+      "Sai Sopha",
+      "Sakhu"
+    ],
+    "Phunphin": [
+      "Tha Kham",
+      "Tha Sathon",
+      "Lilet",
+      "Bang Maduea",
+      "Bang Duean",
+      "Tha Rong Chang",
+      "Krut",
+      "Phunphin",
+      "Bang Ngon",
+      "Si Wichai",
+      "Nam Rop",
+      "Maluan",
+      "Hua Toei",
+      "Nong Sai",
+      "Khao Hua Khwai",
+      "Tapan"
+    ],
+    "Chai Buri": [
+      "Song Phraek",
+      "Chai Buri",
+      "Khlong Noi",
+      "Sai Thong"
+    ],
+    "Vibhavadi": [
+      "Takuk Tai",
+      "Takuk Nuea"
+    ]
+  },
+  "Ranong": {
+    "Mueang Ranong": [
+      "Khao Niwet",
+      "Ratchakrut",
+      "Ngao",
+      "Bang Rin",
+      "Pak Nam",
+      "Bang Non",
+      "Hat Som Paen",
+      "Sai Daeng",
+      "Ko Phayam"
+    ],
+    "La-un": [
+      "La-un Tai",
+      "La-un Nuea",
+      "Bang Phra Tai",
+      "Bang Phra Nuea",
+      "Bang Kaeo",
+      "Nai Wong Nuea",
+      "Nai Wong Tai"
+    ],
+    "Kapoe": [
+      "Muang Kluang",
+      "Kapoe",
+      "Chiao Liang",
+      "Ban Na",
+      "Bang Hin"
+    ],
+    "Kra Buri": [
+      "Nam Chuet",
+      "Nam Chuet Noi",
+      "Mamu",
+      "Pak Chan",
+      "Lamliang",
+      "Choporo",
+      "Bang Yai"
+    ],
+    "Suk Samran": [
+      "Nakha",
+      "Kamphuan"
+    ]
+  },
+  "Chumphon": {
+    "Mueang Chumphon": [
+      "Tha Taphao",
+      "Pak Nam",
+      "Tha Yang",
+      "Bang Mak",
+      "Na Thung",
+      "Na Cha-ang",
+      "Tak Daet",
+      "Bang Luek",
+      "Hat Phan Krai",
+      "Wang Phai",
+      "Wang Mai",
+      "Ban Na",
+      "Khun Krathing",
+      "Thung Kha",
+      "Wisai Nuea",
+      "Hat Sai Ri",
+      "Tham Sing"
+    ],
+    "Tha Sae": [
+      "Tha Sae",
+      "Khuring",
+      "Salui",
+      "Na Kratam",
+      "Rap Ro",
+      "Tha Kham",
+      "Hong Charoen",
+      "Hin Kaeo",
+      "Sap Anan",
+      "Song Phi Nong"
+    ],
+    "Pathio": [
+      "Bang Song",
+      "Thale Sap",
+      "Saphli",
+      "Chum Kho",
+      "Don Yang",
+      "Pak Khlong",
+      "Khao Chai Rat"
+    ],
+    "Lang Suan": [
+      "Lang Suan",
+      "Khan Ngoen",
+      "Tha Maphla",
+      "Na Kha",
+      "Na Phaya",
+      "Ban Khuan",
+      "Bang Maphrao",
+      "Bang Nam Chuet",
+      "Pak Nam",
+      "Pho Daeng",
+      "Laem Sai",
+      "Wang Tako",
+      "Hat Yai"
+    ],
+    "Lamae": [
+      "Lamae",
+      "Thung Luang",
+      "Suan Taeng",
+      "Thung Kha Wat"
+    ],
+    "Phato": [
+      "Phato",
+      "Pak Song",
+      "Pang Wan",
+      "Phra Rak"
+    ],
+    "Sawi": [
+      "Na Pho",
+      "Sawi",
+      "Thung Raya",
+      "Tha Hin",
+      "Pak Phraek",
+      "Dan Sawi",
+      "Khron",
+      "Wisai Tai",
+      "Na Sak",
+      "Khao Thalu",
+      "Khao Khai"
+    ],
+    "Thung Tako": [
+      "Pak Tako",
+      "Thung Takhrai",
+      "Tako",
+      "Chong Mai Kaeo"
+    ]
+  },
+  "Songkhla": {
+    "Mueang Songkhla": [
+      "Bo Yang",
+      "Khao Rup Chang",
+      "Ko Taeo",
+      "Phawong",
+      "Thung Wang",
+      "Ko Yo"
+    ],
+    "Sathing Phra": [
+      "Chathing Phra",
+      "Kradangnga",
+      "Sanam Chai",
+      "Di Luang",
+      "Chumphon",
+      "Khlong Ri",
+      "Khu Khut",
+      "Tha Hin",
+      "Wat Chan",
+      "Bo Daeng",
+      "Bor Dan"
+    ],
+    "Chana": [
+      "Ban Na",
+      "Pa Ching",
+      "Saphan Mai Kaen",
+      "Sakom",
+      "Na Wa",
+      "Na Thap",
+      "Nam Khao",
+      "Khun Tat Wai",
+      "Tha Mo Sai",
+      "Chanong",
+      "Khu",
+      "Khae",
+      "Khlong Pia",
+      "Taling Chan"
+    ],
+    "Na Thawi": [
+      "Na Thawi",
+      "Chang",
+      "Na Mo Si",
+      "Khlong Sai",
+      "Plak Nu",
+      "Tha Pradu",
+      "Sathon",
+      "Thap Chang",
+      "Prakop",
+      "Khlong Kwang"
+    ],
+    "Thepha": [
+      "Thepha",
+      "Pak Bang",
+      "Ko Saba",
+      "Lam Phlai",
+      "Tha Muang",
+      "Wang Yai",
+      "Sakom"
+    ],
+    "Saba Yoi": [
+      "Saba Yoi",
+      "Thung Pho",
+      "Pian",
+      "Ban Not",
+      "Chanae",
+      "Khuha",
+      "Khao Daeng",
+      "Ba Hoi",
+      "Than Khiri"
+    ],
+    "Ranot": [
+      "Ranot",
+      "Khlong Daen",
+      "Takhria",
+      "Tha Bon",
+      "Ban Mai",
+      "Bo Tru",
+      "Pak Trae",
+      "Phang Yang",
+      "Rawa",
+      "Wat Son",
+      "Ban Khao",
+      "Daen Sa-nguan"
+    ],
+    "Krasae Sin": [
+      "Ko Yai",
+      "Rong",
+      "Choeng Sae",
+      "Krasae Sin"
+    ],
+    "Rattaphum": [
+      "Kamphaeng Phet",
+      "Tha Chamuang",
+      "Khuha Tai",
+      "Khuan Ru",
+      "Khao Phra"
+    ],
+    "Sadao": [
+      "Sadao",
+      "Prik",
+      "Phang La",
+      "Samnak Taeo",
+      "Thung Mo",
+      "Tha Pho",
+      "Padang Besa",
+      "Samnak Kham",
+      "Khao Mi Kiat"
+    ],
+    "Hat Yai": [
+      "Hat Yai",
+      "Khuan Lang",
+      "Khu Tao",
+      "Kho Hong",
+      "Khlong Hae",
+      "Khlong U Taphao",
+      "Chalung",
+      "Thung Yai",
+      "Thung Tamsao",
+      "Tha Kham",
+      "Nam Noi",
+      "Ban Phru",
+      "Phatong"
+    ],
+    "Na Mom": [
+      "Na Mom",
+      "Phichit",
+      "Thung Khamin",
+      "Khlong Rhang"
+    ],
+    "Khuan Niang": [
+      "Rattaphum",
+      "Khuan So",
+      "Huai Luek",
+      "Bang Rieang"
+    ],
+    "Bang Klam": [
+      "Bang Klam",
+      "Tha Chang",
+      "Mae Thom",
+      "Ban Han"
+    ],
+    "Singhanakhon": [
+      "Ching Kho",
+      "Sathing Mo",
+      "Thamnop",
+      "Ram Daeng",
+      "Wat Khanun",
+      "Chalae",
+      "Pak Ro",
+      "Pa Khat",
+      "Hua Khao",
+      "Bang Khiat",
+      "Muang Ngam"
+    ],
+    "Khlong Hoi Khong": [
+      "Khlong Hoi Khong",
+      "Thung Lan",
+      "Khok Muang",
+      "Khlong La"
+    ]
+  },
+  "Satun": {
+    "Mueang Satun": [
+      "Phiman",
+      "Khlong Khut",
+      "Khuan Khan",
+      "Ban Khuan",
+      "Chalung",
+      "Ko Sarai",
+      "Tanyong Po",
+      "Che Bilang",
+      "Tam Malang",
+      "Puyu",
+      "Khuan Pho",
+      "Ketri"
+    ],
+    "Khuan Don": [
+      "Khuan Don",
+      "Khuan Sato",
+      "Yan Sue",
+      "Wang Prachan"
+    ],
+    "Khuan Kalong": [
+      "Thung Nui",
+      "Khuan Kalong",
+      "Udai Charoen"
+    ],
+    "Tha Phae": [
+      "Tha Phae",
+      "Paera",
+      "Sakhon",
+      "Tha Rua"
+    ],
+    "La-ngu": [
+      "Kamphaeng",
+      "La-ngu",
+      "Khao Khao",
+      "Pak Nam",
+      "Nam Phut",
+      "Laem Son"
+    ],
+    "Thung Wa": [
+      "Thung Wa",
+      "Na Thon",
+      "Khon Khlan",
+      "Thung Bulang",
+      "Pa Kae Bo Hin"
+    ],
+    "Manang": [
+      "Palm Phatthana",
+      "Nikhom Phatthana"
+    ]
+  },
+  "Trang": {
+    "Mueang Trang": [
+      "Thap Thiang",
+      "Na Phala",
+      "Ban Khuan",
+      "Na Bin La",
+      "Khuan Pring",
+      "Na Yong Tai",
+      "Bang Rak",
+      "Khok Lo",
+      "Na To Ming",
+      "Nong Trut",
+      "Nam Phut",
+      "Na Ta Luang",
+      "Ban Pho",
+      "Na Tham Nuea",
+      "Na Tham Tai"
+    ],
+    "Kantang": [
+      "Kantang",
+      "Khuan Thani",
+      "Bang Mak",
+      "Bang Pao",
+      "Wang Won",
+      "Kantang Tai",
+      "Khok Yang",
+      "Khlong Lu",
+      "Yan Sue",
+      "Bo Nam Ron",
+      "Bang Sak",
+      "Na Kluea",
+      "Ko Libong",
+      "Khlong Chi Lom"
+    ],
+    "Yan Ta Khao": [
+      "Yan Ta Khao",
+      "Nong Bo",
+      "Na Chum Het",
+      "Nai Khuan",
+      "Phrong Chorakhe",
+      "Thung Krabue",
+      "Thung Khai",
+      "Ko Pia"
+    ],
+    "Palian": [
+      "Tha Kham",
+      "Thung Yao",
+      "Palian",
+      "Bang Duan",
+      "Ban Na",
+      "Suso",
+      "Liphang",
+      "Ko Sukon",
+      "Tha Phaya",
+      "Laem Som"
+    ],
+    "Sikao": [
+      "Bo Hin",
+      "Khao Mai Kaeo",
+      "Kalase",
+      "Mai Fat",
+      "Na Mueang Phet"
+    ],
+    "Huai Yot": [
+      "Huai Yot",
+      "Nong Chang Laen",
+      "Bang Di",
+      "Bang Kung",
+      "Khao Kop",
+      "Khao Khao",
+      "Khao Pun",
+      "Pak Chaem",
+      "Pak Khom",
+      "Tha Ngio",
+      "Lamphu Ra",
+      "Na Wong",
+      "Huai Nang",
+      "Nai Tao",
+      "Thung To",
+      "Wang Khiri"
+    ],
+    "Wang Wiset": [
+      "Khao Wiset",
+      "Wang Maprang",
+      "Ao Tong",
+      "Tha Saba",
+      "Wang Maprang Nuea"
+    ],
+    "Na Yong": [
+      "Na Yong Nuea",
+      "Chong",
+      "Lamo",
+      "Khok Saba",
+      "Na Muen Si",
+      "Na Khao Sia"
+    ],
+    "Ratsada": [
+      "Khuan Mao",
+      "Khlong Pang",
+      "Nong Bua",
+      "Nong Prue",
+      "Khao Phrai"
+    ],
+    "Hat Samran": [
+      "Hat Samran",
+      "Ba Wi",
+      "Ta Se"
+    ]
+  },
+  "Phatthalung": {
+    "Mueang Phatthalung": [
+      "Khuha Sawan",
+      "Khao Chiak",
+      "Tha Miram",
+      "Khok Cha-ngai",
+      "Na Thom",
+      "Prang Mu",
+      "Tha Khae",
+      "Lampam",
+      "Tamnan",
+      "Khuan Maphrao",
+      "Rom Mueang",
+      "Chai Buri",
+      "Na Not",
+      "Phaya Khan"
+    ],
+    "Kong Ra": [
+      "Kong Ra",
+      "Charat",
+      "Khlong Chaloem",
+      "Khlong Sai Khao",
+      "Som Wang"
+    ],
+    "Khao Chaison": [
+      "Khao Chaison",
+      "Khuan Khanun",
+      "Chong Thanon",
+      "Han Pho",
+      "Khok Muang"
+    ],
+    "Tamot": [
+      "Mae Khari",
+      "Tamod",
+      "Khlong Yai"
+    ],
+    "Khuan Khanun": [
+      "Khuan Khanun",
+      "Thale Noi",
+      "Na Khayat",
+      "Phanom Wang",
+      "Laem Tanot",
+      "Pan Tae",
+      "Tanot Duan",
+      "Don Sai",
+      "Makok Nuea",
+      "Phanang Tung",
+      "Chamuang",
+      "Phraek Ha"
+    ],
+    "Pak Phayun": [
+      "Pak Phayun",
+      "Don Pradu",
+      "Ko Nang Kham",
+      "Ko Mak",
+      "Falami",
+      "Han Thao",
+      "Don Sai"
+    ],
+    "Si Banphot": [
+      "Khao Ya",
+      "Khao Pu",
+      "Taphaen"
+    ],
+    "Pa Bon": [
+      "Pa Bon",
+      "Khok Sai",
+      "Nong Thong",
+      "Thung Nari",
+      "Wang Mai"
+    ],
+    "Bang Kaeo": [
+      "Tha Maduea",
+      "Na Pakho",
+      "Khok Sak"
+    ],
+    "Pa Phayom": [
+      "Pa Phayom",
+      "Lan Khoi",
+      "Ko Tao",
+      "Ban Phrao"
+    ],
+    "Srinagarindra": [
+      "Chumphon",
+      "Ban Na",
+      "Ang Thong",
+      "Lam Sin"
+    ]
+  },
+  "Pattani": {
+    "Mueang Pattani": [
+      "Sabarang",
+      "Ano Ru",
+      "Chabang Tiko",
+      "Bana",
+      "Tanyong Lulo",
+      "Khlong Maning",
+      "Kamiyo",
+      "Barahom",
+      "Paka Harang",
+      "Ru Samilae",
+      "Talubo",
+      "Baraho",
+      "Puyut"
+    ],
+    "Khok Pho": [
+      "Khok Pho",
+      "Makrut",
+      "Bang Kro",
+      "Pa Bon",
+      "Sai Khao",
+      "Na Pradu",
+      "Pak Lo",
+      "Thung Phala",
+      "Tha Ruea",
+      "Na Ket",
+      "Khuan Nori",
+      "Chang Hai Tok"
+    ],
+    "Nong Chik": [
+      "Ko Po",
+      "Kholo Tanyong",
+      "Don Rak",
+      "Dato",
+      "Tuyong",
+      "Tha Kamcham",
+      "Bo Thong",
+      "Bang Khao",
+      "Bang Tawa",
+      "Pulo Puyo",
+      "Yabi",
+      "Lipa Sa-ngo"
+    ],
+    "Panare": [
+      "Panare",
+      "Tha Kham",
+      "Ban Nok",
+      "Don",
+      "Khuan",
+      "Tha Nam",
+      "Khok Krabue",
+      "Pho Ming",
+      "Ban Klang",
+      "Ban Nam Bo"
+    ],
+    "Mayo": [
+      "Mayo",
+      "Thanon",
+      "Trang",
+      "Krawa",
+      "Lubo Yirai",
+      "La-nga",
+      "Kra So",
+      "Ko Chan",
+      "Pado",
+      "Sakho Bon",
+      "Sakho Tai",
+      "Sakam",
+      "Panan"
+    ],
+    "Thung Yang Daeng": [
+      "Talo Mae Na",
+      "Phithen",
+      "Nam Dam",
+      "Paku"
+    ],
+    "Sai Buri": [
+      "Taluban",
+      "Tabing",
+      "Pase Yawo",
+      "Bang Kao",
+      "Bue Re",
+      "Tro Bon",
+      "Kadunong",
+      "Lahan",
+      "Manang Dalam",
+      "Paen",
+      "Thung Khla"
+    ],
+    "Mai Kaen": [
+      "Sai Thong",
+      "Mai Kaen",
+      "Talo Krai Thong",
+      "Don Sai"
+    ],
+    "Yaring": [
+      "Talo",
+      "Talo Kapo",
+      "Tanyong Dalo",
+      "Tanyong Chueng-nga",
+      "Tolang",
+      "Ta Kae",
+      "Tali-ai",
+      "Yamu",
+      "Bang Pu",
+      "Nong Raet",
+      "Piya Mumang",
+      "Pula Kong",
+      "Baloi",
+      "Saban",
+      "Manang Yong",
+      "Rata Panyang",
+      "Charang",
+      "Laem Pho"
+    ],
+    "Yarang": [
+      "Yarang",
+      "Sadawa",
+      "Prachan",
+      "Sano",
+      "Rawaeng",
+      "Pitu Mudi",
+      "Wat",
+      "Krado",
+      "Khlong Mai",
+      "Mo Mawi",
+      "Kolam",
+      "Khao Tum"
+    ],
+    "Kapho": [
+      "Karubi",
+      "Talo Due Raman",
+      "Plong Hoi"
+    ],
+    "Mae Lan": [
+      "Mae Lan",
+      "Muang Tia",
+      "Pa Rai"
+    ]
+  },
+  "Yala": {
+    "Mueang Yala": [
+      "Sateng",
+      "Budi",
+      "Yopo",
+      "Lidon",
+      "Yala",
+      "Tha Sap",
+      "Lam Mai",
+      "Na Tham",
+      "Lam Phaya",
+      "Po Seng",
+      "Phron",
+      "Bannang Sareng",
+      "Sateng Nok",
+      "Ta Se"
+    ],
+    "Betong": [
+      "Betong",
+      "Yarom",
+      "Tano Maero",
+      "Aiyoe Weng",
+      "Than Nam Thip"
+    ],
+    "Bannang Sata": [
+      "Bannang Sata",
+      "Bacho",
+      "Tano Pute",
+      "Tham Thalu",
+      "Taling Chan",
+      "Khuean Bang Lang"
+    ],
+    "Than To": [
+      "Than To",
+      "Ban Rae",
+      "Mae Wat",
+      "Khiri Khet"
+    ],
+    "Yaha": [
+      "Yaha",
+      "La-ae",
+      "Patae",
+      "Baro",
+      "Ta Chi",
+      "Ba-ngoi Sinae",
+      "Ka Tong"
+    ],
+    "Raman": [
+      "Kayu Boko",
+      "Kalupang",
+      "Kalo",
+      "Koto Tuera",
+      "Kota Baru",
+      "Kero",
+      "Cha-kwa",
+      "Tha Thong",
+      "Noen Ngam",
+      "Balo",
+      "Ba-ngoi",
+      "Buemang",
+      "Yata",
+      "Wang Phaya",
+      "Asong",
+      "Talo Halo"
+    ],
+    "Kabang": [
+      "Kabang",
+      "Bala"
+    ],
+    "Krong Pinang": [
+      "Krong Pinang",
+      "Sa-e",
+      "Huai Krathing",
+      "Purong"
+    ]
+  },
+  "Narathiwat": {
+    "Mueang Narathiwat": [
+      "Bang Nak",
+      "Lam Phu",
+      "Manang Tayo",
+      "Bang Po",
+      "Kaluwo",
+      "Kaluwo Nuea",
+      "Khok Khian"
+    ],
+    "Tak Bai": [
+      "Chehe",
+      "Phrai Wan",
+      "Phron",
+      "Sala Mai",
+      "Bang Khun Thong",
+      "Ko Sathon",
+      "Na Nak",
+      "Khosit"
+    ],
+    "Bacho": [
+      "Bacho",
+      "Lubo Sawo",
+      "Kayo Mati",
+      "Paluka Samo",
+      "Bare Nuea",
+      "Ba Re Tai"
+    ],
+    "Yi-ngo": [
+      "Yi-ngo",
+      "Lahan",
+      "Chobo",
+      "Lubo Baya",
+      "Lubo Buesa",
+      "Tapoyo"
+    ],
+    "Ra-ngae": [
+      "Tanyong Mat",
+      "Tanyong Limo",
+      "Bo-ngo",
+      "Kalisa",
+      "Ba-ngo Sato",
+      "Chaloem",
+      "Maruebo Tok"
+    ],
+    "Rueso": [
+      "Rueso",
+      "Sawo",
+      "Riang",
+      "Samakkhi",
+      "Batong",
+      "Lalo",
+      "Rueso Ok",
+      "Khok Sato",
+      "Suwari"
+    ],
+    "Si Sakhon": [
+      "Sako",
+      "Tamayung",
+      "Si Sakhon",
+      "Choeng Khiri",
+      "Kalong",
+      "Si Banphot"
+    ],
+    "Waeng": [
+      "Waeng",
+      "Kayu Khla",
+      "Kholo",
+      "Lochut",
+      "Mae Dong",
+      "Erawan"
+    ],
+    "Sukhirin": [
+      "Mamong",
+      "Sukhirin",
+      "Kia",
+      "Phukhao Thong",
+      "Rom Sai"
+    ],
+    "Su-ngai Kolok": [
+      "Su-ngai Kolok",
+      "Pase Mat",
+      "Muno",
+      "Puyo"
+    ],
+    "Su-ngai Padi": [
+      "Paluru",
+      "Su-ngai Padi",
+      "To Deng",
+      "Sako",
+      "Riko",
+      "Ka Wa"
+    ],
+    "Chanae": [
+      "Chanae",
+      "Dusong Yo",
+      "Phadung Mat",
+      "Chang Phueak"
+    ],
+    "Cho-airong": [
+      "Chuap",
+      "Bukit",
+      "Maruebo Ok"
+    ]
+  }
+}

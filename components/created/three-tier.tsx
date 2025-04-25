@@ -148,7 +148,7 @@ export function ThreeTier({
                       aria-expanded={openProvince}
                       className="w-full justify-between font-normal"
                     >
-                      {field.value ? field.value : "เลือกจังหวัด..."}
+                      {field.value ? field.value : "Select Province..."}
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </FormControl>
@@ -206,7 +206,7 @@ export function ThreeTier({
                       className="w-full justify-between font-normal"
                       disabled={!selectedProvince}
                     >
-                      {field.value ? field.value : "เลือกอำเภอ..."}
+                      {field.value ? field.value : "Select District..."}
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </FormControl>
@@ -263,7 +263,7 @@ export function ThreeTier({
                       className="w-full justify-between font-normal"
                       disabled={!selectedProvince || !selectedDistrict}
                     >
-                      {field.value ? field.value : "เลือกตำบล..."}
+                      {field.value ? field.value : "Select Subdistrict"}
                       <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                     </Button>
                   </FormControl>

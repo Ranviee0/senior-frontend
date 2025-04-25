@@ -8,7 +8,7 @@ export interface Upload {
   longitude: number;
   zoning: string;
   pop_density: number;
-  flood_risk: "low" | "medium" | "high";
+  flood_risk: "low" | "medium" | "high" | "unknown";
   nearby_dev_plan: string[];
 }
 

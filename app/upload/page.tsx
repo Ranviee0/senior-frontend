@@ -1,43 +1,23 @@
 "use client"
 
-import type React from "react"
-import { useEffect, useState } from "react"
-import { useForm, FormProvider, Controller } from "react-hook-form"
+import { useState } from "react"
+import { useForm, FormProvider } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { ThreeTier } from "@/components/created/three-tier"
-import provinceData from "@/data/provinces.json"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
-import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Separator } from "@/components/ui/separator"
-import { ImageUploadPreview } from "@/components/created/image-upload"
-import type { ProvinceData } from "@/app/types"
-import { LocationPicker } from "@/components/created/location-picker"
 import { uploadSchema, type UploadFormValues } from "./schema"
-import { AlertCircle, Check, X } from "lucide-react"
-import { Alert, AlertDescription } from "@/components/ui/alert"
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog"
 import { useRouter } from "next/navigation"
+import { StepIndicator } from "./step-indicator"
+import { BasicInformationStep } from "./basic-information-step"
+import { LocationDetailsStep } from "./location-details-step"
+import { DevelopmentPlansStep } from "./development-plans-step"
+import { PriceStep } from "./price-step"
+import { ConfirmationModal } from "./confirmation-modal"
+import { Button } from "@/components/ui/button"
+import { Separator } from "@/components/ui/separator"
+import { AlertCircle } from "lucide-react"
+import { Alert, AlertDescription } from "@/components/ui/alert"
 
-const UploadPage: React.FC = () => {
+const UploadPage = () => {
   const router = useRouter()
-  const [province, setProvince] = useState<string>("")
-  const [district, setDistrict] = useState<string>("")
-  const [subdistrict, setSubdistrict] = useState<string>("")
-  const [zipCode, setZipCode] = useState<string>("")
-  const [data, setData] = useState<ProvinceData | null>(null)
-  const [densityLevel, setDensityLevel] = useState<string>("")
-  const [densityValue, setDensityValue] = useState<number>(0)
-  const [streetAddress, setStreetAddress] = useState<string>("")
   const [currentStep, setCurrentStep] = useState<number>(0)
   const [stepErrors, setStepErrors] = useState<string[]>([])
   const [submissionStatus, setSubmissionStatus] = useState<{
@@ -52,6 +32,7 @@ const UploadPage: React.FC = () => {
     { title: "Basic Information", description: "Land details and images" },
     { title: "Location Details", description: "Address and geographical information" },
     { title: "Development Plans", description: "Nearby development information" },
+    { title: "Price", description: "Land pricing information" },
   ]
 
   const methods = useForm<UploadFormValues>({
@@ -74,14 +55,9 @@ const UploadPage: React.FC = () => {
   })
 
   const {
-    control,
-    setValue,
     handleSubmit,
-    watch,
-    register,
-    formState: { errors, isValid },
     trigger,
-    getValues,
+    formState: { errors },
   } = methods
 
   // Function to validate the current step
@@ -91,12 +67,11 @@ const UploadPage: React.FC = () => {
 
     switch (currentStep) {
       case 0:
-        isStepValid = await trigger(["land_name", "description", "area", "price"])
+        isStepValid = await trigger(["land_name", "description", "area"])
         if (!isStepValid) {
           if (errors.land_name) newErrors.push(errors.land_name.message as string)
           if (errors.description) newErrors.push(errors.description.message as string)
           if (errors.area) newErrors.push(errors.area.message as string)
-          if (errors.price) newErrors.push(errors.price.message as string)
         }
         break
       case 1:
@@ -116,84 +91,52 @@ const UploadPage: React.FC = () => {
           newErrors.push(errors.nearby_dev_plan.message as string)
         }
         break
+      case 3:
+        isStepValid = await trigger(["price"])
+        if (!isStepValid) {
+          if (errors.price) newErrors.push(errors.price.message as string)
+        }
+        break
     }
 
     setStepErrors(newErrors)
     return isStepValid
   }
 
+  // Function to check if all previous steps are valid
+  const areAllPreviousStepsValid = async () => {
+    // Check steps 0, 1, and 2
+    const step0Valid = await trigger(["land_name", "description", "area"], { shouldFocus: false })
+    if (!step0Valid) return false
+
+    const step1Valid = await trigger(["address", "lattitude", "longitude", "zoning", "pop_density", "flood_risk"], {
+      shouldFocus: false,
+    })
+    if (!step1Valid) return false
+
+    const step2Valid = await trigger(["nearby_dev_plan"], { shouldFocus: false })
+    if (!step2Valid) return false
+
+    return true
+  }
+
   // Function to handle next step
   const handleNextStep = async () => {
     const isStepValid = await validateStep()
     if (isStepValid) {
-      setCurrentStep(Math.min(steps.length - 1, currentStep + 1))
-      setStepErrors([])
-    }
-  }
-
-  useEffect(() => {
-    if (!province) return
-
-    const found = provinceData.find((p) => p["name-en"] === province)
-    setData(found ?? null)
-
-    if (found) {
-      const density = Number(found.population) / Number(found.area_km2)
-      setDensityValue(density)
-
-      let level = ""
-      if (density < 100) level = "low"
-      else if (density <= 650) level = "medium"
-      else level = "high"
-
-      setDensityLevel(level)
-      setValue("pop_density", density)
-    }
-  }, [province, setValue])
-
-  useEffect(() => {
-    const addressComponents = []
-    if (streetAddress) addressComponents.push(streetAddress)
-    if (subdistrict) addressComponents.push(subdistrict)
-    if (district) addressComponents.push(district)
-    if (province) addressComponents.push(province)
-    if (zipCode) addressComponents.push(zipCode)
-
-    const fullAddress = addressComponents.join(", ")
-    setValue("address", fullAddress)
-  }, [province, district, subdistrict, zipCode, streetAddress, setValue])
-
-  // Effect to handle redirect after successful submission
-  useEffect(() => {
-    let redirectTimer: NodeJS.Timeout
-
-    if (submissionStatus?.success) {
-      // Redirect to home page after 1.5 seconds to allow user to see success message
-      redirectTimer = setTimeout(() => {
-        router.push("/")
-      }, 1500)
-    }
-
-    return () => {
-      if (redirectTimer) clearTimeout(redirectTimer)
-    }
-  }, [submissionStatus, router])
-
-  const handleProvincesChange = (provinces: string[]) => {
-    if (provinces.length > 0) {
-      setProvince(provinces[0])
-    }
-  }
-
-  const handleDistrictsChange = (districts: string[]) => {
-    if (districts.length > 0) {
-      setDistrict(districts[0])
-    }
-  }
-
-  const handleSubdistrictsChange = (subdistricts: string[]) => {
-    if (subdistricts.length > 0) {
-      setSubdistrict(subdistricts[0])
+      // If moving to the price step (step 3), check if all previous steps are valid
+      if (currentStep === 2) {
+        const allValid = await areAllPreviousStepsValid()
+        if (allValid) {
+          setCurrentStep(Math.min(steps.length - 1, currentStep + 1))
+          setStepErrors([])
+        } else {
+          setStepErrors(["Please complete all previous steps before setting the price"])
+        }
+      } else {
+        setCurrentStep(Math.min(steps.length - 1, currentStep + 1))
+        setStepErrors([])
+      }
     }
   }
 
@@ -247,7 +190,11 @@ const UploadPage: React.FC = () => {
         success: true,
         message: "Land details uploaded successfully! Redirecting to home page...",
       })
-      // Redirect is now handled by the useEffect
+
+      // Redirect to home page after 1.5 seconds
+      setTimeout(() => {
+        router.push("/")
+      }, 1500)
     } catch (error) {
       console.error("❌ Upload error:", error)
       setSubmissionStatus({
@@ -260,13 +207,19 @@ const UploadPage: React.FC = () => {
     }
   }
 
-  // Format currency for display
-  const formatCurrency = (value: number) => {
-    return new Intl.NumberFormat("en-US", {
-      style: "currency",
-      currency: "THB",
-      minimumFractionDigits: 0,
-    }).format(value)
+  // Handle step navigation
+  const handleStepClick = async (index: number) => {
+    // If trying to navigate to the price step (index 3), check if all previous steps are valid
+    if (index === 3) {
+      const allValid = await areAllPreviousStepsValid()
+      if (allValid) {
+        setCurrentStep(index)
+      } else {
+        setStepErrors(["Please complete all previous steps before setting the price"])
+      }
+    } else {
+      setCurrentStep(index)
+    }
   }
 
   return (
@@ -276,46 +229,7 @@ const UploadPage: React.FC = () => {
           <h1 className="text-xl font-bold mb-4">Upload New Land</h1>
 
           {/* Step indicator */}
-          <div className="mb-8">
-            <div className="grid grid-cols-3 gap-0">
-              {steps.map((step, index) => (
-                <div
-                  key={index}
-                  className={`flex flex-col items-center relative ${
-                    index < steps.length - 1
-                      ? "after:content-[''] after:absolute after:top-5 after:left-1/2 after:w-full after:h-0.5 after:bg-gray-200 after:z-0"
-                      : ""
-                  }`}
-                >
-                  <div
-                    className={`w-10 h-10 rounded-full flex items-center justify-center mb-2 z-10
-                      ${
-                        currentStep === index
-                          ? "bg-primary text-primary-foreground"
-                          : currentStep > index
-                            ? "bg-primary/80 text-primary-foreground"
-                            : "bg-gray-200 text-gray-500"
-                      }`}
-                    onClick={() => setCurrentStep(index)}
-                    style={{ cursor: "pointer" }}
-                  >
-                    {index + 1}
-                  </div>
-                  <div className="text-sm font-medium text-center">{step.title}</div>
-                  <div className="text-xs text-gray-500 text-center px-2">{step.description}</div>
-
-                  {index < steps.length - 1 && (
-                    <div className="absolute top-5 left-1/2 w-full h-0.5 z-0" style={{ transform: "translateX(0%)" }}>
-                      <div
-                        className="h-full bg-primary transition-all"
-                        style={{ width: currentStep > index ? "100%" : "0%" }}
-                      />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
+          <StepIndicator steps={steps} currentStep={currentStep} onStepClick={handleStepClick} />
 
           <Separator className="my-3" />
 
@@ -343,235 +257,11 @@ const UploadPage: React.FC = () => {
 
           <div>
             <form onSubmit={handleSubmit(handleFormSubmit)} className="space-y-6">
-              {/* Step 1: Basic Information */}
-              {currentStep === 0 && (
-                <div className="space-y-6">
-                  <h2 className="text-md font-semibold mb-4">Basic Information</h2>
-
-                  {/* Property Images */}
-                  <div className="space-y-3">
-                    <ImageUploadPreview onChange={(files) => setValue("images", files)} />
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="land_name" className="text-sm">
-                      Land Name <span className="text-red-500">*</span>
-                    </Label>
-                    <Input
-                      id="land_name"
-                      {...register("land_name")}
-                      className={`h-9 ${errors.land_name ? "border-red-500" : ""}`}
-                    />
-                    {errors.land_name && (
-                      <p className="text-xs text-red-500 mt-1">{errors.land_name.message as string}</p>
-                    )}
-                  </div>
-
-                  {/* Basic Information */}
-                  <div className="grid grid-cols-3 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="price" className="text-sm">
-                        Price <span className="text-red-500">*</span>
-                      </Label>
-                      <Input
-                        id="price"
-                        type="number"
-                        {...register("price", { valueAsNumber: true })}
-                        className={`h-9 ${errors.price ? "border-red-500" : ""}`}
-                      />
-                      {errors.price && <p className="text-xs text-red-500 mt-1">{errors.price.message as string}</p>}
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="area" className="text-sm">
-                        Area (sq.m) <span className="text-red-500">*</span>
-                      </Label>
-                      <Input
-                        id="area"
-                        type="number"
-                        {...register("area", { valueAsNumber: true })}
-                        className={`h-9 ${errors.area ? "border-red-500" : ""}`}
-                      />
-                      {errors.area && <p className="text-xs text-red-500 mt-1">{errors.area.message as string}</p>}
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="description" className="text-sm">
-                      Description <span className="text-red-500">*</span>
-                    </Label>
-                    <Textarea
-                      id="description"
-                      rows={3}
-                      {...register("description")}
-                      className={errors.description ? "border-red-500" : ""}
-                    />
-                    {errors.description && (
-                      <p className="text-xs text-red-500 mt-1">{errors.description.message as string}</p>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {/* Step 2: Location Details */}
-              {currentStep === 1 && (
-                <div className="space-y-6">
-                  <h2 className="text-md font-semibold mb-4">Location Details</h2>
-
-                  <div className="space-y-4">
-                    <div>
-                      <div className="grid grid-cols-6 gap-4 mb-4">
-                        <div className="space-y-2 col-span-4">
-                          <Label htmlFor="streetAddress" className="text-sm">
-                            Street Address <span className="text-red-500">*</span>
-                          </Label>
-                          <Input
-                            id="streetAddress"
-                            value={streetAddress}
-                            onChange={(e) => setStreetAddress(e.target.value)}
-                            placeholder="e.g. 51 Main St."
-                            className={`h-9 ${errors.address ? "border-red-500" : ""}`}
-                          />
-                        </div>
-
-                        <div className="space-y-2 col-span-1">
-                          <Label htmlFor="zipCode" className="text-sm">
-                            Zip Code
-                          </Label>
-                          <Input
-                            id="zipCode"
-                            value={zipCode}
-                            onChange={(e) => setZipCode(e.target.value)}
-                            className="h-9"
-                          />
-                        </div>
-
-                        <div className="space-y-2 col-span-1">
-                          <Label className="text-sm">Population Density</Label>
-                          <div className="flex items-center space-x-2">
-                            <Input value={densityValue.toFixed(2)} readOnly className="h-9 bg-gray-50" />
-                            <span className="text-xs text-gray-500 whitespace-nowrap">({densityLevel})</span>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="mb-4">
-                        <ThreeTier
-                          control={control}
-                          fieldId="address_components"
-                          index={0}
-                          onProvincesChange={handleProvincesChange}
-                          onDistrictsChange={handleDistrictsChange}
-                          onSubdistrictsChange={handleSubdistrictsChange}
-                        />
-                      </div>
-
-                      <div className="grid grid-cols-3 gap-4">
-                        <div className="col-span-1 space-y-2">
-                          <Label htmlFor="flood_risk" className="text-sm">
-                            Flood Risk <span className="text-red-500">*</span>
-                          </Label>
-                          <Controller
-                            control={control}
-                            name="flood_risk"
-                            render={({ field }) => (
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <SelectTrigger className={`h-9 ${errors.flood_risk ? "border-red-500" : ""}`}>
-                                  <SelectValue placeholder="Select risk level" />
-                                </SelectTrigger>
-                                <SelectContent>
-                                  <SelectItem value="low">Low</SelectItem>
-                                  <SelectItem value="medium">Medium</SelectItem>
-                                  <SelectItem value="high">High</SelectItem>
-                                  <SelectItem value="unknown">Unknown</SelectItem>
-                                </SelectContent>
-                              </Select>
-                            )}
-                          />
-                          {errors.flood_risk && (
-                            <p className="text-xs text-red-500 mt-1">{errors.flood_risk.message as string}</p>
-                          )}
-                        </div>
-                        <div className="col-span-1 space-y-2">
-                          <Label htmlFor="zoning" className="text-sm">
-                            Zoning
-                          </Label>
-                          <Input id="zoning" {...register("zoning")} className="h-9" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    <LocationPicker
-                      control={control}
-                      latFieldId="lattitude"
-                      lngFieldId="longitude"
-                      label="Select Location"
-                      required
-                    />
-                    {(errors.lattitude || errors.longitude) && (
-                      <p className="text-xs text-red-500 mt-1">Valid location coordinates are required</p>
-                    )}
-                  </div>
-                </div>
-              )}
-
-              {/* Step 3: Development Plans */}
-              {currentStep === 2 && (
-                <div className="space-y-6">
-                  <h2 className="text-md font-semibold mb-4">Nearby Development Plans</h2>
-
-                  <div className="space-y-4">
-                    <Controller
-                      control={control}
-                      name="nearby_dev_plan"
-                      render={({ field }) => (
-                        <div className="space-y-3">
-                          {field.value.map((plan, index) => (
-                            <div key={index} className="flex gap-2">
-                              <Input
-                                value={plan}
-                                onChange={(e) => {
-                                  const newPlans = [...field.value]
-                                  newPlans[index] = e.target.value
-                                  field.onChange(newPlans)
-                                }}
-                                placeholder="Enter development plan"
-                                className={`h-9 ${errors.nearby_dev_plan ? "border-red-500" : ""}`}
-                              />
-                              <Button
-                                type="button"
-                                variant="outline"
-                                size="sm"
-                                onClick={() => {
-                                  const newPlans = field.value.filter((_, i) => i !== index)
-                                  field.onChange(newPlans.length ? newPlans : [""])
-                                }}
-                              >
-                                Remove
-                              </Button>
-                            </div>
-                          ))}
-                          <Button
-                            type="button"
-                            variant="outline"
-                            size="sm"
-                            onClick={() => {
-                              field.onChange([...field.value, ""])
-                            }}
-                          >
-                            Add Development Plan
-                          </Button>
-                          {errors.nearby_dev_plan && (
-                            <p className="text-xs text-red-500 mt-1">{errors.nearby_dev_plan.message as string}</p>
-                          )}
-                        </div>
-                      )}
-                    />
-                  </div>
-                </div>
-              )}
+              {/* Step content */}
+              {currentStep === 0 && <BasicInformationStep />}
+              {currentStep === 1 && <LocationDetailsStep />}
+              {currentStep === 2 && <DevelopmentPlansStep />}
+              {currentStep === 3 && <PriceStep />}
 
               {/* Navigation buttons */}
               <div className="flex justify-between pt-8">
@@ -603,65 +293,13 @@ const UploadPage: React.FC = () => {
       </div>
 
       {/* Confirmation Modal */}
-      <Dialog open={showConfirmModal} onOpenChange={setShowConfirmModal}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <DialogTitle>Confirm Land Upload</DialogTitle>
-            <DialogDescription>Please review the land details before confirming the upload.</DialogDescription>
-          </DialogHeader>
-
-          {formDataToSubmit && (
-            <div className="space-y-4 py-4">
-              <div className="grid grid-cols-2 gap-4">
-                <div>
-                  <h3 className="font-medium text-sm">Land Name</h3>
-                  <p className="text-sm">{formDataToSubmit.land_name}</p>
-                </div>
-                <div>
-                  <h3 className="font-medium text-sm">Price</h3>
-                  <p className="text-sm">{formatCurrency(formDataToSubmit.price)}</p>
-                </div>
-                <div>
-                  <h3 className="font-medium text-sm">Area</h3>
-                  <p className="text-sm">{formDataToSubmit.area} sq.m</p>
-                </div>
-                <div>
-                  <h3 className="font-medium text-sm">Flood Risk</h3>
-                  <p className="text-sm capitalize">{formDataToSubmit.flood_risk}</p>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="font-medium text-sm">Address</h3>
-                <p className="text-sm">{formDataToSubmit.address}</p>
-              </div>
-
-              <div>
-                <h3 className="font-medium text-sm">Description</h3>
-                <p className="text-sm line-clamp-2">{formDataToSubmit.description}</p>
-              </div>
-
-              {formDataToSubmit.images && formDataToSubmit.images.length > 0 && (
-                <div>
-                  <h3 className="font-medium text-sm">Images</h3>
-                  <p className="text-sm">{formDataToSubmit.images.length} image(s) selected</p>
-                </div>
-              )}
-            </div>
-          )}
-
-          <DialogFooter className="flex sm:justify-between">
-            <Button type="button" variant="outline" onClick={() => setShowConfirmModal(false)}>
-              <X className="mr-2 h-4 w-4" />
-              Cancel
-            </Button>
-            <Button type="button" onClick={submitForm} disabled={isSubmitting}>
-              <Check className="mr-2 h-4 w-4" />
-              {isSubmitting ? "Uploading..." : "Confirm Upload"}
-            </Button>
-          </DialogFooter>
-        </DialogContent>
-      </Dialog>
+      <ConfirmationModal
+        showModal={showConfirmModal}
+        setShowModal={setShowConfirmModal}
+        formData={formDataToSubmit}
+        onConfirm={submitForm}
+        isSubmitting={isSubmitting}
+      />
     </FormProvider>
   )
 }

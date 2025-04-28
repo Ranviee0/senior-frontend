@@ -43,7 +43,7 @@ const UploadPage = () => {
       address: "",
       area: 0,
       price: 0,
-      lattitude: 13.7563,
+      latitude: 13.7563,
       longitude: 100.5018,
       zoning: "",
       pop_density: 0,
@@ -75,10 +75,10 @@ const UploadPage = () => {
         }
         break
       case 1:
-        isStepValid = await trigger(["address", "lattitude", "longitude", "zoning", "pop_density", "flood_risk"])
+        isStepValid = await trigger(["address", "latitude", "longitude", "zoning", "pop_density", "flood_risk"])
         if (!isStepValid) {
           if (errors.address) newErrors.push(errors.address.message as string)
-          if (errors.lattitude) newErrors.push(errors.lattitude.message as string)
+          if (errors.latitude) newErrors.push(errors.latitude.message as string)
           if (errors.longitude) newErrors.push(errors.longitude.message as string)
           if (errors.zoning) newErrors.push(errors.zoning.message as string)
           if (errors.pop_density) newErrors.push(errors.pop_density.message as string)
@@ -109,7 +109,7 @@ const UploadPage = () => {
     const step0Valid = await trigger(["land_name", "description", "area"], { shouldFocus: false })
     if (!step0Valid) return false
 
-    const step1Valid = await trigger(["address", "lattitude", "longitude", "zoning", "pop_density", "flood_risk"], {
+    const step1Valid = await trigger(["address", "latitude", "longitude", "zoning", "pop_density", "flood_risk"], {
       shouldFocus: false,
     })
     if (!step1Valid) return false
@@ -162,7 +162,7 @@ const UploadPage = () => {
       formData.append("area", formDataToSubmit.area.toString())
       formData.append("price", formDataToSubmit.price.toString())
       formData.append("address", formDataToSubmit.address)
-      formData.append("lattitude", formDataToSubmit.lattitude.toString())
+      formData.append("latitude", formDataToSubmit.latitude.toString())
       formData.append("longitude", formDataToSubmit.longitude.toString())
       formData.append("pop_density", formDataToSubmit.pop_density.toString())
       formData.append("flood_risk", formDataToSubmit.flood_risk)

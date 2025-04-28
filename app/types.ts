@@ -4,7 +4,7 @@ export interface Upload {
   address: string;
   area: number;
   price: number;
-  lattitude: number;
+  latitude: number;
   longitude: number;
   zoning: string;
   pop_density: number;

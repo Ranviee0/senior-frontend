@@ -163,12 +163,12 @@ export const LocationDetailsStep: React.FC = () => {
       <div className="mt-6">
         <LocationPicker
           control={control}
-          latFieldId="lattitude"
+          latFieldId="latitude"
           lngFieldId="longitude"
           label="Select Location"
           required
         />
-        {(errors.lattitude || errors.longitude) && (
+        {(errors.latitude || errors.longitude) && (
           <p className="text-xs text-red-500 mt-1">Valid location coordinates are required</p>
         )}
       </div>

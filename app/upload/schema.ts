@@ -9,7 +9,7 @@ export const uploadSchema = z.object({
 
   // Location Details
   address: z.string().min(1, "Address is required"),
-  lattitude: z.number().min(-90).max(90, "Latitude must be between -90 and 90"),
+  latitude: z.number().min(-90).max(90, "Latitude must be between -90 and 90"),
   longitude: z.number().min(-180).max(180, "Longitude must be between -180 and 180"),
   zoning: z.string().optional(),
   pop_density: z.number().nonnegative("Population density cannot be negative"),
@@ -37,7 +37,7 @@ export const basicInfoSchema = uploadSchema.pick({
 
 export const locationSchema = uploadSchema.pick({
   address: true,
-  lattitude: true,
+  latitude: true,
   longitude: true,
   zoning: true,
   pop_density: true,

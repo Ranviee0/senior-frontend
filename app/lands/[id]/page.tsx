@@ -177,13 +177,6 @@ export default async function LandDetailsPage({ params }: { params: { id: string
                 </CardContent>
               </Card>
             )}
-
-            <div className="flex gap-4">
-              <Button className="flex-1">Contact Seller</Button>
-              <Button variant="outline" className="flex-1">
-                Share Listing
-              </Button>
-            </div>
           </div>
         </div>
       </div>

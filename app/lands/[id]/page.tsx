@@ -8,6 +8,7 @@ import { Separator } from "@/components/ui/separator"
 import { Badge } from "@/components/ui/badge"
 import { formatPrice } from "@/lib/utils"
 import { ImageGallery } from "@/components/created/image-gallery"
+import { MapComponent } from "@/components/created/map-component"
 
 interface LandListing {
   id: number
@@ -24,6 +25,15 @@ interface LandListing {
   nearbyDevPlan: string
   uploadedAt: string
   images: string[]
+}
+
+interface Landmark {
+  id: number
+  type: "MRT" | "BTS" | "CBD" | "Office" | "Condo" | "Tourist"
+  name: string
+  latitude: number
+  longitude: number
+  distance_km: number
 }
 
 async function getLandDetails(id: string): Promise<LandListing> {
@@ -46,8 +56,59 @@ async function getLandDetails(id: string): Promise<LandListing> {
   }
 }
 
+async function getClosestLandmarks(id: string): Promise<Landmark[]> {
+  try {
+    const response = await fetch(`http://localhost:8000/landmarks/closest-landmarks/${id}`, {
+      next: { revalidate: 60 },
+    })
+
+    if (!response.ok) {
+      console.error(`Failed to fetch landmarks: ${response.status}`)
+      return []
+    }
+
+    return response.json()
+  } catch (error) {
+    console.error("Error fetching landmarks:", error)
+    return []
+  }
+}
+
+// Function to determine the color based on landmark type - now all pink for consistency with map
+export function getLandmarkColor(type: string): string {
+  // All landmarks are pink now to match the map
+  return "#ec4899" // pink
+}
+
 export default async function LandDetailsPage({ params }: { params: { id: string } }) {
-  const land = await getLandDetails(params.id)
+  // Fetch data with error handling
+  let land: LandListing | null = null
+  let landmarks: Landmark[] = []
+
+  try {
+    land = await getLandDetails(params.id)
+    landmarks = await getClosestLandmarks(params.id)
+  } catch (error) {
+    console.error("Error loading data:", error)
+    // We'll handle this in the rendering below
+  }
+
+  // If land data couldn't be fetched, show an error
+  if (!land) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center p-8">
+          <h1 className="text-2xl font-bold mb-4">Unable to load property details</h1>
+          <p className="text-muted-foreground mb-6">
+            There was an error loading the property information. Please try again later.
+          </p>
+          <Link href="/">
+            <Button>Return to Listings</Button>
+          </Link>
+        </div>
+      </div>
+    )
+  }
 
   // Parse the nearbyDevPlan string if it's stored as a JSON string
   let nearbyDevelopments: string[] = []
@@ -59,16 +120,21 @@ export default async function LandDetailsPage({ params }: { params: { id: string
   }
 
   // Format the upload date
-  const uploadDate = new Date(
-    land.uploadedAt.replace(/(\d{4})(\d{2})(\d{2})-(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6"),
-  )
-  const formattedDate = new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-  }).format(uploadDate)
+  let formattedDate = "Unknown"
+  try {
+    const uploadDate = new Date(
+      land.uploadedAt.replace(/(\d{4})(\d{2})(\d{2})-(\d{2})(\d{2})(\d{2})/, "$1-$2-$3T$4:$5:$6"),
+    )
+    formattedDate = new Intl.DateTimeFormat("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(uploadDate)
+  } catch (e) {
+    console.error("Error formatting date:", e)
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -86,6 +152,31 @@ export default async function LandDetailsPage({ params }: { params: { id: string
           {/* Left column - Images */}
           <div className="lg:col-span-2">
             <ImageGallery images={land.images} landName={land.landName} />
+
+            {/* Map section */}
+            <div className="mt-6">
+              <Card>
+                <CardContent className="pt-6">
+                  <h2 className="font-semibold mb-4">Nearby Landmarks</h2>
+                  {/* Only render map if we have valid coordinates */}
+                  {typeof land.latitude === "number" && typeof land.longitude === "number" ? (
+                    <MapComponent
+                      land={{
+                        id: land.id,
+                        name: land.landName,
+                        latitude: land.latitude,
+                        longitude: land.longitude,
+                      }}
+                      landmarks={landmarks}
+                    />
+                  ) : (
+                    <div className="h-[400px] flex items-center justify-center bg-gray-100 rounded-lg">
+                      <p className="text-muted-foreground">Map location unavailable</p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </div>
           </div>
 
           {/* Right column - Details */}
@@ -134,7 +225,7 @@ export default async function LandDetailsPage({ params }: { params: { id: string
                           land.floodRisk === "high"
                             ? "destructive"
                             : land.floodRisk === "medium"
-                              ? "secondary"
+                              ? "warning"
                               : "outline"
                         }
                       >
@@ -177,6 +268,41 @@ export default async function LandDetailsPage({ params }: { params: { id: string
                 </CardContent>
               </Card>
             )}
+
+            {landmarks.length > 0 && (
+              <Card>
+                <CardContent className="pt-6">
+                  <h2 className="font-semibold mb-4">Closest Landmarks</h2>
+                  <div className="space-y-3">
+                    {landmarks.map((landmark) => (
+                      <div
+                        key={landmark.id}
+                        className="p-3 rounded-lg border hover:bg-muted/50 cursor-pointer transition-colors"
+                        data-landmark-id={landmark.id}
+                      >
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#ec4899" }} />
+                            <span className="font-medium">{landmark.name}</span>
+                          </div>
+                          <Badge variant="outline">{landmark.type}</Badge>
+                        </div>
+                        <div className="text-sm text-muted-foreground mt-1">
+                          {landmark.distance_km.toFixed(2)} km away
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            )}
+
+            <div className="flex gap-4">
+              <Button className="flex-1">Contact Seller</Button>
+              <Button variant="outline" className="flex-1">
+                Share Listing
+              </Button>
+            </div>
           </div>
         </div>
       </div>

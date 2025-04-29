@@ -178,7 +178,7 @@ const UploadPage = () => {
         })
       }
 
-      const response = await fetch("http://localhost:8000/admin/upload", {
+      const response = await fetch("http://localhost:8000/upload/", {
         method: "POST",
         body: formData,
       })

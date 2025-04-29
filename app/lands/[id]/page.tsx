@@ -225,7 +225,7 @@ export default async function LandDetailsPage({ params }: { params: { id: string
                           land.floodRisk === "high"
                             ? "destructive"
                             : land.floodRisk === "medium"
-                              ? "warning"
+                              ? "secondary"
                               : "outline"
                         }
                       >

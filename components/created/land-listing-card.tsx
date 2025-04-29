@@ -6,8 +6,16 @@ interface LandListing {
   id: number
   landName: string
   description: string
+  area: number
   price: number
   address: string
+  latitude?: number
+  longitude?: number
+  zoning?: string
+  popDensity?: number
+  floodRisk?: string
+  nearbyDevPlan?: string
+  uploadedAt?: string
   images: string[]
 }
 
@@ -17,11 +25,10 @@ interface LandListingCardProps {
 
 export function LandListingCard({ listing }: LandListingCardProps) {
   const { landName, description, price, address, images } = listing
-  console.log(images)
 
   return (
     <Card className="overflow-hidden h-full flex flex-col">
-      <div className="relative h-48 w-full">
+      <div className="relative h-40 w-full">
         <Image
           src={images[0]}
           alt={landName}
@@ -30,15 +37,17 @@ export function LandListingCard({ listing }: LandListingCardProps) {
           priority
         />
       </div>
-      <CardHeader>
-        <h2 className="text-xl font-bold">{landName}</h2>
-        <p className="text-green-600 font-semibold text-lg">{formatPrice(price)}</p>
+      <CardHeader className="py-3 px-4">
+        <div className="flex justify-between items-center">
+          <h2 className="text-lg font-bold line-clamp-1">{landName}</h2>
+          <p className="text-green-600 font-semibold">{formatPrice(price)}</p>
+        </div>
       </CardHeader>
-      <CardContent className="flex-grow">
-        <p className="text-muted-foreground mb-4">{description}</p>
+      <CardContent className="py-0 px-4 flex-grow">
+        <p className="text-sm text-muted-foreground line-clamp-3">{description}</p>
       </CardContent>
-      <CardFooter className="border-t pt-4">
-        <p className="text-sm text-muted-foreground">
+      <CardFooter className="border-t py-3 px-4">
+        <p className="text-xs text-muted-foreground">
           <span className="font-medium">Address:</span> {address}
         </p>
       </CardFooter>

@@ -1,5 +1,8 @@
+"use client"
+
+import { useState, useEffect, use } from "react"
 import Link from "next/link"
-import { notFound } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { ArrowLeft, MapPin } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -36,65 +39,86 @@ interface Landmark {
   distance_km: number
 }
 
-async function getLandDetails(id: string): Promise<LandListing> {
-  try {
-    const response = await fetch(`http://localhost:8000/lands/${id}`, {
-      next: { revalidate: 60 },
-    })
-
-    if (!response.ok) {
-      if (response.status === 404) {
-        notFound()
-      }
-      throw new Error(`Failed to fetch land details: ${response.status}`)
-    }
-
-    return response.json()
-  } catch (error) {
-    console.error("Error fetching land details:", error)
-    throw error
-  }
-}
-
-async function getClosestLandmarks(id: string): Promise<Landmark[]> {
-  try {
-    const response = await fetch(`http://localhost:8000/landmarks/closest-landmarks/${id}`, {
-      next: { revalidate: 60 },
-    })
-
-    if (!response.ok) {
-      console.error(`Failed to fetch landmarks: ${response.status}`)
-      return []
-    }
-
-    return response.json()
-  } catch (error) {
-    console.error("Error fetching landmarks:", error)
-    return []
-  }
-}
-
 // Function to determine the color based on landmark type - now all pink for consistency with map
 export function getLandmarkColor(type: string): string {
   // All landmarks are pink now to match the map
   return "#ec4899" // pink
 }
 
-export default async function LandDetailsPage({ params }: { params: { id: string } }) {
-  // Fetch data with error handling
-  let land: LandListing | null = null
-  let landmarks: Landmark[] = []
+export default function LandDetailsPage({ params }: { params: Promise<{ id: string }> }) {
+  // Unwrap the params Promise using React.use()
+  const unwrappedParams = use(params)
+  const id = unwrappedParams.id
 
-  try {
-    land = await getLandDetails(params.id)
-    landmarks = await getClosestLandmarks(params.id)
-  } catch (error) {
-    console.error("Error loading data:", error)
-    // We'll handle this in the rendering below
+  const [land, setLand] = useState<LandListing | null>(null)
+  const [landmarks, setLandmarks] = useState<Landmark[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+  const router = useRouter()
+
+  useEffect(() => {
+    async function fetchLandDetails() {
+      setIsLoading(true)
+      try {
+        const response = await fetch(`http://localhost:8000/lands/${id}`, {
+          cache: "no-store",
+        })
+
+        if (!response.ok) {
+          if (response.status === 404) {
+            router.push("/not-found")
+            return
+          }
+          throw new Error(`Failed to fetch land details: ${response.status}`)
+        }
+
+        const data = await response.json()
+        setLand(data)
+      } catch (error) {
+        console.error("Error fetching land details:", error)
+        setError("Failed to load property details")
+      }
+    }
+
+    async function fetchClosestLandmarks() {
+      try {
+        const response = await fetch(`http://localhost:8000/landmarks/closest-landmarks/${id}`, {
+          cache: "no-store",
+        })
+
+        if (!response.ok) {
+          console.error(`Failed to fetch landmarks: ${response.status}`)
+          setLandmarks([])
+          return
+        }
+
+        const data = await response.json()
+        setLandmarks(data)
+      } catch (error) {
+        console.error("Error fetching landmarks:", error)
+        setLandmarks([])
+      } finally {
+        setIsLoading(false)
+      }
+    }
+
+    fetchLandDetails()
+    fetchClosestLandmarks()
+  }, [id, router])
+
+  // If data is loading, show a loading state
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center p-8">
+          <h1 className="text-2xl font-bold mb-4">Loading property details...</h1>
+        </div>
+      </div>
+    )
   }
 
-  // If land data couldn't be fetched, show an error
-  if (!land) {
+  // If there was an error or land data couldn't be fetched, show an error
+  if (error || !land) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center p-8">

@@ -1,3 +1,6 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { LandListingCard } from "@/components/created/land-listing-card"
 import { Button } from "@/components/ui/button"
@@ -20,26 +23,41 @@ interface LandListing {
   images: string[]
 }
 
-async function getLandListings(): Promise<LandListing[]> {
-  try {
-    // Add cache control to ensure fresh data
-    const response = await fetch("http://localhost:8000/lands/", {
-      next: { revalidate: 60 }, // Revalidate every 60 seconds
-    })
+export default function Home() {
+  const [landListings, setLandListings] = useState<LandListing[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
-    if (!response.ok) {
-      throw new Error(`Failed to fetch land listings: ${response.status}`)
+  useEffect(() => {
+    async function fetchLandListings() {
+      try {
+        setIsLoading(true)
+        setError(null)
+
+        const response = await fetch("http://localhost:8000/lands/")
+
+        if (!response.ok) {
+          throw new Error(`Failed to fetch land listings: ${response.status}`)
+        }
+
+        const data = await response.json()
+        setLandListings(data)
+      } catch (error) {
+        console.error("Error fetching land listings:", error)
+        setError("Failed to load land listings. Please try again later.")
+      } finally {
+        setIsLoading(false)
+      }
     }
 
-    return response.json()
-  } catch (error) {
-    console.error("Error fetching land listings:", error)
-    return []
-  }
-}
+    fetchLandListings()
 
-export default async function Home() {
-  const landListings = await getLandListings()
+    // Set up an interval to refresh data every 60 seconds
+    const intervalId = setInterval(fetchLandListings, 60000)
+
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(intervalId)
+  }, []) // Empty dependency array means this effect runs once on mount
 
   return (
     <div className="min-h-screen">
@@ -56,7 +74,15 @@ export default async function Home() {
       </header>
 
       <main className="container mx-auto py-6 px-4">
-        {landListings.length === 0 ? (
+        {isLoading ? (
+          <div className="text-center py-10">
+            <p className="text-lg text-muted-foreground">Loading land listings...</p>
+          </div>
+        ) : error ? (
+          <div className="text-center py-10">
+            <p className="text-lg text-red-500">{error}</p>
+          </div>
+        ) : landListings.length === 0 ? (
           <div className="text-center py-10">
             <p className="text-lg text-muted-foreground">No land listings found.</p>
           </div>

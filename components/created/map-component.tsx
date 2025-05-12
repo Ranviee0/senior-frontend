@@ -106,7 +106,7 @@ export function MapComponent({ land, landmarks }: MapComponentProps) {
 
         L.circleMarker([landmark.latitude, landmark.longitude], {
           radius: 6,
-          fillColor: "#ec4899", // Pink
+          fillColor: "#00ff00", // Pink
           color: "#000",
           weight: 1,
           opacity: 1,
@@ -132,7 +132,7 @@ export function MapComponent({ land, landmarks }: MapComponentProps) {
               <span>Property Location</span>
             </div>
             <div style="display: flex; align-items: center;">
-              <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #ec4899; border: 1px solid #000; margin-right: 5px;"></div>
+              <div style="width: 12px; height: 12px; border-radius: 50%; background-color: #00ff00; border: 1px solid #000; margin-right: 5px;"></div>
               <span>Landmarks</span>
             </div>
           </div>

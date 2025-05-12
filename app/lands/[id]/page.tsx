@@ -42,7 +42,7 @@ interface Landmark {
 // Function to determine the color based on landmark type - now all pink for consistency with map
 export function getLandmarkColor(type: string): string {
   // All landmarks are pink now to match the map
-  return "#ec4899" // pink
+  return "#00ff00" // pink
 }
 
 export default function LandDetailsPage({ params }: { params: Promise<{ id: string }> }) {
@@ -306,7 +306,7 @@ export default function LandDetailsPage({ params }: { params: Promise<{ id: stri
                       >
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-2">
-                            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#ec4899" }} />
+                            <div className="w-3 h-3 rounded-full" style={{ backgroundColor: "#00ff00" }} />
                             <span className="font-medium">{landmark.name}</span>
                           </div>
                           <Badge variant="outline">{landmark.type}</Badge>

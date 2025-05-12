@@ -1,11 +1,32 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { MapContainer, TileLayer } from "react-leaflet"
+import { MapContainer, TileLayer, useMap } from "react-leaflet"
 import "leaflet/dist/leaflet.css"
 import type { LatLngExpression } from "leaflet"
 import { PannableCircleMarker } from "./pannable"
 import { cn } from "@/lib/utils"
+
+// MapController component to access the map instance
+const MapController = ({
+  selectedPosition,
+  selectedLandmarkId,
+}: {
+  selectedPosition: LatLngExpression | null
+  selectedLandmarkId: number | null
+}) => {
+  const map = useMap()
+
+  // Fly to selected position when it changes
+  useEffect(() => {
+    if (selectedPosition) {
+      // Use type assertion to tell TypeScript that map has flyTo method
+      ;(map as any).flyTo(selectedPosition, (map as any).getZoom(), { animate: true })
+    }
+  }, [selectedPosition, map])
+
+  return null
+}
 
 export type Landmark = {
   id: number
@@ -50,6 +71,7 @@ const LandmarkMap = ({
 }: LandmarkMapProps) => {
   const [isClient, setIsClient] = useState(false)
   const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null)
+  const [selectedPosition, setSelectedPosition] = useState<LatLngExpression | null>(null)
 
   const landPosition: LatLngExpression = {
     lat: land.latitude,
@@ -63,6 +85,13 @@ const LandmarkMap = ({
   // Function to handle landmark selection
   const handleLandmarkSelect = (landmark: Landmark) => {
     setSelectedLandmark(landmark)
+
+    // Set the selected position to fly to
+    const position: LatLngExpression = {
+      lat: landmark.latitude,
+      lng: landmark.longitude,
+    }
+    setSelectedPosition(position)
   }
 
   return (
@@ -113,6 +142,9 @@ const LandmarkMap = ({
             scrollWheelZoom={false}
             style={{ height: "100%", width: "100%" }}
           >
+            {/* Map controller to handle flying to selected positions */}
+            <MapController selectedPosition={selectedPosition} selectedLandmarkId={selectedLandmark?.id || null} />
+
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -133,21 +165,27 @@ const LandmarkMap = ({
             />
 
             {/* Landmarks Markers */}
-            {landmarks.map((landmark) => (
-              <PannableCircleMarker
-                key={landmark.id}
-                position={{ lat: landmark.latitude, lng: landmark.longitude }}
-                popupContent={
-                  <div>
-                    <strong>{landmark.name}</strong>
-                    <br />
-                    {landmark.type} — {landmark.distance_km.toFixed(2)} km from land
-                  </div>
-                }
-                fillColor={selectedLandmark?.id === landmark.id ? highlightedMarkerColor : landmarkMarkerColor}
-                radius={selectedLandmark?.id === landmark.id ? 12 : 8}
-              />
-            ))}
+            {landmarks.map((landmark) => {
+              const isSelected = selectedLandmark?.id === landmark.id
+              return (
+                <PannableCircleMarker
+                  key={landmark.id}
+                  position={{ lat: landmark.latitude, lng: landmark.longitude }}
+                  popupContent={
+                    <div>
+                      <strong>{landmark.name}</strong>
+                      <br />
+                      {landmark.type} — {landmark.distance_km.toFixed(2)} km from land
+                    </div>
+                  }
+                  fillColor={isSelected ? highlightedMarkerColor : landmarkMarkerColor}
+                  radius={isSelected ? 10 : 8}
+                  isSelected={isSelected}
+                  onClick={() => handleLandmarkSelect(landmark)}
+                  openPopupOnSelect={isSelected}
+                />
+              )
+            })}
           </MapContainer>
         )}
       </div>

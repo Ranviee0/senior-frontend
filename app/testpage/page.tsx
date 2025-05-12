@@ -92,7 +92,7 @@ export default function Home() {
         land={exampleLand}
         landMarkerColor="#CC0000"
         landmarkMarkerColor="#3388ff"
-        highlightedMarkerColor="#32CD32"
+        selectedLandmarkColor="#0066cc"
       />
     </main>
   )

@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import { formatPrice } from "@/lib/utils";
 import { ImageGallery } from "@/components/created/image-gallery";
 import LandmarkMap from "@/components/created/landmark-component";
+import api from "@/lib/api"; // your pre-configured Axios instance
 
 interface LandListing {
   id: number;
@@ -64,53 +65,30 @@ export default function LandDetailsPage({
     async function fetchLandDetails() {
       setIsLoading(true);
       try {
-        const response = await fetch(`http://localhost:8000/lands/${id}`, {
-          cache: "no-store",
+        const response = await api.get(`/landmarks/closest-landmarks/${id}`, {
+          headers: {
+            "Cache-Control": "no-store",
+          },
         });
 
-        if (!response.ok) {
-          if (response.status === 404) {
-            router.push("/not-found");
-            return;
-          }
-          throw new Error(`Failed to fetch land details: ${response.status}`);
-        }
-
-        const data = await response.json();
+        // Axios throws an error for non-2xx responses by default,
+        // so no need to manually check `response.ok`
+        const data = response.data;
         setLand(data);
-      } catch (error) {
-        console.error("Error fetching land details:", error);
-        setError("Failed to load property details");
-      }
-    }
-
-    async function fetchClosestLandmarks() {
-      try {
-        const response = await fetch(
-          `http://localhost:8000/landmarks/closest-landmarks/${id}`,
-          {
-            cache: "no-store",
-          }
-        );
-
-        if (!response.ok) {
-          console.error(`Failed to fetch landmarks: ${response.status}`);
-          setLandmarks([]);
+      } catch (error: any) {
+        if (error.response?.status === 404) {
+          router.push("/not-found");
           return;
         }
 
-        const data = await response.json();
-        setLandmarks(data);
-      } catch (error) {
-        console.error("Error fetching landmarks:", error);
-        setLandmarks([]);
+        console.error("Error fetching land details:", error);
+        setError("Failed to load property details");
       } finally {
         setIsLoading(false);
       }
     }
 
     fetchLandDetails();
-    fetchClosestLandmarks();
   }, [id, router]);
 
   // If data is loading, show a loading state
@@ -195,7 +173,6 @@ export default function LandDetailsPage({
           {/* Left column - Images */}
           <div className="lg:col-span-2">
             <ImageGallery images={land.images} landName={land.landName} />
-
           </div>
 
           {/* Right column - Details */}
@@ -280,7 +257,6 @@ export default function LandDetailsPage({
                 </div>
               </CardContent>
             </Card>
-
           </div>
         </div>
         <LandmarkMap landmarks={landmarks} land={land} />

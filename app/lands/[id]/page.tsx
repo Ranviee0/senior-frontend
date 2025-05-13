@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
 import { ArrowLeft, MapPin, Calendar, AreaChart, Tag, Droplets, Building, Users } from "lucide-react"
 import Link from "next/link"
-import { formatPrice, formatDate, parseJsonSafely } from "@/lib/utils"
+import { formatPrice, parseJsonSafely, formatCustomDate, formatNumber } from "@/lib/utils"
 import { ImageGallery } from "@/components/created/image-gallery"
 import LandmarkMap from "@/components/created/landmark-component"
 import { getLandDetail, getClosestLandmark } from "@/lib/server-api"
@@ -20,6 +20,9 @@ export default async function LandDetailPage({ params }: PageProps) {
 
   // Parse the nearbyDevPlan if it's a JSON string
   const developmentPlans = parseJsonSafely<string[]>(land.nearbyDevPlan)
+
+  // Format the date directly using our custom formatter
+  const formattedDate = land.uploadedAt ? formatCustomDate(land.uploadedAt) : "Date unavailable"
 
   return (
     <div className="container mx-auto py-4 px-3 space-y-4">
@@ -83,7 +86,7 @@ export default async function LandDetailPage({ params }: PageProps) {
                 <Users className="h-4 w-4 text-muted-foreground mt-0.5" />
                 <div>
                   <p className="font-medium">Population</p>
-                  <p className="text-muted-foreground">{land.popDensity} per sq.km.</p>
+                  <p className="text-muted-foreground">{formatNumber(land.popDensity)} per sq.km.</p>
                 </div>
               </div>
 
@@ -99,9 +102,7 @@ export default async function LandDetailPage({ params }: PageProps) {
                 <Calendar className="h-4 w-4 text-muted-foreground mt-0.5" />
                 <div>
                   <p className="font-medium">Listed On</p>
-                  <p className="text-muted-foreground">
-                    {land.uploadedAt ? formatDate(land.uploadedAt) : "Date unavailable"}
-                  </p>
+                  <p className="text-muted-foreground">{formattedDate}</p>
                 </div>
               </div>
 

@@ -32,7 +32,7 @@ export function ImageGallery({ images, landName }: ImageGalleryProps) {
 
   return (
     <div className="relative rounded-xl overflow-hidden bg-gray-100">
-      <div className="relative aspect-[16/9] w-full">
+      <div className="relative aspect-[4/3] w-full">
         <Image
           src={displayImages[currentIndex] || "/placeholder.svg"}
           alt={`${landName} - Image ${currentIndex + 1}`}

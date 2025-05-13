@@ -62,7 +62,7 @@ export default function LandDetailsPage({
   const router = useRouter();
 
   useEffect(() => {
-    async function fetchLandDetails() {
+    async function fetchLandmarks() {
       setIsLoading(true);
       try {
         const response = await api.get(`/landmarks/closest-landmarks/${id}`, {
@@ -74,7 +74,7 @@ export default function LandDetailsPage({
         // Axios throws an error for non-2xx responses by default,
         // so no need to manually check `response.ok`
         const data = response.data;
-        setLand(data);
+        setLandmarks(data);
       } catch (error: any) {
         if (error.response?.status === 404) {
           router.push("/not-found");
@@ -85,10 +85,30 @@ export default function LandDetailsPage({
         setError("Failed to load property details");
       } finally {
         setIsLoading(false);
+      } 
+    }
+    async function fetchLand() {
+      setIsLoading(true);
+      try {
+        const response = await api.get(`/lands/${id}`, {
+          headers: {
+            "Cache-Control": "no-store",
+          },
+        });
+        setLand(response.data);
+      } catch (error: any) {
+        if (error.response?.status === 404) {
+          router.push("/not-found");
+          return;
+        }
+        console.error("Error fetching land details:", error);
+        setError("Failed to load property details");
+      } finally {
+        setIsLoading(false);
       }
     }
-
-    fetchLandDetails();
+    fetchLand();
+    fetchLandmarks();
   }, [id, router]);
 
   // If data is loading, show a loading state

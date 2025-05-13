@@ -1,64 +1,75 @@
-"use client"
+"use client";
 
-import { useFormContext } from "react-hook-form"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { FormField, FormItem, FormLabel, FormControl, FormMessage } from "@/components/ui/form"
-import PriceChart from "./price-chart"
-import { useState, useEffect } from "react"
-import { MapPin, Ruler } from "lucide-react"
+import { useFormContext } from "react-hook-form";
+import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import {
+  FormField,
+  FormItem,
+  FormLabel,
+  FormControl,
+  FormMessage,
+} from "@/components/ui/form";
+import PriceChart from "./price-chart";
+import { useState, useEffect } from "react";
+import { MapPin, Ruler } from "lucide-react";
+import api from "@/lib/api";
 
 export function PriceStep() {
-  const { control, watch } = useFormContext()
-  const [forecastPrices, setForecastPrices] = useState<number[]>([])
-  const [isLoading, setIsLoading] = useState(false)
-  const [fetchError, setFetchError] = useState<string | null>(null)
+  const { control, watch } = useFormContext();
+  const [forecastPrices, setForecastPrices] = useState<number[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [fetchError, setFetchError] = useState<string | null>(null);
 
   // Watch the form values we need
-  const latitude = watch("latitude")
-  const longitude = watch("longitude")
-  const area = watch("area")
-  const price = watch("price") || 0
+  const latitude = watch("latitude");
+  const longitude = watch("longitude");
+  const area = watch("area");
+  const price = watch("price") || 0;
 
   // Fetch forecast prices from API based on location and area
   useEffect(() => {
     const fetchForecastPrices = async () => {
-      // Only fetch if we have valid values
       if (!latitude || !longitude || !area || area <= 0) {
-        setForecastPrices([])
-        return
+        setForecastPrices([]);
+        return;
       }
 
-      setIsLoading(true)
-      setFetchError(null)
+      setIsLoading(true);
+      setFetchError(null);
 
       try {
-        const url = `http://localhost:8000/predict/predict-multi/?latitude=${latitude}&longitude=${longitude}&land_size=${area}`
-        const response = await fetch(url)
+        const response = await api.get("/predict/predict-multi/", {
+          params: {
+            latitude,
+            longitude,
+            land_size: area,
+          },
+          headers: {
+            "Cache-Control": "no-store", // optional, like fetch's no-store
+          },
+        });
 
-        if (!response.ok) {
-          throw new Error(`API request failed with status ${response.status}`)
-        }
-
-        const data = await response.json()
-        setForecastPrices(data)
-      } catch (error) {
-        console.error("Error fetching price forecast:", error)
-        setFetchError(error instanceof Error ? error.message : "Failed to fetch price forecast")
-        setForecastPrices([])
+        setForecastPrices(response.data);
+      } catch (error: any) {
+        console.error("Error fetching price forecast:", error);
+        setFetchError(error?.message ?? "Failed to fetch price forecast");
+        setForecastPrices([]);
       } finally {
-        setIsLoading(false)
+        setIsLoading(false);
       }
-    }
+    };
 
-    fetchForecastPrices()
-  }, [latitude, longitude, area])
+    fetchForecastPrices();
+  }, [latitude, longitude, area]);
 
   return (
     <div className="space-y-6">
       <div>
         <h2 className="text-lg font-semibold mb-2">Price Information</h2>
-        <p className="text-sm text-muted-foreground mb-4">Set the price for your land and view the price forecast</p>
+        <p className="text-sm text-muted-foreground mb-4">
+          Set the price for your land and view the price forecast
+        </p>
       </div>
 
       {/* Display the location and area information */}
@@ -112,12 +123,22 @@ export function PriceStep() {
       )}
 
       {/* Show loading state or error */}
-      {isLoading && <div className="py-4 text-center text-muted-foreground">Loading price forecast...</div>}
+      {isLoading && (
+        <div className="py-4 text-center text-muted-foreground">
+          Loading price forecast...
+        </div>
+      )}
 
-      {fetchError && <div className="py-4 text-center text-destructive text-sm">Error: {fetchError}</div>}
+      {fetchError && (
+        <div className="py-4 text-center text-destructive text-sm">
+          Error: {fetchError}
+        </div>
+      )}
 
       {/* Price forecast chart */}
-      {!isLoading && forecastPrices.length > 0 && <PriceChart prices={forecastPrices} />}
+      {!isLoading && forecastPrices.length > 0 && (
+        <PriceChart prices={forecastPrices} />
+      )}
     </div>
-  )
+  );
 }

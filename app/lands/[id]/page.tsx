@@ -120,15 +120,6 @@ export default function LandDetailsPage({
     );
   }
 
-  // Parse the nearbyDevPlan string if it's stored as a JSON string
-  let nearbyDevelopments: string[] = [];
-  try {
-    nearbyDevelopments = JSON.parse(land.nearbyDevPlan);
-  } catch (e) {
-    // If parsing fails, use it as a regular string
-    nearbyDevelopments = land.nearbyDevPlan ? [land.nearbyDevPlan] : [];
-  }
-
   // Format the upload date
   let formattedDate = "Unknown";
   try {

@@ -10,7 +10,7 @@ export interface LandListing {
   zoning: string;
   popDensity: number;
   floodRisk: string;
-  nearbyDevPlan: string;
+  nearbyDevPlan: string[];
   uploadedAt: string;
   images: string[];
 }

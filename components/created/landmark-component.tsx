@@ -1,63 +1,41 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { MapContainer, TileLayer, useMap } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
-import type { LatLngExpression } from "leaflet"
-import { PannableCircleMarker } from "./pannable"
-import { cn } from "@/lib/utils"
+import { useEffect, useState } from "react";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import type { LatLngExpression } from "leaflet";
+import { PannableCircleMarker } from "./pannable";
+import { cn } from "@/lib/utils";
+import type { Landmark } from "@/types/data";
+import type { LandListing } from "@/types/data";
 
 // MapController component to access the map instance
 const MapController = ({
   selectedPosition,
 }: {
-  selectedPosition: LatLngExpression | null
+  selectedPosition: LatLngExpression | null;
 }) => {
-  const map = useMap()
+  const map = useMap();
 
   // Fly to selected position when it changes
   useEffect(() => {
     if (selectedPosition) {
       // Use type assertion to tell TypeScript that map has flyTo method
-      ;(map as any).flyTo(selectedPosition, (map as any).getZoom(), { animate: true })
+      (map as any).flyTo(selectedPosition, (map as any).getZoom(), {
+        animate: true,
+      });
     }
-  }, [selectedPosition, map])
+  }, [selectedPosition, map]);
 
-  return null
-}
-
-export type Landmark = {
-  id: number
-  type: string
-  name: string
-  latitude: number
-  longitude: number
-  distance_km: number
-}
-
-export type Land = {
-  id: number
-  landName: string
-  description: string
-  area: number
-  price: number
-  address: string
-  latitude: number
-  longitude: number
-  zoning: string
-  popDensity: number
-  floodRisk: string
-  nearbyDevPlan: string
-  uploadedAt: string
-  images: string[]
-}
+  return null;
+};
 
 interface LandmarkMapProps {
-  landmarks: Landmark[]
-  land: Land
-  landMarkerColor?: string
-  landmarkMarkerColor?: string
-  selectedLandmarkColor?: string
+  landmarks: Landmark[];
+  land: LandListing;
+  landMarkerColor?: string;
+  landmarkMarkerColor?: string;
+  selectedLandmarkColor?: string;
 }
 
 const LandmarkMap = ({
@@ -67,42 +45,45 @@ const LandmarkMap = ({
   landmarkMarkerColor = "#3388ff",
   selectedLandmarkColor = "#0066cc", // Darker blue for selected landmarks
 }: LandmarkMapProps) => {
-  const [isClient, setIsClient] = useState(false)
-  const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(null)
-  const [isLandSelected, setIsLandSelected] = useState(false)
-  const [selectedPosition, setSelectedPosition] = useState<LatLngExpression | null>(null)
+  const [isClient, setIsClient] = useState(false);
+  const [selectedLandmark, setSelectedLandmark] = useState<Landmark | null>(
+    null
+  );
+  const [isLandSelected, setIsLandSelected] = useState(false);
+  const [selectedPosition, setSelectedPosition] =
+    useState<LatLngExpression | null>(null);
 
   const landPosition: LatLngExpression = {
     lat: land.latitude,
     lng: land.longitude,
-  }
+  };
 
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
 
   // Function to handle landmark selection
   const handleLandmarkSelect = (landmark: Landmark) => {
-    setSelectedLandmark(landmark)
-    setIsLandSelected(false)
+    setSelectedLandmark(landmark);
+    setIsLandSelected(false);
 
     // Set the selected position to fly to
     const position: LatLngExpression = {
       lat: landmark.latitude,
       lng: landmark.longitude,
-    }
-    setSelectedPosition(position)
-  }
+    };
+    setSelectedPosition(position);
+  };
 
   // Function to handle land selection
   const handleLandSelect = () => {
     // Deselect any selected landmark
-    setSelectedLandmark(null)
-    setIsLandSelected(true)
+    setSelectedLandmark(null);
+    setIsLandSelected(true);
 
     // Set the selected position to the land
-    setSelectedPosition(landPosition)
-  }
+    setSelectedPosition(landPosition);
+  };
 
   return (
     <div className="flex flex-col md:flex-row h-[600px] w-full border rounded-lg overflow-hidden">
@@ -110,20 +91,25 @@ const LandmarkMap = ({
       <div className="w-full md:w-1/3 lg:w-1/4 bg-gray-50 overflow-y-auto border-r">
         <div className="p-4 bg-white border-b">
           <h3 className="font-medium text-lg">Nearby Landmarks</h3>
-          <p className="text-sm text-gray-500">{landmarks.length} locations found</p>
+          <p className="text-sm text-gray-500">
+            {landmarks.length} locations found
+          </p>
         </div>
 
         {/* Land item at the top of the list */}
         <div
           className={cn(
             "p-4 cursor-pointer hover:bg-gray-100 transition-colors border-b",
-            isLandSelected ? "bg-red-50 border-l-4 border-red-500" : "",
+            isLandSelected ? "bg-red-50 border-l-4 border-red-500" : ""
           )}
           onClick={handleLandSelect}
         >
           <div className="flex items-start">
             <div className="flex-shrink-0 mt-1">
-              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: landMarkerColor }} />
+              <div
+                className="w-3 h-3 rounded-full"
+                style={{ backgroundColor: landMarkerColor }}
+              />
             </div>
             <div className="ml-3">
               <p className="font-medium">{land.landName}</p>
@@ -144,7 +130,9 @@ const LandmarkMap = ({
               onClick={() => handleLandmarkSelect(landmark)}
               className={cn(
                 "p-4 cursor-pointer hover:bg-gray-100 transition-colors",
-                selectedLandmark?.id === landmark.id ? "bg-blue-50 border-l-4 border-blue-500" : "",
+                selectedLandmark?.id === landmark.id
+                  ? "bg-blue-50 border-l-4 border-blue-500"
+                  : ""
               )}
             >
               <div className="flex items-start">
@@ -153,14 +141,18 @@ const LandmarkMap = ({
                     className="w-3 h-3 rounded-full"
                     style={{
                       backgroundColor:
-                        selectedLandmark?.id === landmark.id ? selectedLandmarkColor : landmarkMarkerColor,
+                        selectedLandmark?.id === landmark.id
+                          ? selectedLandmarkColor
+                          : landmarkMarkerColor,
                     }}
                   />
                 </div>
                 <div className="ml-3">
                   <p className="font-medium">{landmark.name}</p>
                   <p className="text-sm text-gray-500">{landmark.type}</p>
-                  <p className="text-sm text-gray-500">{landmark.distance_km.toFixed(2)} km away</p>
+                  <p className="text-sm text-gray-500">
+                    {landmark.distance_km.toFixed(2)} km away
+                  </p>
                 </div>
               </div>
             </li>
@@ -172,7 +164,7 @@ const LandmarkMap = ({
       <div className="flex-1 h-full">
         {isClient && (
           <MapContainer
-            center={landPosition}
+            center={[land.latitude, land.longitude]}
             zoom={14}
             scrollWheelZoom={false}
             style={{ height: "100%", width: "100%" }}
@@ -208,7 +200,7 @@ const LandmarkMap = ({
 
             {/* Landmarks Markers */}
             {landmarks.map((landmark) => {
-              const isSelected = selectedLandmark?.id === landmark.id
+              const isSelected = selectedLandmark?.id === landmark.id;
               return (
                 <PannableCircleMarker
                   key={landmark.id}
@@ -217,22 +209,25 @@ const LandmarkMap = ({
                     <div>
                       <strong>{landmark.name}</strong>
                       <br />
-                      {landmark.type} — {landmark.distance_km.toFixed(2)} km from land
+                      {landmark.type} — {landmark.distance_km.toFixed(2)} km
+                      from land
                     </div>
                   }
-                  fillColor={isSelected ? selectedLandmarkColor : landmarkMarkerColor}
+                  fillColor={
+                    isSelected ? selectedLandmarkColor : landmarkMarkerColor
+                  }
                   radius={isSelected ? 10 : 8}
                   isSelected={isSelected}
                   onClick={() => handleLandmarkSelect(landmark)}
                   openPopupOnSelect={isSelected}
                 />
-              )
+              );
             })}
           </MapContainer>
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default LandmarkMap
+export default LandmarkMap;

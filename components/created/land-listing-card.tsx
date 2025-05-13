@@ -2,23 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { formatPrice } from "@/lib/utils"
-
-interface LandListing {
-  id: number
-  landName: string
-  description: string
-  area: number
-  price: number
-  address: string
-  latitude?: number
-  longitude?: number
-  zoning?: string
-  popDensity?: number
-  floodRisk?: string
-  nearbyDevPlan?: string
-  uploadedAt?: string
-  images: string[]
-}
+import type { LandListing } from "@/types/data"
 
 interface LandListingCardProps {
   listing: LandListing

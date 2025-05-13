@@ -11,7 +11,6 @@ import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { formatPrice } from "@/lib/utils";
 import { ImageGallery } from "@/components/created/image-gallery";
-import { MapComponent } from "@/components/created/map-component";
 import LandmarkMap from "@/components/created/landmark-component";
 
 interface LandListing {

@@ -73,13 +73,6 @@ export function ThreeTier({
     setProvinces(Object.keys(data))
   }, [])
 
-  // Remove this useEffect
-  // useEffect(() => {
-  //   if (onProvincesChange) {
-  //     onProvincesChange(provinces);
-  //   }
-  // }, [provinces, onProvincesChange]);
-
   // Add this useEffect instead
   useEffect(() => {
     if (onProvincesChange && selectedProvince) {

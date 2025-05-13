@@ -18,7 +18,7 @@ export default async function LandDetailPage({ params }: PageProps) {
 
   return (
     <div className="space-y-4">
-      <Link href="/land">
+      <Link href="/">
         <ArrowLeft className="inline mr-2" />
         Back
       </Link>

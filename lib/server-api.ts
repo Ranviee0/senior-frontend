@@ -26,3 +26,14 @@ export async function getClosestLandmark(
     throw err; // rethrow for other errors
   }
 }
+
+export async function getAllLandDetail(): Promise<LandListing[]> {
+  try {
+    const res = await api.get<LandListing[]>("/lands/");
+    return res.data;
+  } catch (err) {
+    const error = err as AxiosError;
+    if (error.response?.status === 404) return [];
+    throw error;
+  }
+}

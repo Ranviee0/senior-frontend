@@ -1,41 +1,20 @@
-"use client";
-
-import { useEffect, useState } from "react";
+// app/page.tsx or app/land/page.tsx
 import Link from "next/link";
 import { LandListingCard } from "@/components/created/land-listing-card";
 import { Button } from "@/components/ui/button";
 import { PlusCircle } from "lucide-react";
-import api from "@/lib/api";
+import { getAllLandDetail } from "@/lib/server-api"; // new server-side function
 import type { LandListing } from "@/types/data";
 
-export default function Home() {
-  const [landListings, setLandListings] = useState<LandListing[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+export default async function Home() {
+  let landListings: LandListing[] = [];
 
-  useEffect(() => {
-    async function fetchLandListings() {
-      try {
-        setIsLoading(true);
-        setError(null);
-
-        const response = await api.get("/lands/"); // Axios auto-parses JSON
-        setLandListings(response.data);
-      } catch (error: any) {
-        console.error("Error fetching land listings:", error);
-        setError("Failed to load land listings. Please try again later.");
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    fetchLandListings();
-
-    // Refresh every 60 seconds
-    const intervalId = setInterval(fetchLandListings, 60000);
-
-    return () => clearInterval(intervalId);
-  }, []);
+  try {
+    landListings = await getAllLandDetail();
+  } catch (err) {
+    console.error("Failed to load land listings:", err);
+    // optionally throw notFound() or display a fallback here
+  }
 
   return (
     <div className="min-h-screen">
@@ -52,17 +31,7 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto py-6 px-4">
-        {isLoading ? (
-          <div className="text-center py-10">
-            <p className="text-lg text-muted-foreground">
-              Loading land listings...
-            </p>
-          </div>
-        ) : error ? (
-          <div className="text-center py-10">
-            <p className="text-lg text-red-500">{error}</p>
-          </div>
-        ) : landListings.length === 0 ? (
+        {landListings.length === 0 ? (
           <div className="text-center py-10">
             <p className="text-lg text-muted-foreground">
               No land listings found.

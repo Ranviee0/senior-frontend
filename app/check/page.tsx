@@ -1,5 +1,5 @@
-// app/check/page.tsx or pages/check.tsx
-import { getTempLandListings } from "@/lib/server-api"; // adjust path if needed
+import Link from "next/link";
+import { getTempLandListings } from "@/lib/server-api";
 import type { TempLandListing } from "@/types/data";
 
 export default async function CheckPage() {
@@ -13,12 +13,14 @@ export default async function CheckPage() {
       ) : (
         <ul className="space-y-2">
           {tempLandListings.map((land) => (
-            <li key={land.id} className="border rounded p-2">
-              <p><strong>Name:</strong> {land.landName}</p>
-              <p><strong>Area:</strong> {land.area} sqm</p>
-              <p><strong>Price:</strong> ฿{land.price.toLocaleString()}</p>
-              <p><strong>Address:</strong> {land.address}</p>
-              <p><strong>Uploaded At:</strong> {land.uploadedAt}</p>
+            <li key={land.id} className="border rounded p-3 shadow-sm">
+              <Link href={`/check/${land.id}`} className="block hover:text-blue-600 hover:underline">
+                <p><strong>Name:</strong> {land.landName}</p>
+                <p><strong>Area:</strong> {land.area} sqm</p>
+                <p><strong>Price:</strong> ฿{land.price.toLocaleString()}</p>
+                <p><strong>Address:</strong> {land.address}</p>
+                <p><strong>Uploaded At:</strong> {land.uploadedAt}</p>
+              </Link>
             </li>
           ))}
         </ul>

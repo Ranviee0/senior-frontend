@@ -13,32 +13,8 @@ import { formatPrice } from "@/lib/utils";
 import { ImageGallery } from "@/components/created/image-gallery";
 import LandmarkMap from "@/components/created/landmark-component";
 import api from "@/lib/api"; // your pre-configured Axios instance
-
-interface LandListing {
-  id: number;
-  landName: string;
-  description: string;
-  area: number;
-  price: number;
-  address: string;
-  latitude: number;
-  longitude: number;
-  zoning: string;
-  popDensity: number;
-  floodRisk: string;
-  nearbyDevPlan: string;
-  uploadedAt: string;
-  images: string[];
-}
-
-interface Landmark {
-  id: number;
-  type: "MRT" | "BTS" | "CBD" | "Office" | "Condo" | "Tourist";
-  name: string;
-  latitude: number;
-  longitude: number;
-  distance_km: number;
-}
+import type { LandListing } from "@/types/data"; // Adjust the import path as necessary
+import type { Landmark } from "@/types/data";
 
 // Function to determine the color based on landmark type - now all pink for consistency with map
 export function getLandmarkColor(type: string): string {
@@ -85,7 +61,7 @@ export default function LandDetailsPage({
         setError("Failed to load property details");
       } finally {
         setIsLoading(false);
-      } 
+      }
     }
     async function fetchLand() {
       setIsLoading(true);

@@ -6,23 +6,7 @@ import { LandListingCard } from "@/components/created/land-listing-card";
 import { Button } from "@/components/ui/button";
 import { PlusCircle } from "lucide-react";
 import api from "@/lib/api";
-
-interface LandListing {
-  id: number;
-  landName: string;
-  description: string;
-  area: number;
-  price: number;
-  address: string;
-  latitude?: number;
-  longitude?: number;
-  zoning?: string;
-  popDensity?: number;
-  floodRisk?: string;
-  nearbyDevPlan?: string;
-  uploadedAt?: string;
-  images: string[];
-}
+import type { LandListing } from "@/types/data";
 
 export default function Home() {
   const [landListings, setLandListings] = useState<LandListing[]>([]);

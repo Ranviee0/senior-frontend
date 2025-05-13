@@ -1,4 +1,5 @@
 import api from "./api";
+import { AxiosError } from "axios";
 import type { LandListing } from "@/types/data";
 import type { Landmark } from "@/types/data";
 
@@ -7,8 +8,9 @@ export async function getLandDetail(id: string): Promise<LandListing | null> {
     const res = await api.get(`/lands/${id}`);
     return res.data;
   } catch (err) {
-    console.error("Failed to fetch land data:", err);
-    return null;
+    const error = err as AxiosError;
+    if (error.response?.status === 404) return null;
+    throw err; // rethrow for other errors
   }
 }
 
@@ -19,7 +21,8 @@ export async function getClosestLandmark(
     const res = await api.get(`/landmarks/closest-landmarks/${id}`);
     return res.data;
   } catch (err) {
-    console.error("Failed to fetch closest landmark:", err);
-    return null;
+    const error = err as AxiosError;
+    if (error.response?.status === 404) return null;
+    throw err; // rethrow for other errors
   }
 }

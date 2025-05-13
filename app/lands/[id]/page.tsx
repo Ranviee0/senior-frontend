@@ -1,11 +1,10 @@
 import { notFound } from "next/navigation";
-import { ArrowLeft, MapPin } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { formatPrice } from "@/lib/utils";
 import { ImageGallery } from "@/components/created/image-gallery";
 import LandmarkMap from "@/components/created/landmark-component";
-import { getLandDetail } from "@/lib/server-api"; // server-side function
-import { getClosestLandmark } from "@/lib/server-api";
+import { getLandDetail, getClosestLandmark } from "@/lib/server-api";
 
 interface PageProps {
   params: { id: string };
@@ -15,7 +14,7 @@ export default async function LandDetailPage({ params }: PageProps) {
   const land = await getLandDetail(params.id);
   const closestLandmarks = await getClosestLandmark(params.id);
 
-  if (!land) return notFound();
+  if (!land || !closestLandmarks) return notFound();
 
   return (
     <div className="space-y-4">
@@ -26,8 +25,8 @@ export default async function LandDetailPage({ params }: PageProps) {
       <h1>{land.landName}</h1>
       <p>{land.description}</p>
       <p>{formatPrice(land.price)}</p>
-      <ImageGallery images={land.images} landName={land.landName}/>
-      <LandmarkMap land={land} landmarks={closestLandmarks ?? []} />
+      <ImageGallery images={land.images} landName={land.landName} />
+      <LandmarkMap land={land} landmarks={closestLandmarks} />
     </div>
   );
 }

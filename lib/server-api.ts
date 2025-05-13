@@ -77,3 +77,15 @@ export async function publishTempLandById(id: number): Promise<{ land_id: number
     throw error;
   }
 }
+
+export async function rejectTempLandById(id: number): Promise<void> {
+  try {
+    await api.delete(`/check/reject/${id}`);
+  } catch (err) {
+    const error = err as AxiosError;
+    if (error.response?.status === 404) {
+      throw new Error("TempLand not found");
+    }
+    throw error;
+  }
+}

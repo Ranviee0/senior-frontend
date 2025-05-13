@@ -1,7 +1,7 @@
 "use client";
 
 import type { TempLandDetailOut } from "@/types/data";
-import { publishTempLandById } from "@/lib/server-api";
+import { publishTempLandById, rejectTempLandById } from "@/lib/server-api";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -12,6 +12,7 @@ export default function CheckDetailContent({
 }) {
   const router = useRouter();
   const [isPublishing, setIsPublishing] = useState(false);
+  const [isRejecting, setIsRejecting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handlePublish = async () => {
@@ -20,7 +21,7 @@ export default function CheckDetailContent({
     try {
       const result = await publishTempLandById(land.id);
       alert(`Land published successfully! Land ID: ${result.land_id}`);
-      router.push("/"); // adjust redirect if needed
+      router.push("/");
     } catch (err: any) {
       console.error(err);
       setError(err.message || "Failed to publish land.");
@@ -29,41 +30,38 @@ export default function CheckDetailContent({
     }
   };
 
+  const handleReject = async () => {
+    if (!confirm("Are you sure you want to reject this land? This action is permanent.")) return;
+
+    setIsRejecting(true);
+    setError(null);
+    try {
+      await rejectTempLandById(land.id);
+      alert("Land rejected and deleted successfully.");
+      router.push("/check");
+    } catch (err: any) {
+      console.error(err);
+      setError(err.message || "Failed to reject land.");
+    } finally {
+      setIsRejecting(false);
+    }
+  };
+
   return (
     <main className="p-6 max-w-4xl mx-auto space-y-6">
       <h1 className="text-3xl font-bold">{land.landName}</h1>
 
       <section className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
-          <strong>Area:</strong> {land.area} sqm
-        </div>
-        <div>
-          <strong>Price:</strong> ฿{land.price.toLocaleString()}
-        </div>
-        <div>
-          <strong>Address:</strong> {land.address}
-        </div>
-        <div>
-          <strong>Uploaded:</strong> {land.uploadedAt}
-        </div>
-        <div>
-          <strong>Latitude:</strong> {land.latitude}
-        </div>
-        <div>
-          <strong>Longitude:</strong> {land.longitude}
-        </div>
-        <div>
-          <strong>Zoning:</strong> {land.zoning || "N/A"}
-        </div>
-        <div>
-          <strong>Population Density:</strong> {land.popDensity}
-        </div>
-        <div>
-          <strong>Flood Risk:</strong> {land.floodRisk}
-        </div>
-        <div>
-          <strong>Nearby Dev Plan:</strong> {land.nearbyDevPlan}
-        </div>
+        <div><strong>Area:</strong> {land.area} sqm</div>
+        <div><strong>Price:</strong> ฿{land.price.toLocaleString()}</div>
+        <div><strong>Address:</strong> {land.address}</div>
+        <div><strong>Uploaded:</strong> {land.uploadedAt}</div>
+        <div><strong>Latitude:</strong> {land.latitude}</div>
+        <div><strong>Longitude:</strong> {land.longitude}</div>
+        <div><strong>Zoning:</strong> {land.zoning || "N/A"}</div>
+        <div><strong>Population Density:</strong> {land.popDensity}</div>
+        <div><strong>Flood Risk:</strong> {land.floodRisk}</div>
+        <div><strong>Nearby Dev Plan:</strong> {land.nearbyDevPlan}</div>
       </section>
 
       <section>
@@ -89,16 +87,24 @@ export default function CheckDetailContent({
         )}
       </section>
 
-      <section className="mt-6">
+      <section className="mt-6 flex gap-4">
         <button
           onClick={handlePublish}
-          disabled={isPublishing}
+          disabled={isPublishing || isRejecting}
           className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
         >
           {isPublishing ? "Publishing..." : "Publish this Land"}
         </button>
-        {error && <p className="text-red-600 mt-2">{error}</p>}
+        <button
+          onClick={handleReject}
+          disabled={isPublishing || isRejecting}
+          className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 disabled:opacity-50"
+        >
+          {isRejecting ? "Rejecting..." : "Reject this Land"}
+        </button>
       </section>
+
+      {error && <p className="text-red-600 mt-4">{error}</p>}
     </main>
   );
 }

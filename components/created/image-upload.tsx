@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState, useRef, useEffect } from "react"
+import { useState, useRef, useEffect, useCallback } from "react"
 import { X, ChevronLeft, ChevronRight } from "lucide-react"
 
 // Update the ImageUploadPreviewProps interface to be more specific
@@ -128,41 +128,134 @@ export function ImageUploadPreview({ onChange, value }: ImageUploadPreviewProps)
     }
   }, [selectedImageIndex, previews.length])
 
+  // Drag and drop handlers
+  const [isDragging, setIsDragging] = useState(false)
+
+  const handleDragEnter = useCallback((e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(true)
+  }, [])
+
+  const handleDragLeave = useCallback((e: React.DragEvent) => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsDragging(false)
+  }, [])
+
+  const handleDragOver = useCallback(
+    (e: React.DragEvent) => {
+      e.preventDefault()
+      e.stopPropagation()
+      if (!isDragging) {
+        setIsDragging(true)
+      }
+    },
+    [isDragging],
+  )
+
+  const handleDrop = useCallback(
+    (e: React.DragEvent) => {
+      e.preventDefault()
+      e.stopPropagation()
+      setIsDragging(false)
+
+      if (!e.dataTransfer.files?.length) return
+
+      const newFiles = Array.from(e.dataTransfer.files).filter((file) => file.type.startsWith("image/"))
+      if (newFiles.length === 0) return
+
+      const newPreviews = newFiles.map((file) => ({
+        file,
+        url: URL.createObjectURL(file),
+      }))
+
+      setPreviews((prev) => [...prev, ...newPreviews])
+
+      if (onChange) {
+        onChange([...previews.map((p) => p.file), ...newFiles])
+      }
+    },
+    [onChange, previews],
+  )
+
   return (
     <div className="space-y-4">
-      {/* Image thumbnails */}
-      <div className="flex flex-wrap gap-3">
-        {previews.map((preview, index) => (
-          <div key={index} className="relative group">
-            <div className="w-24 h-24 border rounded overflow-hidden cursor-pointer" onClick={() => openModal(index)}>
-              <img
-                src={preview.url || "/placeholder.svg"}
-                alt={`Preview ${index}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <button
-              type="button"
-              onClick={(e) => removeImage(index, e)}
-              className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
-              aria-label="Remove image"
+      {/* Drag and drop area */}
+      <div
+        className={`border-2 border-dashed rounded-lg p-6 transition-colors ${
+          isDragging ? "border-primary bg-primary/5" : "border-gray-300"
+        }`}
+        onDragEnter={handleDragEnter}
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+      >
+        <div className="flex flex-col items-center justify-center space-y-2 text-center">
+          <div className="text-gray-500">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="mx-auto h-12 w-12"
             >
-              <X size={14} />
-            </button>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
           </div>
-        ))}
-
-        <button
-          type="button"
-          onClick={() => fileInputRef.current?.click()}
-          className="w-24 h-24 border border-dashed rounded flex items-center justify-center text-gray-400 hover:text-gray-600 hover:border-gray-400 transition-colors"
-        >
-          + Add
-        </button>
+          <div className="flex text-sm text-gray-600">
+            <label
+              htmlFor="file-upload"
+              className="relative cursor-pointer rounded-md font-medium text-primary hover:text-primary/80"
+            >
+              <span>Upload images</span>
+              <input
+                id="file-upload"
+                ref={fileInputRef}
+                type="file"
+                multiple
+                accept="image/*"
+                onChange={handleFileChange}
+                className="sr-only"
+              />
+            </label>
+            <p className="pl-1">or drag and drop</p>
+          </div>
+          <p className="text-xs text-gray-500">PNG, JPG, GIF up to 10MB</p>
+        </div>
       </div>
 
-      {/* Hidden file input */}
-      <input ref={fileInputRef} type="file" multiple accept="image/*" onChange={handleFileChange} className="hidden" />
+      {/* Image thumbnails */}
+      {previews.length > 0 && (
+        <div className="flex flex-wrap gap-3">
+          {previews.map((preview, index) => (
+            <div key={index} className="relative group">
+              <div className="w-24 h-24 border rounded overflow-hidden cursor-pointer" onClick={() => openModal(index)}>
+                <img
+                  src={preview.url || "/placeholder.svg"}
+                  alt={`Preview ${index}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <button
+                type="button"
+                onClick={(e) => removeImage(index, e)}
+                className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Remove image"
+              >
+                <X size={14} />
+              </button>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Image modal */}
       {selectedImageIndex !== null && previews.length > 0 && (

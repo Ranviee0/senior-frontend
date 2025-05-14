@@ -1,18 +1,28 @@
-// app/page.tsx or app/land/page.tsx
-import Link from "next/link";
-import { LandListingCard } from "@/components/created/land-listing-card";
-import { Button } from "@/components/ui/button";
-import { PlusCircle } from "lucide-react";
-import { getAllLandDetail } from "@/lib/server-api"; // new server-side function
-import type { LandListing } from "@/types/data";
+import Link from "next/link"
+import { LandListingCard } from "@/components/created/land-listing-card"
+import { Button } from "@/components/ui/button"
+import { PlusCircle } from "lucide-react"
+import { getAllLandDetail, searchLandsByProvince } from "@/lib/server-api"
+import { ProvinceSearch } from "@/components/created/province-search"
+import type { LandListing } from "@/types/data"
 
-export default async function Home() {
-  let landListings: LandListing[] = [];
+export default async function Home({
+  searchParams,
+}: {
+  searchParams: { province?: string }
+}) {
+  let landListings: LandListing[] = []
 
   try {
-    landListings = await getAllLandDetail();
+    if (searchParams.province) {
+      // If a province is selected, search lands by that province
+      landListings = await searchLandsByProvince(searchParams.province)
+    } else {
+      // Otherwise, get all land listings
+      landListings = await getAllLandDetail()
+    }
   } catch (err) {
-    console.error("Failed to load land listings:", err);
+    console.error("Failed to load land listings:", err)
     // optionally throw notFound() or display a fallback here
   }
 
@@ -31,10 +41,21 @@ export default async function Home() {
       </header>
 
       <main className="container mx-auto py-6 px-4">
+        <div className="mb-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <h2 className="text-xl font-semibold">
+              {searchParams.province ? `Land in ${searchParams.province}` : "All Land Listings"}
+            </h2>
+            <ProvinceSearch />
+          </div>
+        </div>
+
         {landListings.length === 0 ? (
           <div className="text-center py-10">
             <p className="text-lg text-muted-foreground">
-              No land listings found.
+              {searchParams.province
+                ? `No land listings found in ${searchParams.province}.`
+                : "No land listings found."}
             </p>
           </div>
         ) : (
@@ -46,5 +67,5 @@ export default async function Home() {
         )}
       </main>
     </div>
-  );
+  )
 }

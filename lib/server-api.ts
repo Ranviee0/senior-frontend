@@ -89,3 +89,13 @@ export async function rejectTempLandById(id: number): Promise<void> {
     throw error;
   }
 }
+
+export async function searchLandsByProvince(province: string): Promise<LandListing[]> {
+  try {
+    const res = await api.get(`/lands/search?search=${encodeURIComponent(province)}`)
+    return res.data
+  } catch (err) {
+    console.error("Error searching lands by province:", err)
+    return []
+  }
+}

@@ -62,7 +62,6 @@ export function ProvinceSearch() {
                 <CommandItem key={province["name-en"]} value={province["name-en"]} onSelect={handleSelect}>
                   <Check className={cn("mr-2 h-4 w-4", value === province["name-en"] ? "opacity-100" : "opacity-0")} />
                   <span>{province["name-en"]}</span>
-                  <span className="ml-2 text-sm text-muted-foreground">{province["name-th"]}</span>
                 </CommandItem>
               ))}
             </CommandGroup>

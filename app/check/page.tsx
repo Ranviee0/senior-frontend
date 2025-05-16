@@ -1,23 +1,40 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { getTempLandListings } from "@/lib/server-api"
 import type { TempLandListing } from "@/types/data"
 
-export default async function CheckPage() {
-  let tempLandListings: TempLandListing[] = []
-  let error = null
+export default function CheckPage() {
+  const [tempLandListings, setTempLandListings] = useState<TempLandListing[]>([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
-  try {
-    tempLandListings = await getTempLandListings()
-  } catch (err) {
-    console.error("Failed to fetch land listings:", err)
-    error = err instanceof Error ? err.message : "Failed to load data"
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true)
+        const listings = await getTempLandListings()
+        setTempLandListings(listings)
+        setError(null)
+      } catch (err) {
+        console.error("Failed to fetch land listings:", err)
+        setError(err instanceof Error ? err.message : "Failed to load data")
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData()
+  }, [])
 
   return (
     <main className="p-4 space-y-4">
       <h1 className="text-xl font-bold">Lands to Be Reviewed</h1>
 
-      {error ? (
+      {loading ? (
+        <p>Loading land listings...</p>
+      ) : error ? (
         <div className="p-4 border border-red-300 bg-red-50 rounded-md">
           <p className="text-red-700">Error loading data: {error}</p>
           <p className="mt-2">Please try again later or contact support if the problem persists.</p>

@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import Link from "next/link"
 import { LandListingCard } from "@/components/created/land-listing-card"
 import { Button } from "@/components/ui/button"

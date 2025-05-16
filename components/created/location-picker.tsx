@@ -1,43 +1,25 @@
 "use client"
-
-import { useEffect, useState } from "react"
-import { MapContainer, TileLayer, CircleMarker, useMapEvents, useMap } from "react-leaflet"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card } from "@/components/ui/card"
 import { type Control, Controller, type FieldValues, type Path } from "react-hook-form"
 import { cn } from "@/lib/utils"
 import { Loader2 } from "lucide-react"
-import "leaflet/dist/leaflet.css"
+import dynamic from "next/dynamic"
 
 // Bangkok coordinates
 const BANGKOK_LAT = 13.7563
 const BANGKOK_LNG = 100.5018
 
-// Component to handle map clicks and update marker position
-function MapClickHandler({
-  setPosition,
-}: {
-  setPosition: (lat: number, lng: number) => void
-}) {
-  useMapEvents({
-    click: (e) => {
-      setPosition(e.latlng.lat, e.latlng.lng)
-    },
-  })
-  return null
-}
-
-// Component to update map center when coordinates change
-function MapUpdater({ lat, lng }: { lat: number; lng: number }) {
-  const map = useMap()
-
-  useEffect(() => {
-    map.setView([lat, lng], map.getZoom())
-  }, [lat, lng, map])
-
-  return null
-}
+// Dynamically import the map components with ssr: false
+const MapComponentWithNoSSR = dynamic(() => import("./map-component").then((mod) => mod.MapComponent), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center h-[300px] bg-gray-100 rounded-md">
+      <Loader2 className="h-8 w-8 animate-spin text-gray-500" />
+    </div>
+  ),
+})
 
 export interface LocationPickerProps<T extends FieldValues> {
   control: Control<T>
@@ -60,20 +42,6 @@ export function LocationPicker<T extends FieldValues>({
   defaultLng = BANGKOK_LNG,
   required = false,
 }: LocationPickerProps<T>) {
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
-
-  if (!isClient) {
-    return (
-      <div className="flex items-center justify-center h-[400px] bg-gray-100 rounded-md">
-        <Loader2 className="h-8 w-8 animate-spin text-gray-500" />
-      </div>
-    )
-  }
-
   return (
     <div className={cn("space-y-3", className)}>
       {label && (
@@ -152,23 +120,7 @@ export function LocationPicker<T extends FieldValues>({
                       </div>
 
                       <div className="h-[300px] w-full rounded-md overflow-hidden border col-span-2">
-                        <MapContainer center={[lat, lng]} zoom={13} style={{ height: "100%", width: "100%" }}>
-                          <TileLayer
-                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                          />
-                          <CircleMarker
-                            center={[lat, lng]}
-                            pathOptions={{
-                              radius: 8,
-                              color: "red",
-                              fillColor: "red",
-                              fillOpacity: 1,
-                            }}
-                          />
-                          <MapClickHandler setPosition={handlePositionChange} />
-                          <MapUpdater lat={lat} lng={lng} />
-                        </MapContainer>
+                        <MapComponentWithNoSSR lat={lat} lng={lng} onPositionChange={handlePositionChange} />
                       </div>
                     </>
                   )
